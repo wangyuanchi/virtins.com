@@ -1,0 +1,2763 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="Description"
+      content="A complete package of Multi-Instrument software consists of Oscilloscope, Spectrum Analyzer, Signal Generator, Multimeter, Spectrum 3D Plot, Data Logger, LCR Meter, Device Test Plan, Vibrometer with full features in each of them. Download and try it out with your sound card!"
+    />
+    <title>Multi-Instrument, a powerful multi-function virtual instrument software - Virtins Technology</title>
+    <link rel="icon" type="image/x-icon" href="images/global/favicon.png" />
+    <!--Bootstrap-->
+    <link href="node_modules/bootstrap/dist/css/bootstrap.min.css" rel="stylesheet" />
+    <script defer src="node_modules/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+    <link rel="stylesheet" href="style.css" />
+    <!--jquery-->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <script>
+      $(function () {
+        $("#nav").load("nav.html");
+        $("#footer").load("footer.html");
+      });
+    </script>
+  </head>
+  <body>
+    <!--navigation bar start-->
+    <header>
+      <div id="nav"></div>
+    </header>
+    <!--navigation bar end-->
+    <!--hero start-->
+    <div class="hero">
+      <img src="images/multi-instrument/hero2.png" alt="Multi-Instrument" width="3500" height="1400" class="hero__img" id="multi-instrument-hero" />
+      <a href="https://virtins.com/MIsetup.exe"
+        ><button class="hero__button" id="multi-instrument-button" role="button"><span>Download</span></button></a
+      >
+    </div>
+    <!--hero end-->
+    <div class="body__widescreen">
+      <nav aria-label="breadcrumb" class="px-4">
+        <ol class="breadcrumb">
+          <li class="breadcrumb-item"><a href="index.html">Home</a></li>
+          <li class="breadcrumb-item active" aria-current="page">Multi-Instrument</li>
+        </ol>
+      </nav>
+      <!--1-->
+      <h1 class="body__h1 d-lg-none">Get Multi-Instrument</h1>
+      <h1 class="body__h1 d-none d-lg-block">Buy Multi-Instrument</h1>
+      <div class="container-fluid px-5 mb-4">
+        <div class="row">
+          <div class="col d-lg-none">
+            <div class="card">
+              <img class="card-img-top p-3" src="images/products/MI.png" alt="MI" width="480" height="480" />
+              <div class="card-body">
+                <h5 class="card-title text-center">Multi-Instrument Free Trial</h5>
+              </div>
+              <a href="https://virtins.com/MIsetup.exe" class="btn btn-primary d-block mx-auto mb-4 px-5" role="button">Download</a>
+            </div>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-12 col-sm-6 col-lg-3 g-3">
+            <div class="card h-100">
+              <img class="card-img-top p-3" src="images/multi-instrument/MIs.png" alt="Multi-Instrument" width="600" height="740" />
+              <div class="card-body">
+                <h5 class="card-title">Multi-Instrument</h5>
+                <p class="card-text text-secondary">
+                  The Full Package includes the Pro version along with all add-on modules. It comes with a free lifetime version upgrade for the same license level.
+                </p>
+                <p class="card-text text-secondary">
+                  Find out more:<br /><a href="https://virtins.com/Multi-Instrument-Brochure.pdf">Brochure</a><br /><a href="https://virtins.com/Multi-Instrument-Manual.pdf">Manual</a>
+                </p>
+              </div>
+              <div class="card-footer">
+                <form target="_self" action="https://www.paypal.com/cgi-bin/webscr" method="post">
+                  <input type="hidden" name="cmd" value="_s-xclick" />
+                  <input type="hidden" name="hosted_button_id" value="DZ8UGNJFZ6F2Q" />
+                  <input type="hidden" name="on0" value="Multi-Instrument" />
+                  <select name="os0" class="form-select" aria-label="Select">
+                    <option value="SC Oscilloscope">SC Oscilloscope $39.95 USD</option>
+                    <option value="SC Spectrum Analyzer">SC Spectrum Analyzer $59.95 USD</option>
+                    <option value="SC Signal Generator">SC Signal Generator $39.95 USD</option>
+                    <option value="Lite">Lite $79.95 USD</option>
+                    <option value="Standard">Standard $129.95 USD</option>
+                    <option value="Pro">Pro $229.95 USD</option>
+                    <option value="Full Package">Full Package $499.95 USD</option>
+                  </select>
+                  <input type="hidden" name="currency_code" value="USD" />
+                  <input class="mx-auto d-block w-75 h-auto mt-2" type="image" name="submit" src="images/global/addtocart.png" alt="PayPal" width="450" height="80" />
+                  <img width="1" height="1" src="https://www.paypalobjects.com/en_US/i/scr/pixel.gif" />
+                </form>
+              </div>
+            </div>
+          </div>
+          <div class="col-12 col-sm-6 col-lg-3 g-3">
+            <div class="card h-100">
+              <img class="card-img-top p-3" src="images/multi-instrument/Spectrum3DPlots.jpg" alt="Spectrum 3D Plots" width="296" height="373" />
+              <div class="card-body">
+                <h5 class="card-title">Multi-Instrument Add-On Modules</h5>
+                <p class="card-text text-secondary">
+                  The add-on modules need to be purchased separately. They can only run with Multi-Instrument Lite, Standard, or Pro, with the exception that Vibrometer can only run with
+                  Multi-Instrument Standard or Pro.
+                </p>
+              </div>
+              <div class="card-footer">
+                <form target="_self" action="https://www.paypal.com/cgi-bin/webscr" method="post">
+                  <input type="hidden" name="cmd" value="_s-xclick" />
+                  <input type="hidden" name="hosted_button_id" value="9ULD3H35N3Q3A" />
+                  <input type="hidden" name="on0" value="Multi-Instrument Add-on Modules" />
+                  <select name="os0" class="form-select" aria-label="Select">
+                    <option value="Spectrum 3D Plot">Spectrum 3D Plot $99.95 USD</option>
+                    <option value="Data Logger">Data Logger $99.95 USD</option>
+                    <option value="LCR Meter">LCR Meter $99.95 USD</option>
+                    <option value="Device Test Plan">Device Test Plan $99.95 USD</option>
+                    <option value="Vibrometer">Vibrometer $99.95 USD</option>
+                    <option value="Dedicated Hardware Support">Dedicated Hardware Support $99.95 USD</option>
+                  </select>
+                  <input type="hidden" name="currency_code" value="USD" />
+                  <input class="mx-auto d-block w-75 h-auto mt-2" type="image" name="submit" src="images/global/addtocart.png" alt="PayPal" width="450" height="80" />
+                  <img width="1" height="1" src="https://www.paypalobjects.com/en_US/i/scr/pixel.gif" />
+                </form>
+              </div>
+            </div>
+          </div>
+          <div class="col-12 col-sm-6 col-lg-3 g-3">
+            <div class="card h-100">
+              <img class="card-img-top p-3" src="images/multi-instrument/upgrade.png" alt="Upgrade" width="256" height="256" />
+              <div class="card-body">
+                <h5 class="card-title">Multi-Instrument License Upgrade</h5>
+                <p class="card-text text-secondary">
+                  The license information in the softkey, hardkey and VT hardware are all remotely upgradable. For license options, please refer to the paragraph below.
+                </p>
+              </div>
+              <div class="card-footer">
+                <form target="_self" action="https://www.paypal.com/cgi-bin/webscr" method="post">
+                  <input type="hidden" name="cmd" value="_s-xclick" />
+                  <input type="hidden" name="hosted_button_id" value="CSNLM8JMH9VDJ" />
+                  <input type="hidden" name="on0" value="Multi-Instrument License Upgrade" />
+                  <select name="os0" class="form-select" aria-label="Select">
+                    <option value="SC Oscilloscope -> Lite">SC Oscilloscope -> Lite $40.00 USD</option>
+                    <option value="SC Spectrum Analyzer -> Lite">SC Spectrum Analyzer -> Lite $20.00 USD</option>
+                    <option value="SC Signal Generator -> Lite">SC Signal Generator -> Lite $40.00 USD</option>
+                    <option value="Lite -> Standard">Lite -> Standard $50.00 USD</option>
+                    <option value="Standard -> Pro">Standard -> Pro $100.00 USD</option>
+                    <option value="Pro -> Full Package">Pro -> Full Package $270.00 USD</option>
+                  </select>
+                  <input type="hidden" name="currency_code" value="USD" />
+                  <input class="mx-auto d-block w-75 h-auto mt-2" type="image" name="submit" src="images/global/addtocart.png" alt="PayPal" width="450" height="80" />
+                  <img width="1" height="1" src="https://www.paypalobjects.com/en_US/i/scr/pixel.gif" />
+                </form>
+              </div>
+            </div>
+          </div>
+          <div class="col-12 col-sm-6 col-lg-3 g-3">
+            <div class="card h-100">
+              <img class="card-img-top p-4" src="images/multi-instrument/USBHardkeys.png" alt="USB Hard Keys" width="544" height="192" />
+              <div class="card-body">
+                <h5 class="card-title">USB Hardkey for Multi-Instrument Series (US$49.95)</h5>
+                <p class="card-text text-secondary">
+                  The software runs without requiring a driver. Upon purchase, it will be initialized to the corresponding license level. With this option, you can run the software on the registered
+                  computer with the softkey, as well as on any computer with the hardkey.
+                </p>
+              </div>
+              <div class="card-footer">
+                <form target="_self" action="https://www.paypal.com/cgi-bin/webscr" method="post">
+                  <input type="hidden" name="cmd" value="_s-xclick" />
+                  <input type="hidden" name="hosted_button_id" value="AV29CN3WJMQPC" />
+                  <input class="mx-auto d-block w-75 h-auto" type="image" name="submit" src="images/global/addtocart.png" alt="PayPal" width="450" height="80" />
+                  <img width="1" height="1" src="https://www.paypalobjects.com/en_US/i/scr/pixel.gif" />
+                </form>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <p class="body__p">
+        License Options: <br />1. Softkey activated license (which locks to the registered computer)<br />
+        2. VT hardware activated license (which locks to the purchased VT hardware) <br />
+        Optionally, a USB hardkey (which locks to the hardkey) can be purchased per softkey or VT hardware activated license.
+      </p>
+      <!--2-->
+      <h1 class="body__h1">Introduction</h1>
+      <p class="body__p">
+        Multi-Instrument is a powerful multi-function virtual instrument software. It is a professional tool for time, frequency, time-frequency and modulation domain analyses. It supports a variety
+        of hardware ranging from sound cards which are available in almost all computers to proprietary ADC and DAC hardware such as NI DAQmx cards, VT DSOs, VT RTAs and so on. It consists of the
+        following instruments and functions, all of which can run simultaneously and in real time.
+      </p>
+      <div class="container-fluid">
+        <div class="row">
+          <div class="col columns">
+            <div class="columns__group mb-3">
+              <img src="images/multi-instrument/SCMIAnim.webp" alt="Multi-Instrument Animation" width="620" height="450" />
+            </div>
+            <div class="columns__group">
+              <h2 class="body__h2 p-0">Oscilloscope</h2>
+              <ul>
+                <li>Digital Oscilloscope</li>
+                <li>Transient Recorder</li>
+                <li>Data Recorder</li>
+                <li>Voltmeter</li>
+                <li>Lissajous Plot</li>
+                <li>Digital Filters</li>
+                <li>Persistence Mode</li>
+                <li>Equivalent Time Sampling</li>
+                <li>AM, FM, PM Demodulator</li>
+                <li>Reverberation Analysis</li>
+                <li>Speech Intelligibility</li>
+                <li>Step Response Analysis</li>
+              </ul>
+            </div>
+            <div class="columns__group">
+              <h2 class="body__h2 p-0">Signal Generator</h2>
+              <ul>
+                <li>Function Generator</li>
+                <li>Arbitrary Generator</li>
+                <li>Burst Generator</li>
+                <li>White Noise Generator</li>
+                <li>Pink Noise Generator</li>
+                <li>MultiTone Generator</li>
+                <li>MLS Generator</li>
+                <li>Musical Scale Generator</li>
+                <li>DTMF Generator</li>
+                <li>Frequency Sweep</li>
+                <li>Amplitude Sweep</li>
+                <li>Fade In/Fade Out</li>
+                <li>AM, FM, PM Modulator</li>
+                <li>DDS & Streaming Modes</li>
+                <li>DC Offset supported</li>
+              </ul>
+            </div>
+            <div class="columns__group">
+              <h2 class="body__h2 p-0">Multimeter</h2>
+              <ul>
+                <li>Voltmeter</li>
+                <li>SPL Meter</li>
+                <li>Frequency Counter</li>
+                <li>RPM Meter Counter</li>
+                <li>Duty Cycle Meter</li>
+                <li>F/V Meter</li>
+                <li>Pulse Width</li>
+              </ul>
+            </div>
+            <div class="columns__group">
+              <h2 class="body__h2 p-0">Derived Data Curves</h2>
+              <ul>
+                <li>Energy Time Curves</li>
+                <li>Step Response Curve</li>
+                <li>Frequency Time Curves</li>
+                <li>X-Y Plots</li>
+                <li>Shock Response Spectrum</li>
+              </ul>
+            </div>
+            <div class="columns__group">
+              <h2 class="body__h2 p-0">Spectrum Analyzer</h2>
+              <ul>
+                <li>Amplitude Spectrum Analyzer</li>
+                <li>Power Spectrum Analyzer</li>
+                <li>Real Time Analyzer</li>
+                <li>Octave Analyzer</li>
+                <li>Phase Spectrum Analyzer</li>
+                <li>Correlation Analyzer</li>
+                <li>Freq. Response Measurement</li>
+                <li>Distortion Analyzer</li>
+                <li>Noise Analyzer</li>
+                <li>Harmonics Analyzer</li>
+                <li>Dynamic Signal Analyzer</li>
+                <li>Coherence Measurement</li>
+                <li>Transfer Function Measurement</li>
+                <li>Impulse Response Measurement</li>
+                <li>Wow & Flutter Measurement</li>
+                <li>Sound Quality Measurement</li>
+                <li>Impedance Analyzer</li>
+              </ul>
+            </div>
+            <div class="columns__group">
+              <h2 class="body__h2 p-0">Spectrum 3D Plot</h2>
+              <ul>
+                <li>Waterfall Plot</li>
+                <li>Spectrogram Cumulative</li>
+                <li>Spectral Decay</li>
+              </ul>
+            </div>
+            <div class="columns__group">
+              <h2 class="body__h2 p-0">Vibrometer</h2>
+              <ul>
+                <li>Displacement</li>
+                <li>Velocity</li>
+                <li>Acceleration Conversion</li>
+              </ul>
+            </div>
+            <div class="columns__group">
+              <h2 class="body__h2 p-0">Data Logger</h2>
+              <ul>
+                <li>8x8 Derived Data Point Logger</li>
+                <li>230 Derived Data Points</li>
+                <li>16 User Defined Data Points</li>
+              </ul>
+            </div>
+            <div class="columns__group">
+              <h2 class="body__h2 p-0">Device Test Plan</h2>
+              <ul>
+                <li>User Defined Plan</li>
+                <li>8 X-Y Plots</li>
+                <li>1 Test Report</li>
+              </ul>
+            </div>
+            <div class="columns__group">
+              <h2 class="body__h2 p-0">LCR Meter</h2>
+              <ul>
+                <li>Inductor Meter</li>
+                <li>Capacitor Meter</li>
+                <li>Resistor Meter</li>
+                <li>Impedance Meter</li>
+              </ul>
+            </div>
+            <div class="columns__group">
+              <h2 class="body__h2 p-0">Derived Data Point (DDP) Viewer</h2>
+              <ul>
+                <li>Display Derived Data Points</li>
+                <li>HH, H, L, LL Alarming</li>
+                <li>User Defined Data Points</li>
+                <li>DDP Array Viewer</li>
+              </ul>
+            </div>
+            <div class="columns__group">
+              <h2 class="body__h2 p-0">Software Customization & Development</h2>
+              <ul>
+                <li>Most Flexible Configuration</li>
+                <li>ActiveX Automation Supported</li>
+                <li>vtDAQ & vtDAO Open Interfaces</li>
+                <li>VB, VC#, Python, LabVIEWE sample codes</li>
+              </ul>
+            </div>
+            <div class="columns__group">
+              <h2 class="body__h2 p-0">System Requirement</h2>
+              <p>Windows XP/VISTA/7/8/10/11, 32 or 64 bit, screen resolution 1024x600 or higher.</p>
+            </div>
+            <div class="columns__group">
+              <h2 class="body__h2 p-0">ADC/DAC Hardware supported</h2>
+              <ul>
+                <li>8/16/24/32 bit Windows compatible sound card (MME/ASIO driver)</li>
+                <li>NI DAQmx compatible cards</li>
+                <li>VT DSO F1/H1/H2/H3 series</li>
+                <li>VT DAQ 1/2 series</li>
+                <li>VT DAO 1 series...</li>
+              </ul>
+            </div>
+            <div class="columns__group">
+              <h2 class="body__h2 p-0">Language supported</h2>
+              <ul>
+                <li>English</li>
+                <li>French</li>
+                <li>German</li>
+                <li>Italian</li>
+                <li>Spanish</li>
+                <li>Portuguese</li>
+                <li>Russian</li>
+                <li>Simplified Chinese</li>
+                <li>Traditional Chinese</li>
+                <li>Japanese</li>
+                <li>Korean...</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+      <p class="body__p">
+        Multi-Instrument has been widely used in education and training, scientific research, audio and acoustic engineering, electronic engineering, vibration analysis, medical diagnosis, musical
+        instrument inspection, and so on. Download it now for a 21-day fully functional FREE trial, using your computer sound card as the ADC and DAC devices.
+      </p>
+      <!--3-->
+      <h1 class="body__h1">The Multi-Instrument system</h1>
+      <p class="body__p">
+        A Multi-Instrument system consists of three layers (from front end to back end, as shown in the figure below): sensor layer, data acquisition hardware layer and virtual instrument software
+        layer (i.e. Multi-Instrument).
+      </p>
+      <h2 class="body__h2">1. Sensor Layer</h2>
+      <p class="body__p">
+        The sensor layer is made up of sensors and their pre-amplifiers (if necessary). It converts physical quantities to electronic signals which can then be quantized by the data acquisition layer.
+        It defines the field of application of the Multi-Instrument system. For example, a passive oscilloscope probe or active differential oscilloscope probe can be used to measure electronic or
+        electrical voltage signals; a current clamp can be used to measure electronic or electrical current signals; a microphone can be used to sense sounds, an acceleration sensor can be used to
+        sense vibration; an ECG sensor can be used to sense the electrical activity of the heart, etc... The sensor layer can also contain actuators such as speakers and vibration shakers.
+      </p>
+      <h2 class="body__h2">2. Data Acquisition Hardware Layer</h2>
+      <p class="body__p">
+        The data acquisition hardware layer contains the data acquisition hardware such as Virtins Technology's PC based USB Oscilloscopes, Spectrum Analyzers and Signal Generators, Virtins
+        Technology's Real Time Analyzers, NI DAQmx cards, sound cards, etc. It scales, conditions and quantizes the electronic or electrical signals passed on by the sensor layer. Together with the
+        sensor layer, it defines the measurement accuracy and precision of the Multi-Instrument system. This layer can also contain DAC hardware which converts the digial signal from the computer to
+        analog signal in order to drive the actuators such as speakers in the sensor layer.
+      </p>
+      <h2 class="body__h2">3. Virtual Instrument Software Layer</h2>
+      <p class="body__p">
+        The virtual instrument software layer is dominated by the Multi-Instrument software. It defines the functions and Graphical User Interfaces (GUI) of the Multi-Instrument system. In general,
+        the Multi-Instrument system is extremely powerful, flexible, customizable, yet cost-effective. Simply through software configuration without any coding, it is possible to achieve custom
+        functions that can only be realized through custom software development using programming tools such as Labview, Matlab, C++, etc. A properly configured Multi-Instrument system will meet your
+        every need in test, measurement, monitoring and control.
+      </p>
+      <img class="mx-auto" src="images/multi-instrument/Multi-Instrument-System.png" alt="Multi-Instrument-System" width="780" height="959" />
+      <!--4-->
+      <h1 class="body__h1">Function Allocation in Different License Levels</h1>
+      <p class="body__p">
+        A complete Multi-Instrument software package consists of basic and add-on modules with all features in each of them. The basic modules include Oscilloscope, Spectrum Analyzer, Signal
+        Generator, Multimeter, Derived Data Point Viewer, Derived Data Curve, and General Functions. The add-on modules include Spectrum 3D Plot, Data Logger, LCR Meter, Device Test Plan, Vibrometer,
+        and Dedicated Hardware Support.
+      </p>
+      <p class="body__p">
+        There are six license levels to access the basic modules: Sound Card Oscilloscope, Sound Card Spectrum Analyzer, Sound Card Signal Generator, Multi-Instrument Lite, Multi-Instrument Standard,
+        and Multi-Instrument Pro. The add-on modules need to be purchased separately. They can only run with Multi-Instrument Lite, Standard, or Pro, except that Vibrometer can only run with
+        Multi-Instrument Standard or Pro. The following table shows the function allocation among different license levels. Please note that a license of Multi-Instrument Full Package contains
+        Multi-Instrument Pro and all add-on modules.
+      </p>
+      <h2 class="body__h2">Basic Modules</h2>
+      <p class="body__p">✔ - Function available <br />* - Function available in Multi-Instrument Full Package only</p>
+      <div class="table-responsive mx-4">
+        <table class="table table-sm table-bordered table-striped border-black">
+          <thead class="table-dark">
+            <tr>
+              <th rowspan="2" colspan="2">Functions/Levels</th>
+              <th>Sound Card Oscilloscope</th>
+              <th>Sound Card Spectrum Analyzer</th>
+              <th>Sound Card Signal Generator</th>
+              <th>Multi-Instrument Lite</th>
+              <th>Multi-Instrument Standard</th>
+              <th>Multi-Instrument Pro</th>
+            </tr>
+            <tr>
+              <td>US$39.95</td>
+              <td>US$59.95</td>
+              <td>US$39.95</td>
+              <td>US$79.95</td>
+              <td>US$129.95</td>
+              <td>US$229.95</td>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td class="bg-primary-subtle fw-bold" colspan="8">General Functions</td>
+            </tr>
+            <tr>
+              <th rowspan="4">ADC/DAC Hardware</th>
+              <td>Sound Card MME</td>
+              <td>✔</td>
+              <td>✔</td>
+              <td>✔</td>
+              <td>✔</td>
+              <td>✔</td>
+              <td>✔</td>
+            </tr>
+            <tr>
+              <td>Sound Card ASIO</td>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td>✔</td>
+            </tr>
+            <tr>
+              <td>Other Hardware</td>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td>✔</td>
+              <td>✔</td>
+              <td>✔</td>
+            </tr>
+            <tr>
+              <td>vtDAQ, vtDAO software development</td>
+              <td colspan="6">License automatically activated with the presence of the corresponding hardware, e.g. a USB hardkey or a VT DSO.</td>
+            </tr>
+            <tr>
+              <th rowspan="6">File Operation</th>
+              <td>Load WAV file</td>
+              <td>✔</td>
+              <td>✔</td>
+              <td>✔</td>
+              <td>✔</td>
+              <td>✔</td>
+              <td>✔</td>
+            </tr>
+            <tr>
+              <td>Load TXT file</td>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td>✔</td>
+              <td>✔</td>
+            </tr>
+            <tr>
+              <td>Load WAV file frame by frame (for long WAV file)</td>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td>✔</td>
+              <td>✔</td>
+            </tr>
+            <tr>
+              <td>Combine WAV file</td>
+              <td>✔</td>
+              <td>✔</td>
+              <td>✔</td>
+              <td>✔</td>
+              <td>✔</td>
+              <td>✔</td>
+            </tr>
+            <tr>
+              <td>Extract data and save them into a new WAV file</td>
+              <td>✔</td>
+              <td>✔</td>
+              <td>✔</td>
+              <td>✔</td>
+              <td>✔</td>
+              <td>✔</td>
+            </tr>
+            <tr>
+              <td>Save/load panel setting</td>
+              <td>✔</td>
+              <td>✔</td>
+              <td>✔</td>
+              <td>✔</td>
+              <td>✔</td>
+              <td>✔</td>
+            </tr>
+            <tr>
+              <th rowspan="6">Data Export</th>
+              <td>Copy Text to Clipboard</td>
+              <td>✔</td>
+              <td>✔</td>
+              <td>✔</td>
+              <td>✔</td>
+              <td>✔</td>
+              <td>✔</td>
+            </tr>
+            <tr>
+              <td>Copy BMP to Clipboard</td>
+              <td>✔</td>
+              <td>✔</td>
+              <td>✔</td>
+              <td>✔</td>
+              <td>✔</td>
+              <td>✔</td>
+            </tr>
+            <tr>
+              <td>Print Preview</td>
+              <td>✔</td>
+              <td>✔</td>
+              <td>✔</td>
+              <td>✔</td>
+              <td>✔</td>
+              <td>✔</td>
+            </tr>
+            <tr>
+              <td>Print</td>
+              <td>✔</td>
+              <td>✔</td>
+              <td>✔</td>
+              <td>✔</td>
+              <td>✔</td>
+              <td>✔</td>
+            </tr>
+            <tr>
+              <td>Export as TXT file</td>
+              <td>✔</td>
+              <td>✔</td>
+              <td>✔</td>
+              <td>✔</td>
+              <td>✔</td>
+              <td>✔</td>
+            </tr>
+            <tr>
+              <td>Export as BMP file</td>
+              <td>✔</td>
+              <td>✔</td>
+              <td>✔</td>
+              <td>✔</td>
+              <td>✔</td>
+              <td>✔</td>
+            </tr>
+            <tr>
+              <th rowspan="7">Trigger Settings</th>
+              <td>Trigger Mode</td>
+              <td>✔</td>
+              <td>✔</td>
+              <td></td>
+              <td>✔</td>
+              <td>✔</td>
+              <td>✔</td>
+            </tr>
+            <tr>
+              <td>Trigger Source</td>
+              <td>✔</td>
+              <td>✔</td>
+              <td></td>
+              <td>✔</td>
+              <td>✔</td>
+              <td>✔</td>
+            </tr>
+            <tr>
+              <td>Trigger Edge</td>
+              <td>✔</td>
+              <td>✔</td>
+              <td></td>
+              <td>✔</td>
+              <td>✔</td>
+              <td>✔</td>
+            </tr>
+            <tr>
+              <td>Trigger Level</td>
+              <td>✔</td>
+              <td>✔</td>
+              <td></td>
+              <td>✔</td>
+              <td>✔</td>
+              <td>✔</td>
+            </tr>
+            <tr>
+              <td>Trigger Delay</td>
+              <td>✔</td>
+              <td>✔</td>
+              <td></td>
+              <td>✔</td>
+              <td>✔</td>
+              <td>✔</td>
+            </tr>
+            <tr>
+              <td>High Frequency Rejection</td>
+              <td>✔</td>
+              <td>✔</td>
+              <td></td>
+              <td>✔</td>
+              <td>✔</td>
+              <td>✔</td>
+            </tr>
+            <tr>
+              <td>Noise Rejection</td>
+              <td>✔</td>
+              <td>✔</td>
+              <td></td>
+              <td>✔</td>
+              <td>✔</td>
+              <td>✔</td>
+            </tr>
+            <tr>
+              <th rowspan="4">Sampling Settings</th>
+              <td>Sampling Rate</td>
+              <td>✔</td>
+              <td>✔</td>
+              <td>✔</td>
+              <td>✔</td>
+              <td>✔</td>
+              <td>✔</td>
+            </tr>
+            <tr>
+              <td>Sampling Channels</td>
+              <td>✔</td>
+              <td>✔</td>
+              <td>✔</td>
+              <td>✔</td>
+              <td>✔</td>
+              <td>✔</td>
+            </tr>
+            <tr>
+              <td>Sampling Bit Resolution</td>
+              <td>✔</td>
+              <td>✔</td>
+              <td>✔</td>
+              <td>✔</td>
+              <td>✔</td>
+              <td>✔</td>
+            </tr>
+            <tr>
+              <td>Record Length</td>
+              <td>✔</td>
+              <td>✔</td>
+              <td></td>
+              <td>✔</td>
+              <td>✔</td>
+              <td>✔</td>
+            </tr>
+            <tr>
+              <th rowspan="8">Calibration</th>
+              <td>Input</td>
+              <td>✔</td>
+              <td>✔</td>
+              <td></td>
+              <td>✔</td>
+              <td>✔</td>
+              <td>✔</td>
+            </tr>
+            <tr>
+              <td>Output</td>
+              <td></td>
+              <td></td>
+              <td>✔</td>
+              <td>✔</td>
+              <td>✔</td>
+              <td>✔</td>
+            </tr>
+            <tr>
+              <td>Probe</td>
+              <td>✔</td>
+              <td>✔</td>
+              <td></td>
+              <td>✔</td>
+              <td>✔</td>
+              <td>✔</td>
+            </tr>
+            <tr>
+              <td>Sound Pressure Level</td>
+              <td>✔</td>
+              <td>✔</td>
+              <td></td>
+              <td>✔</td>
+              <td>✔</td>
+              <td>✔</td>
+            </tr>
+            <tr>
+              <td>F/V Conversion</td>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td>✔</td>
+              <td>✔</td>
+            </tr>
+            <tr>
+              <td>Latency for Sync. Output/Input</td>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td>✔</td>
+            </tr>
+            <tr>
+              <td>Sensor Sensitivity</td>
+              <td>✔</td>
+              <td>✔</td>
+              <td></td>
+              <td>✔</td>
+              <td>✔</td>
+              <td>✔</td>
+            </tr>
+            <tr>
+              <td>Load Factor for Power Calculation</td>
+              <td>✔</td>
+              <td>✔</td>
+              <td></td>
+              <td>✔</td>
+              <td>✔</td>
+              <td>✔</td>
+            </tr>
+            <tr>
+              <th rowspan="12">Graph Operation</th>
+              <td>Zoom</td>
+              <td>✔</td>
+              <td>✔</td>
+              <td>✔</td>
+              <td>✔</td>
+              <td>✔</td>
+              <td>✔</td>
+            </tr>
+            <tr>
+              <td>Scroll</td>
+              <td>✔</td>
+              <td>✔</td>
+              <td>✔</td>
+              <td>✔</td>
+              <td>✔</td>
+              <td>✔</td>
+            </tr>
+            <tr>
+              <td>Cursor Reader</td>
+              <td>✔</td>
+              <td>✔</td>
+              <td>✔</td>
+              <td>✔</td>
+              <td>✔</td>
+              <td>✔</td>
+            </tr>
+            <tr>
+              <td>Marker</td>
+              <td>✔</td>
+              <td>✔</td>
+              <td>✔</td>
+              <td>✔</td>
+              <td>✔</td>
+              <td>✔</td>
+            </tr>
+            <tr>
+              <td>Chart Type</td>
+              <td>✔</td>
+              <td>✔</td>
+              <td>✔</td>
+              <td>✔</td>
+              <td>✔</td>
+              <td>✔</td>
+            </tr>
+            <tr>
+              <td>Line Width</td>
+              <td>✔</td>
+              <td>✔</td>
+              <td>✔</td>
+              <td>✔</td>
+              <td>✔</td>
+              <td>✔</td>
+            </tr>
+            <tr>
+              <td>Color</td>
+              <td>✔</td>
+              <td>✔</td>
+              <td>✔</td>
+              <td>✔</td>
+              <td>✔</td>
+              <td>✔</td>
+            </tr>
+            <tr>
+              <td>Fast/Slow Display Mode</td>
+              <td>✔</td>
+              <td>✔</td>
+              <td>✔</td>
+              <td>✔</td>
+              <td>✔</td>
+              <td>✔</td>
+            </tr>
+            <tr>
+              <td>Refresh Delay</td>
+              <td>✔</td>
+              <td>✔</td>
+              <td>✔</td>
+              <td>✔</td>
+              <td>✔</td>
+              <td>✔</td>
+            </tr>
+            <tr>
+              <td>Font Size</td>
+              <td>✔</td>
+              <td>✔</td>
+              <td>✔</td>
+              <td>✔</td>
+              <td>✔</td>
+              <td>✔</td>
+            </tr>
+            <tr>
+              <td>Roll Mode</td>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td>✔</td>
+              <td>✔</td>
+            </tr>
+            <tr>
+              <td>Reference Curve & Limits</td>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td>✔</td>
+              <td>✔</td>
+            </tr>
+            <tr>
+              <th rowspan="12">Others</th>
+              <td>Gain Adjustment</td>
+              <td>✔</td>
+              <td>✔</td>
+              <td>✔</td>
+              <td>✔</td>
+              <td>✔</td>
+              <td>✔</td>
+            </tr>
+            <tr>
+              <td>Input Peak Indicator</td>
+              <td>✔</td>
+              <td>✔</td>
+              <td>✔</td>
+              <td>✔</td>
+              <td>✔</td>
+              <td>✔</td>
+            </tr>
+            <tr>
+              <td>Sound Card Selection</td>
+              <td>✔</td>
+              <td>✔</td>
+              <td>✔</td>
+              <td>✔</td>
+              <td>✔</td>
+              <td>✔</td>
+            </tr>
+            <tr>
+              <td>Sampling Parameter Auto Setting</td>
+              <td>✔</td>
+              <td>✔</td>
+              <td>✔</td>
+              <td>✔</td>
+              <td>✔</td>
+              <td>✔</td>
+            </tr>
+            <tr>
+              <td>Multilingual GUIs</td>
+              <td>✔</td>
+              <td>✔</td>
+              <td>✔</td>
+              <td>✔</td>
+              <td>✔</td>
+              <td>✔</td>
+            </tr>
+            <tr>
+              <td>Show/Hide Toolbar</td>
+              <td>✔</td>
+              <td>✔</td>
+              <td>✔</td>
+              <td>✔</td>
+              <td>✔</td>
+              <td>✔</td>
+            </tr>
+            <tr>
+              <td>Lock/Unlock Panel Setting</td>
+              <td>✔</td>
+              <td>✔</td>
+              <td>✔</td>
+              <td>✔</td>
+              <td>✔</td>
+              <td>✔</td>
+            </tr>
+            <tr>
+              <td>Hot Panel Setting Toolbar</td>
+              <td>✔</td>
+              <td>✔</td>
+              <td>✔</td>
+              <td>✔</td>
+              <td>✔</td>
+              <td>✔</td>
+            </tr>
+            <tr>
+              <td>ActiveX Automation Server</td>
+              <td>✔</td>
+              <td>✔</td>
+              <td>✔</td>
+              <td>✔</td>
+              <td>✔</td>
+              <td>✔</td>
+            </tr>
+            <tr>
+              <td>Auto Ranging</td>
+              <td>✔</td>
+              <td>✔</td>
+              <td>✔</td>
+              <td>✔</td>
+              <td>✔</td>
+              <td>✔</td>
+            </tr>
+            <tr>
+              <td>Auto Scaling</td>
+              <td>✔</td>
+              <td>✔</td>
+              <td></td>
+              <td>✔</td>
+              <td>✔</td>
+              <td>✔</td>
+            </tr>
+            <tr>
+              <td>Input Channel Operation</td>
+              <td>✔</td>
+              <td>✔</td>
+              <td></td>
+              <td>✔</td>
+              <td>✔</td>
+              <td>✔</td>
+            </tr>
+            <tr>
+              <td class="bg-primary-subtle fw-bold" colspan="8">Oscilloscope</td>
+            </tr>
+            <tr>
+              <th rowspan="5">Type</th>
+              <td>Individual Waveform</td>
+              <td>✔</td>
+              <td>✔</td>
+              <td>✔ (offline)</td>
+              <td>✔</td>
+              <td>✔</td>
+              <td>✔</td>
+            </tr>
+            <tr>
+              <td>Waveform Addition</td>
+              <td>✔</td>
+              <td>✔</td>
+              <td>✔ (offline)</td>
+              <td>✔</td>
+              <td>✔</td>
+              <td>✔</td>
+            </tr>
+            <tr>
+              <td>Waveform Subtraction</td>
+              <td>✔</td>
+              <td>✔</td>
+              <td>✔ (offline)</td>
+              <td>✔</td>
+              <td>✔</td>
+              <td>✔</td>
+            </tr>
+            <tr>
+              <td>Waveform Multiplication</td>
+              <td>✔</td>
+              <td>✔</td>
+              <td>✔ (offline)</td>
+              <td>✔</td>
+              <td>✔</td>
+              <td>✔</td>
+            </tr>
+            <tr>
+              <td>Lissajous Pattern</td>
+              <td>✔</td>
+              <td>✔</td>
+              <td>✔ (offline)</td>
+              <td>✔</td>
+              <td>✔</td>
+              <td>✔</td>
+            </tr>
+            <tr>
+              <th rowspan="2">Inter-Frame Processing</th>
+              <td>Linear Average</td>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td>✔</td>
+              <td>✔</td>
+            </tr>
+            <tr>
+              <td>Exponential Average</td>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td>✔</td>
+              <td>✔</td>
+            </tr>
+            <tr>
+              <th>Intra-Frame</th>
+              <td>Time Delay Removal</td>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td>✔</td>
+              <td>✔</td>
+            </tr>
+            <tr>
+              <th rowspan="3">Demodulation (Intra-Frame)</th>
+              <td>AM</td>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td>✔</td>
+              <td>✔</td>
+            </tr>
+            <tr>
+              <td>FM</td>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td>✔</td>
+              <td>✔</td>
+            </tr>
+            <tr>
+              <td>PM</td>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td>✔</td>
+              <td>✔</td>
+            </tr>
+            <tr>
+              <th rowspan="13">Digital Filtering (Intra-Frame Processing)</th>
+              <td>Remove DC</td>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td>✔</td>
+              <td>✔</td>
+            </tr>
+            <tr>
+              <td>Rectification</td>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td>✔</td>
+              <td>✔</td>
+            </tr>
+            <tr>
+              <td>FFT Low Pass</td>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td>✔</td>
+              <td>✔</td>
+            </tr>
+            <tr>
+              <td>FFT High Pass</td>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td>✔</td>
+              <td>✔</td>
+            </tr>
+            <tr>
+              <td>FFT Band Pass</td>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td>✔</td>
+              <td>✔</td>
+            </tr>
+            <tr>
+              <td>FFT Band Stop</td>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td>✔</td>
+              <td>✔</td>
+            </tr>
+            <tr>
+              <td>FFT Frequency Response</td>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td>✔</td>
+              <td>✔</td>
+            </tr>
+            <tr>
+              <td>FIR Low Pass</td>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td>✔</td>
+              <td>✔</td>
+            </tr>
+            <tr>
+              <td>FIR High Pass</td>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td>✔</td>
+              <td>✔</td>
+            </tr>
+            <tr>
+              <td>FIR Band Pass</td>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td>✔</td>
+              <td>✔</td>
+            </tr>
+            <tr>
+              <td>FIR Band Stop</td>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td>✔</td>
+              <td>✔</td>
+            </tr>
+            <tr>
+              <td>FIR Frequency Response</td>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td>✔</td>
+              <td>✔</td>
+            </tr>
+            <tr>
+              <td>IIR Coefficients</td>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td>✔</td>
+              <td>✔</td>
+            </tr>
+            <tr>
+              <th rowspan="5">Parameter Measurement</th>
+              <td>Reverberation / Speech Intelligibility</td>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td>✔</td>
+            </tr>
+            <tr>
+              <td>Discontinuity</td>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td>✔</td>
+            </tr>
+            <tr>
+              <td>Step Response Analysis</td>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td>✔</td>
+            </tr>
+            <tr>
+              <td>Echo</td>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td>*</td>
+            </tr>
+            <tr>
+              <td>Damping Ratio</td>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td>*</td>
+            </tr>
+            <tr>
+              <th rowspan="6">Others</th>
+              <td>Max, Min, Mean, RMS</td>
+              <td>✔</td>
+              <td>✔</td>
+              <td>✔ (offline)</td>
+              <td>✔</td>
+              <td>✔</td>
+              <td>✔</td>
+            </tr>
+            <tr>
+              <td>Record Mode</td>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td>✔</td>
+              <td>✔</td>
+            </tr>
+            <tr>
+              <td>Persistence Display Mode</td>
+              <td>✔</td>
+              <td>✔</td>
+              <td></td>
+              <td>✔</td>
+              <td>✔</td>
+              <td>✔</td>
+            </tr>
+            <tr>
+              <td>Equivalent Time Sampling Mode</td>
+              <td>✔</td>
+              <td>✔</td>
+              <td></td>
+              <td>✔</td>
+              <td>✔</td>
+              <td>✔</td>
+            </tr>
+            <tr>
+              <td>Analog & Digital Signal Mixed Display</td>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td>✔</td>
+              <td>✔</td>
+              <td>✔</td>
+            </tr>
+            <tr>
+              <td>SINC Interpolation</td>
+              <td>✔</td>
+              <td>✔</td>
+              <td>✔</td>
+              <td>✔</td>
+              <td>✔</td>
+              <td>✔</td>
+            </tr>
+            <tr>
+              <td class="bg-primary-subtle fw-bold" colspan="8">Spectrum Analyzer</td>
+            </tr>
+            <tr>
+              <th rowspan="7">Type</th>
+              <td>Amplitude Spectrum / Power Spectrum Density / Impedance Spectrum</td>
+              <td></td>
+              <td>✔</td>
+              <td></td>
+              <td>✔</td>
+              <td>✔</td>
+              <td>✔</td>
+            </tr>
+            <tr>
+              <td>Phase Spectrum</td>
+              <td></td>
+              <td>✔</td>
+              <td></td>
+              <td>✔</td>
+              <td>✔</td>
+              <td>✔</td>
+            </tr>
+            <tr>
+              <td>Auto-Correlation (Linear / Circular)</td>
+              <td></td>
+              <td>✔</td>
+              <td></td>
+              <td>✔</td>
+              <td>✔</td>
+              <td>✔</td>
+            </tr>
+            <tr>
+              <td>Cross-Correlation (Linear / Circular) (Original / Generalized)</td>
+              <td></td>
+              <td>✔</td>
+              <td></td>
+              <td>✔</td>
+              <td>✔</td>
+              <td>✔</td>
+            </tr>
+            <tr>
+              <td>Coherence/Non-Coherence</td>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td>✔</td>
+            </tr>
+            <tr>
+              <td>Transfer function/Impedance Analyzer</td>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td>✔</td>
+            </tr>
+            <tr>
+              <td>Impulse Response</td>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td>✔</td>
+            </tr>
+            <tr>
+              <th rowspan="4">Intra-Frame Processing</th>
+              <td>Frequency Compensation</td>
+              <td></td>
+              <td>✔</td>
+              <td></td>
+              <td>✔</td>
+              <td>✔</td>
+              <td>✔</td>
+            </tr>
+            <tr>
+              <td>Frequency Weighting</td>
+              <td></td>
+              <td>✔</td>
+              <td></td>
+              <td>✔</td>
+              <td>✔</td>
+              <td>✔</td>
+            </tr>
+            <tr>
+              <td>Remove DC</td>
+              <td></td>
+              <td>✔</td>
+              <td></td>
+              <td>✔</td>
+              <td>✔</td>
+              <td>✔</td>
+            </tr>
+            <tr>
+              <td>Smoothing via Moving Average</td>
+              <td></td>
+              <td>✔</td>
+              <td></td>
+              <td>✔</td>
+              <td>✔</td>
+              <td>✔</td>
+            </tr>
+            <tr>
+              <th rowspan="3">Inter-Frame Processing</th>
+              <td>Peak Hold</td>
+              <td></td>
+              <td>✔</td>
+              <td></td>
+              <td>✔</td>
+              <td>✔</td>
+              <td>✔</td>
+            </tr>
+            <tr>
+              <td>Linear Averaging</td>
+              <td></td>
+              <td>✔</td>
+              <td></td>
+              <td>✔</td>
+              <td>✔</td>
+              <td>✔</td>
+            </tr>
+            <tr>
+              <td>Exponential Average</td>
+              <td></td>
+              <td>✔</td>
+              <td></td>
+              <td>✔</td>
+              <td>✔</td>
+              <td>✔</td>
+            </tr>
+            <tr>
+              <th rowspan="14">Parameter Measurement</th>
+              <td>THD, THD+N, SNR, SINAD, Noise Level, ENOB</td>
+              <td></td>
+              <td>✔</td>
+              <td></td>
+              <td>✔</td>
+              <td>✔</td>
+              <td>✔</td>
+            </tr>
+            <tr>
+              <td>IMD/DIM</td>
+              <td></td>
+              <td>✔</td>
+              <td></td>
+              <td>✔</td>
+              <td>✔</td>
+              <td>✔</td>
+            </tr>
+            <tr>
+              <td>Bandwidth</td>
+              <td></td>
+              <td>✔</td>
+              <td></td>
+              <td>✔</td>
+              <td>✔</td>
+              <td>✔</td>
+            </tr>
+            <tr>
+              <td>Crosstalk</td>
+              <td></td>
+              <td>✔</td>
+              <td></td>
+              <td>✔</td>
+              <td>✔</td>
+              <td>✔</td>
+            </tr>
+            <tr>
+              <td>Harmonics & Phase</td>
+              <td></td>
+              <td>✔</td>
+              <td></td>
+              <td>✔</td>
+              <td>✔</td>
+              <td>✔</td>
+            </tr>
+            <tr>
+              <td>Energy in User Defined Frequency Bands</td>
+              <td></td>
+              <td>✔</td>
+              <td></td>
+              <td>✔</td>
+              <td>✔</td>
+              <td>✔</td>
+            </tr>
+            <tr>
+              <td>Peaks, SFDR, TD+N</td>
+              <td></td>
+              <td>✔</td>
+              <td></td>
+              <td>✔</td>
+              <td>✔</td>
+              <td>✔</td>
+            </tr>
+            <tr>
+              <td>Wow & Flutter</td>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td>*</td>
+            </tr>
+            <tr>
+              <td>Sound Loudness</td>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td>✔</td>
+            </tr>
+            <tr>
+              <td>Sound Loudness Level</td>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td>✔</td>
+            </tr>
+            <tr>
+              <td>Sound Sharpness</td>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td>✔</td>
+            </tr>
+            <tr>
+              <td>Sound Articulation Index</td>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td>✔</td>
+            </tr>
+            <tr>
+              <td>Total Non-Coherent Distortion + Noise</td>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td>✔</td>
+            </tr>
+            <tr>
+              <td>GedLee Metric</td>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td>✔</td>
+            </tr>
+            <tr>
+              <th rowspan="5">FFT</th>
+              <td>FFT Size 128~32768</td>
+              <td></td>
+              <td>✔</td>
+              <td></td>
+              <td>✔</td>
+              <td>✔</td>
+              <td>✔</td>
+            </tr>
+            <tr>
+              <td>FFT Size 65536~4194034</td>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td>✔</td>
+            </tr>
+            <tr>
+              <td>Intra-Frame Average</td>
+              <td></td>
+              <td>✔</td>
+              <td></td>
+              <td>✔</td>
+              <td>✔</td>
+              <td>✔</td>
+            </tr>
+            <tr>
+              <td>Window Function</td>
+              <td></td>
+              <td>✔</td>
+              <td></td>
+              <td>✔</td>
+              <td>✔</td>
+              <td>✔</td>
+            </tr>
+            <tr>
+              <td>Window Overlap</td>
+              <td></td>
+              <td>✔</td>
+              <td></td>
+              <td>✔</td>
+              <td>✔</td>
+              <td>✔</td>
+            </tr>
+            <tr>
+              <th rowspan="3">Other</th>
+              <td>Octave Analysis (1/1, 1/3, 1/6, 1/12, 1/24, 1/48, 1/96)</td>
+              <td></td>
+              <td>✔</td>
+              <td></td>
+              <td>✔</td>
+              <td>✔</td>
+              <td>✔</td>
+            </tr>
+            <tr>
+              <td>Linear / Log Scale for X and Y</td>
+              <td></td>
+              <td>✔</td>
+              <td></td>
+              <td>✔</td>
+              <td>✔</td>
+              <td>✔</td>
+            </tr>
+            <tr>
+              <td>Peak Marker / Label</td>
+              <td></td>
+              <td>✔</td>
+              <td></td>
+              <td>✔</td>
+              <td>✔</td>
+              <td>✔</td>
+            </tr>
+            <tr>
+              <td class="bg-primary-subtle fw-bold" colspan="8">Signal Generator</td>
+            </tr>
+            <tr>
+              <th class rowspan="14">Waveform</th>
+              <td>Sine</td>
+              <td></td>
+              <td></td>
+              <td>✔</td>
+              <td>✔</td>
+              <td>✔</td>
+              <td>✔</td>
+            </tr>
+            <tr>
+              <td>Rectangle</td>
+              <td></td>
+              <td></td>
+              <td>✔</td>
+              <td>✔</td>
+              <td>✔</td>
+              <td>✔</td>
+            </tr>
+            <tr>
+              <td>Triangle</td>
+              <td></td>
+              <td></td>
+              <td>✔</td>
+              <td>✔</td>
+              <td>✔</td>
+              <td>✔</td>
+            </tr>
+            <tr>
+              <td>Saw Tooth</td>
+              <td></td>
+              <td></td>
+              <td>✔</td>
+              <td>✔</td>
+              <td>✔</td>
+              <td>✔</td>
+            </tr>
+            <tr>
+              <td>White Noise</td>
+              <td></td>
+              <td></td>
+              <td>✔</td>
+              <td>✔</td>
+              <td>✔</td>
+              <td>✔</td>
+            </tr>
+            <tr>
+              <td>Pink Noise</td>
+              <td></td>
+              <td></td>
+              <td>✔</td>
+              <td>✔</td>
+              <td>✔</td>
+              <td>✔</td>
+            </tr>
+            <tr>
+              <td>MultiTones</td>
+              <td></td>
+              <td></td>
+              <td>✔</td>
+              <td>✔</td>
+              <td>✔</td>
+              <td>✔</td>
+            </tr>
+            <tr>
+              <td>Arbitrary Waveform</td>
+              <td></td>
+              <td></td>
+              <td>✔</td>
+              <td>✔</td>
+              <td>✔</td>
+              <td>✔</td>
+            </tr>
+            <tr>
+              <td>MLS</td>
+              <td></td>
+              <td></td>
+              <td>✔</td>
+              <td>✔</td>
+              <td>✔</td>
+              <td>✔</td>
+            </tr>
+            <tr>
+              <td>DTMF</td>
+              <td></td>
+              <td></td>
+              <td>✔</td>
+              <td>✔</td>
+              <td>✔</td>
+              <td>✔</td>
+            </tr>
+            <tr>
+              <td>Musical Scale</td>
+              <td></td>
+              <td></td>
+              <td>✔</td>
+              <td>✔</td>
+              <td>✔</td>
+              <td>✔</td>
+            </tr>
+            <tr>
+              <td>Wave File</td>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td>✔</td>
+              <td>✔</td>
+            </tr>
+            <tr>
+              <td>Play Waveform in Oscilloscope</td>
+              <td>✔</td>
+              <td>✔</td>
+              <td>✔</td>
+              <td>✔</td>
+              <td>✔</td>
+              <td>✔</td>
+            </tr>
+            <tr>
+              <td>Cyclic Play Waveform in Oscilloscope</td>
+              <td>✔</td>
+              <td>✔</td>
+              <td>✔</td>
+              <td>✔</td>
+              <td>✔</td>
+              <td>✔</td>
+            </tr>
+            <tr>
+              <th rowspan="3">Sweep</th>
+              <td>Frequency Sweep (Linear/Log)</td>
+              <td></td>
+              <td></td>
+              <td>✔</td>
+              <td>✔</td>
+              <td>✔</td>
+              <td>✔</td>
+            </tr>
+            <tr>
+              <td>Amplitude Sweep (Linear/Log)</td>
+              <td></td>
+              <td></td>
+              <td>✔</td>
+              <td>✔</td>
+              <td>✔</td>
+              <td>✔</td>
+            </tr>
+            <tr>
+              <td>Forward + Reverse Sweep</td>
+              <td></td>
+              <td></td>
+              <td>✔</td>
+              <td>✔</td>
+              <td>✔</td>
+              <td>✔</td>
+            </tr>
+            <tr>
+              <th rowspan="4">Burst (Mask)</th>
+              <td>Normal Phase</td>
+              <td></td>
+              <td></td>
+              <td>✔</td>
+              <td>✔</td>
+              <td>✔</td>
+              <td>✔</td>
+            </tr>
+            <tr>
+              <td>Locked Phase</td>
+              <td></td>
+              <td></td>
+              <td>✔</td>
+              <td>✔</td>
+              <td>✔</td>
+              <td>✔</td>
+            </tr>
+            <tr>
+              <td>Window-Shaped Burst</td>
+              <td></td>
+              <td></td>
+              <td>✔</td>
+              <td>✔</td>
+              <td>✔</td>
+              <td>✔</td>
+            </tr>
+            <tr>
+              <td>On/Off Amplitude Ratio</td>
+              <td></td>
+              <td></td>
+              <td>✔</td>
+              <td>✔</td>
+              <td>✔</td>
+              <td>✔</td>
+            </tr>
+            <tr>
+              <th rowspan="2">Fade</th>
+              <td>Fade In</td>
+              <td></td>
+              <td></td>
+              <td>✔</td>
+              <td>✔</td>
+              <td>✔</td>
+              <td>✔</td>
+            </tr>
+            <tr>
+              <td>Fade Out</td>
+              <td></td>
+              <td></td>
+              <td>✔</td>
+              <td>✔</td>
+              <td>✔</td>
+              <td>✔</td>
+            </tr>
+            <tr>
+              <th rowspan="3">Modulation</th>
+              <td>AM</td>
+              <td></td>
+              <td></td>
+              <td>✔</td>
+              <td>✔</td>
+              <td>✔</td>
+              <td>✔</td>
+            </tr>
+            <tr>
+              <td>FM</td>
+              <td></td>
+              <td></td>
+              <td>✔</td>
+              <td>✔</td>
+              <td>✔</td>
+              <td>✔</td>
+            </tr>
+            <tr>
+              <td>PM</td>
+              <td></td>
+              <td></td>
+              <td>✔</td>
+              <td>✔</td>
+              <td>✔</td>
+              <td>✔</td>
+            </tr>
+            <tr>
+              <th rowspan="7">Others</th>
+              <td>Software Loopback (all channels)</td>
+              <td></td>
+              <td></td>
+              <td>✔</td>
+              <td>✔</td>
+              <td>✔</td>
+              <td>✔</td>
+            </tr>
+            <tr>
+              <td>Software Loopback (1 channel)</td>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td>✔</td>
+              <td>✔</td>
+              <td>✔</td>
+            </tr>
+            <tr>
+              <td>Sync. with Oscilloscope</td>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td>✔</td>
+            </tr>
+            <tr>
+              <td>Save as WAV file</td>
+              <td></td>
+              <td></td>
+              <td>✔</td>
+              <td>✔</td>
+              <td>✔</td>
+              <td>✔</td>
+            </tr>
+            <tr>
+              <td>Save as TXT file</td>
+              <td></td>
+              <td></td>
+              <td>✔</td>
+              <td>✔</td>
+              <td>✔</td>
+              <td>✔</td>
+            </tr>
+            <tr>
+              <td>DDS</td>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td>✔</td>
+              <td>✔</td>
+              <td>✔</td>
+            </tr>
+            <tr>
+              <td>DC Offset</td>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td>✔</td>
+              <td>✔</td>
+              <td>✔</td>
+            </tr>
+            <tr>
+              <td class="bg-primary-subtle fw-bold" colspan="8">Multimeter</td>
+            </tr>
+            <tr>
+              <th rowspan="16">Type</th>
+              <td>RMS</td>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td>✔</td>
+              <td>✔</td>
+            </tr>
+            <tr>
+              <td>dBV</td>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td>✔</td>
+              <td>✔</td>
+            </tr>
+            <tr>
+              <td>dBu</td>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td>✔</td>
+              <td>✔</td>
+            </tr>
+            <tr>
+              <td>dBSPL</td>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td>✔</td>
+              <td>✔</td>
+            </tr>
+            <tr>
+              <td>dB(A)</td>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td>✔</td>
+              <td>✔</td>
+            </tr>
+            <tr>
+              <td>dB(Z)</td>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td>✔</td>
+              <td>✔</td>
+            </tr>
+            <tr>
+              <td>dB(C)</td>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td>✔</td>
+              <td>✔</td>
+            </tr>
+            <tr>
+              <td>Frequency Counter</td>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td>✔</td>
+              <td>✔</td>
+              <td>✔</td>
+            </tr>
+            <tr>
+              <td>RPM</td>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td>✔</td>
+              <td>✔</td>
+            </tr>
+            <tr>
+              <td>Counter</td>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td>✔</td>
+              <td>✔</td>
+            </tr>
+            <tr>
+              <td>Duty Cycle</td>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td>✔</td>
+              <td>✔</td>
+            </tr>
+            <tr>
+              <td>Frequency/Voltage</td>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td>✔</td>
+              <td>✔</td>
+            </tr>
+            <tr>
+              <td>Cycle RMS</td>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td>✔</td>
+              <td>✔</td>
+            </tr>
+            <tr>
+              <td>Cycle Mean</td>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td>✔</td>
+              <td>✔</td>
+            </tr>
+            <tr>
+              <td>Pulse Width</td>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td>✔</td>
+              <td>✔</td>
+            </tr>
+            <tr>
+              <td>Jitter Statistics</td>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td>✔</td>
+            </tr>
+            <tr>
+              <th rowspan="3">Settings</th>
+              <td>Counter Trigger Hysteresis</td>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td>✔</td>
+              <td>✔</td>
+              <td>✔</td>
+            </tr>
+            <tr>
+              <td>Counter Trigger Level</td>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td>✔</td>
+              <td>✔</td>
+              <td>✔</td>
+            </tr>
+            <tr>
+              <td>Frequency Divider</td>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td>✔</td>
+              <td>✔</td>
+              <td>✔</td>
+            </tr>
+            <tr>
+              <td class="bg-primary-subtle fw-bold" colspan="8">DDP (Derived Data Point) Viewer</td>
+            </tr>
+            <tr>
+              <th rowspan="7">Function</th>
+              <td>DDP & UDDP Display</td>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td>✔</td>
+            </tr>
+            <tr>
+              <td>HH, H, L, LL Alarm</td>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td>✔</td>
+            </tr>
+            <tr>
+              <td>Set Display Precision</td>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td>✔</td>
+            </tr>
+            <tr>
+              <td>Define UDDP</td>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td>✔</td>
+            </tr>
+            <tr>
+              <td>Alarm Sound</td>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td>✔</td>
+            </tr>
+            <tr>
+              <td>Alarm Acknowledge</td>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td>✔</td>
+            </tr>
+            <tr>
+              <td>Linear/Exponential Averge</td>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td>✔</td>
+            </tr>
+            <tr>
+              <th rowspan="6">DDP Array Viewer</th>
+              <td>Harmonic Frequencies, RMS, Phases Report</td>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td>✔</td>
+            </tr>
+            <tr>
+              <td>Octave Bands, RMS, Report</td>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td>✔</td>
+            </tr>
+            <tr>
+              <td>Peak Frequencies, RMS, Phases Report</td>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td>✔</td>
+            </tr>
+            <tr>
+              <td>Frequency Bands, RMS Report</td>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td>✔</td>
+            </tr>
+            <tr>
+              <td>Reverberation / Speech Intelligibility (1/1 Octave)</td>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td>✔</td>
+            </tr>
+            <tr>
+              <td>Reverberation / Speech Intelligibility (1/3 Octave)</td>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td>✔</td>
+            </tr>
+            <tr>
+              <td class="bg-primary-subtle fw-bold" colspan="8">Derived Data Curve (DDC)</td>
+            </tr>
+            <tr>
+              <th rowspan="10">Function</th>
+              <td>Energy Time Curve (Log-Squared)</td>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td>✔</td>
+            </tr>
+            <tr>
+              <td>Energy Time Curve (Envelop)</td>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td>✔</td>
+            </tr>
+            <tr>
+              <td>Energy Time Curve (dBSPL)</td>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td>✔</td>
+            </tr>
+            <tr>
+              <td>Impulse Response Schroeder Integration Curve</td>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td>✔</td>
+            </tr>
+            <tr>
+              <td>Step Response Curve (via Impulse Response Integration)</td>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td>✔</td>
+            </tr>
+            <tr>
+              <td>Frequency Time Curve (Demodulated)</td>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td>✔</td>
+            </tr>
+            <tr>
+              <td>X-Y Plot</td>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td>✔</td>
+            </tr>
+            <tr>
+              <td>Shock Response Spectrum</td>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td>✔</td>
+            </tr>
+            <tr>
+              <td>Frequency Time Curve (Timed)</td>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td>✔</td>
+            </tr>
+            <tr>
+              <td>RPM Time Curve</td>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td>✔</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+      <h2 class="body__h2">Add-on Modules</h2>
+      <p class="body__p">Blank - Function available if purchased<br />Shaded Blank - Function NOT available in that license level</p>
+      <div class="table-responsive mx-4">
+        <table class="table table-sm table-bordered border-black">
+          <thead class="table-dark">
+            <tr>
+              <th colspan="2">Functions/Levels</th>
+              <th>Sound Card Oscilloscope</th>
+              <th>Sound Card Spectrum Analyzer</th>
+              <th>Sound Card Signal Generator</th>
+              <th>Multi-Instrument Lite</th>
+              <th>Multi-Instrument Standard</th>
+              <th>Multi-Instrument Pro</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td class="bg-primary-subtle fw-bold" colspan="8">Spectrum 3D Plot (US$99.95)</td>
+            </tr>
+            <tr>
+              <th rowspan="6">Type</th>
+              <td>Waterfall Plot (Inter-frame, STFT)</td>
+              <td class="table-dark"></td>
+              <td class="table-dark"></td>
+              <td class="table-dark"></td>
+              <td></td>
+              <td></td>
+              <td></td>
+            </tr>
+            <tr>
+              <td>Waterfall Plot (Intra-frame, STFT)</td>
+              <td class="table-dark"></td>
+              <td class="table-dark"></td>
+              <td class="table-dark"></td>
+              <td></td>
+              <td></td>
+              <td></td>
+            </tr>
+            <tr>
+              <td>Waterfall Plot (Intra-frame, CSD)</td>
+              <td class="table-dark"></td>
+              <td class="table-dark"></td>
+              <td class="table-dark"></td>
+              <td></td>
+              <td></td>
+              <td></td>
+            </tr>
+            <tr>
+              <td>Spectrogram (Inter-frame, STFT)</td>
+              <td class="table-dark"></td>
+              <td class="table-dark"></td>
+              <td class="table-dark"></td>
+              <td></td>
+              <td></td>
+              <td></td>
+            </tr>
+            <tr>
+              <td>Spectrogram (Intra-frame, STFT)</td>
+              <td class="table-dark"></td>
+              <td class="table-dark"></td>
+              <td class="table-dark"></td>
+              <td></td>
+              <td></td>
+              <td></td>
+            </tr>
+            <tr>
+              <td>Spectrogram (Intra-frame, CSD)</td>
+              <td class="table-dark"></td>
+              <td class="table-dark"></td>
+              <td class="table-dark"></td>
+              <td></td>
+              <td></td>
+              <td></td>
+            </tr>
+            <tr>
+              <th rowspan="6">Settings</th>
+              <td>Spectrogram Color Palette</td>
+              <td class="table-dark"></td>
+              <td class="table-dark"></td>
+              <td class="table-dark"></td>
+              <td></td>
+              <td></td>
+              <td></td>
+            </tr>
+            <tr>
+              <td>Waterfall Color Palette</td>
+              <td class="table-dark"></td>
+              <td class="table-dark"></td>
+              <td class="table-dark"></td>
+              <td></td>
+              <td></td>
+              <td></td>
+            </tr>
+            <tr>
+              <td>Waterfall Tilt Angle</td>
+              <td class="table-dark"></td>
+              <td class="table-dark"></td>
+              <td class="table-dark"></td>
+              <td></td>
+              <td></td>
+              <td></td>
+            </tr>
+            <tr>
+              <td>Waterfall / Spectrogram Height</td>
+              <td class="table-dark"></td>
+              <td class="table-dark"></td>
+              <td class="table-dark"></td>
+              <td></td>
+              <td></td>
+              <td></td>
+            </tr>
+            <tr>
+              <td>Linear / Log Scale for X and Y</td>
+              <td class="table-dark"></td>
+              <td class="table-dark"></td>
+              <td class="table-dark"></td>
+              <td></td>
+              <td></td>
+              <td></td>
+            </tr>
+            <tr>
+              <td>Number of Spectral Profiles <br />(10~200)</td>
+              <td class="table-dark"></td>
+              <td class="table-dark"></td>
+              <td class="table-dark"></td>
+              <td></td>
+              <td></td>
+              <td></td>
+            </tr>
+            <tr>
+              <th rowspan="3">Others</th>
+              <td>3D Cursor Reader</td>
+              <td class="table-dark"></td>
+              <td class="table-dark"></td>
+              <td class="table-dark"></td>
+              <td></td>
+              <td></td>
+              <td></td>
+            </tr>
+            <tr>
+              <td>Octave Analysis (1/1, 1/3, 1/6, 1/12, 1/24, 1/48, 1/96)</td>
+              <td class="table-dark"></td>
+              <td class="table-dark"></td>
+              <td class="table-dark"></td>
+              <td></td>
+              <td></td>
+              <td></td>
+            </tr>
+            <tr>
+              <td>Spectrogram Smoothing</td>
+              <td class="table-dark"></td>
+              <td class="table-dark"></td>
+              <td class="table-dark"></td>
+              <td></td>
+              <td></td>
+              <td></td>
+            </tr>
+            <tr>
+              <td colspan="8" class="bg-primary-subtle fw-bold">Data Logger (US$99.95)</td>
+            </tr>
+            <tr>
+              <td colspan="2">Real Time Logging</td>
+              <td class="table-dark"></td>
+              <td class="table-dark"></td>
+              <td class="table-dark"></td>
+              <td></td>
+              <td></td>
+              <td></td>
+            </tr>
+            <tr>
+              <td colspan="2">Load historical log file</td>
+              <td class="table-dark"></td>
+              <td class="table-dark"></td>
+              <td class="table-dark"></td>
+              <td></td>
+              <td></td>
+              <td></td>
+            </tr>
+            <tr>
+              <td colspan="2">Three logging methods</td>
+              <td class="table-dark"></td>
+              <td class="table-dark"></td>
+              <td class="table-dark"></td>
+              <td></td>
+              <td></td>
+              <td></td>
+            </tr>
+            <tr>
+              <td colspan="2">262 derived data points available for logging</td>
+              <td class="table-dark"></td>
+              <td class="table-dark"></td>
+              <td class="table-dark"></td>
+              <td></td>
+              <td></td>
+              <td></td>
+            </tr>
+            <tr>
+              <td colspan="2">Up to 8 x 8 = 64 variables can be logged simultaneously</td>
+              <td class="table-dark"></td>
+              <td class="table-dark"></td>
+              <td class="table-dark"></td>
+              <td></td>
+              <td></td>
+              <td></td>
+            </tr>
+            <tr>
+              <td colspan="8" class="bg-primary-subtle fw-bold">LCR Meter (US$99.95)</td>
+            </tr>
+            <tr>
+              <td colspan="2">High Impedance Measurement</td>
+              <td class="table-dark"></td>
+              <td class="table-dark"></td>
+              <td class="table-dark"></td>
+              <td></td>
+              <td></td>
+              <td></td>
+            </tr>
+            <tr>
+              <td colspan="2">Low Impedance Measurement</td>
+              <td class="table-dark"></td>
+              <td class="table-dark"></td>
+              <td class="table-dark"></td>
+              <td></td>
+              <td></td>
+              <td></td>
+            </tr>
+            <tr>
+              <td colspan="2">Up to 8 X-Y Plots (Linear/Log)</td>
+              <td class="table-dark"></td>
+              <td class="table-dark"></td>
+              <td class="table-dark"></td>
+              <td></td>
+              <td></td>
+              <td></td>
+            </tr>
+            <tr>
+              <td colspan="8" class="bg-primary-subtle fw-bold">Device Test Plan (US$99.95)</td>
+            </tr>
+            <tr>
+              <td colspan="2">25 Instructions</td>
+              <td class="table-dark"></td>
+              <td class="table-dark"></td>
+              <td class="table-dark"></td>
+              <td></td>
+              <td></td>
+              <td></td>
+            </tr>
+            <tr>
+              <td colspan="2">Create / Edit / Lock / Execute / Load / Save a Device Test Plan</td>
+              <td class="table-dark"></td>
+              <td class="table-dark"></td>
+              <td class="table-dark"></td>
+              <td></td>
+              <td></td>
+              <td></td>
+            </tr>
+            <tr>
+              <td colspan="2">Up to 8 X-Y Plots (Linear/Log)</td>
+              <td class="table-dark"></td>
+              <td class="table-dark"></td>
+              <td class="table-dark"></td>
+              <td></td>
+              <td></td>
+              <td></td>
+            </tr>
+            <tr>
+              <td colspan="2">Device Test Plan Log</td>
+              <td class="table-dark"></td>
+              <td class="table-dark"></td>
+              <td class="table-dark"></td>
+              <td></td>
+              <td></td>
+              <td></td>
+            </tr>
+            <tr>
+              <td colspan="2">Automatic Multi-Step Generation</td>
+              <td class="table-dark"></td>
+              <td class="table-dark"></td>
+              <td class="table-dark"></td>
+              <td></td>
+              <td></td>
+              <td></td>
+            </tr>
+            <tr>
+              <td colspan="2">User Log In/ Out</td>
+              <td class="table-dark"></td>
+              <td class="table-dark"></td>
+              <td class="table-dark"></td>
+              <td></td>
+              <td></td>
+              <td></td>
+            </tr>
+            <tr>
+              <td colspan="2">Volatile & Non-volatile Variables</td>
+              <td class="table-dark"></td>
+              <td class="table-dark"></td>
+              <td class="table-dark"></td>
+              <td></td>
+              <td></td>
+              <td></td>
+            </tr>
+            <tr>
+              <td colspan="8" class="bg-primary-subtle fw-bold">Vibrometer (US$99.95)</td>
+            </tr>
+            <tr>
+              <td colspan="2">RMS, Peak/PP, Crest Factor for acceleration, velocity, displacement (in Multimeter)</td>
+              <td class="table-dark"></td>
+              <td class="table-dark"></td>
+              <td class="table-dark"></td>
+              <td class="table-dark"></td>
+              <td></td>
+              <td></td>
+            </tr>
+            <tr>
+              <td colspan="2">Waveform conversion among acceleration, velocity and displacement (in Oscilloscope)</td>
+              <td class="table-dark"></td>
+              <td class="table-dark"></td>
+              <td class="table-dark"></td>
+              <td class="table-dark"></td>
+              <td></td>
+              <td></td>
+            </tr>
+            <tr>
+              <td colspan="2">SI/English units</td>
+              <td class="table-dark"></td>
+              <td class="table-dark"></td>
+              <td class="table-dark"></td>
+              <td class="table-dark"></td>
+              <td></td>
+              <td></td>
+            </tr>
+            <tr>
+              <td colspan="8" class="bg-primary-subtle fw-bold">Dedicated Hardware Support (US$99.95)</td>
+            </tr>
+            <tr>
+              <td colspan="2">RTX6001 Remote /Local Control</td>
+              <td class="table-dark"></td>
+              <td class="table-dark"></td>
+              <td class="table-dark"></td>
+              <td></td>
+              <td></td>
+              <td></td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+      <p class="body__p">
+        The Dedicated Hardware Support add-on module is intended for seamless integration with some third-party hardware devices. <br />The following third-party hardware devices are under this
+        category:
+      </p>
+      <p class="body__p">
+        1. <a href="audio-and-acoustic-analyzers/RTX6001.html">RTX6001 Audio Analyzer</a><br />Note that without this add-on module, RTX6001 will work as a sound card only and is still supported by
+        Multi-Instrument's generic sound card drivers. With this add-on module, the input and output data will be scaled properly by the software without calibration, and RTX6001 is fully controllable
+        from PC. <br />
+      </p>
+      <!--5-->
+      <h1 class="body__h1">Module Specifications and Features</h1>
+      <div class="container-fluid px-3">
+        <div class="row">
+          <div class="col-12 col-sm-6 col-md-4 col-xl-2 d-flex flex-column align-items-center">
+            <img class="p-4" src="images/multi-instrument/Oscilloscope.jpg" alt="Oscilloscope" width="296" height="372" />
+            <h2 class="body__h2 text-center"><a href="multi-instrument/multi-instrument-oscilloscope.html">Oscilloscope</a></h2>
+          </div>
+          <div class="col-12 col-sm-6 col-md-4 col-xl-2 d-flex flex-column align-items-center">
+            <img class="p-4" src="images/multi-instrument/Spectrum Analyzer.jpg" alt="Spectrum Analyzer" width="296" height="372" />
+            <h2 class="body__h2 text-center"><a href="multi-instrument/multi-instrument-spectrum-analyzer.html">Spectrum Analyzer</a></h2>
+          </div>
+          <div class="col-12 col-sm-6 col-md-4 col-xl-2 d-flex flex-column align-items-center">
+            <img class="p-4" src="images/multi-instrument/Signal Generator.jpg" alt="Signal Generator" width="296" height="372" />
+            <h2 class="body__h2 text-center"><a href="multi-instrument/multi-instrument-signal-generator.html">Signal Generator</a></h2>
+          </div>
+          <div class="col-12 col-sm-6 col-md-4 col-xl-2 d-flex flex-column align-items-center">
+            <img class="p-4" src="images/multi-instrument/Multimeter.jpg" alt="Multimeter" width="296" height="372" />
+            <h2 class="body__h2 text-center"><a href="multi-instrument/multi-instrument-multimeter.html">Multimeter</a></h2>
+          </div>
+          <div class="col-12 col-sm-6 col-md-4 col-xl-2 d-flex flex-column align-items-center">
+            <img class="p-4" src="images/multi-instrument/Spectrum3DPlots.jpg" alt="Spectrum 3D Plot" width="296" height="372" />
+            <h2 class="body__h2 text-center"><a href="multi-instrument/multi-instrument-spectrum-3D-plot.html">Spectrum 3D Plot</a></h2>
+          </div>
+          <div class="col-12 col-sm-6 col-md-4 col-xl-2 d-flex flex-column align-items-center">
+            <img class="p-4" src="images/multi-instrument/DataLogger.jpg" alt="Data Logger" width="296" height="372" />
+            <h2 class="body__h2 text-center"><a href="multi-instrument/multi-instrument-data-logger.html">Data Logger</a></h2>
+          </div>
+          <div class="col-12 col-sm-6 col-md-4 col-xl-2 d-flex flex-column align-items-center">
+            <img class="p-4" src="images/multi-instrument/LCR.jpg" alt="LCR Meter" width="296" height="372" />
+            <h2 class="body__h2 text-center"><a href="multi-instrument/multi-instrument-LCR-meter.html">LCR Meter</a></h2>
+          </div>
+          <div class="col-12 col-sm-6 col-md-4 col-xl-2 d-flex flex-column align-items-center">
+            <img class="p-4" src="images/multi-instrument/DTP.jpg" alt="Device Test Plan" width="296" height="372" />
+            <h2 class="body__h2 text-center"><a href="multi-instrument/multi-instrument-device-test-plan.html">Device Test Plan</a></h2>
+          </div>
+          <div class="col-12 col-sm-6 col-md-4 col-xl-2 d-flex flex-column align-items-center">
+            <img class="p-4" src="images/multi-instrument/Vibrometer.jpg" alt="Vibrometer" width="296" height="372" />
+            <h2 class="body__h2 text-center"><a href="multi-instrument/multi-instrument-vibrometer.html">Vibrometer</a></h2>
+          </div>
+          <div class="col-12 col-sm-6 col-md-4 col-xl-2 d-flex flex-column align-items-center">
+            <img class="p-4" src="images/multi-instrument/DDPViewers.jpg" alt="DDP Viewer" width="296" height="372" />
+            <h2 class="body__h2 text-center"><a href="multi-instrument/multi-instrument-DDP-viewer.html">DDP Viewer</a></h2>
+          </div>
+          <div class="col-12 col-sm-6 col-md-4 col-xl-2 d-flex flex-column align-items-center">
+            <img class="p-4" src="images/multi-instrument/DDCViewer.png" alt="DDC" width="296" height="372" />
+            <h2 class="body__h2 text-center"><a href="multi-instrument/multi-instrument-DDC.html">DDC</a></h2>
+          </div>
+          <div class="col-12 col-sm-6 col-md-4 col-xl-2 d-flex flex-column align-items-center">
+            <img class="p-4" src="images/multi-instrument/Multi-Instrument-API.png" alt="API" width="296" height="372" />
+            <h2 class="body__h2 text-center"><a href="multi-instrument/multi-instrument-API.html">API</a></h2>
+          </div>
+        </div>
+      </div>
+      <!--6-->
+      <h1 class="body__h1">Sound Card Based Measurement System</h1>
+      <p class="body__p">
+        With the Multi-Instrument softare, without any additional ADC and DAC hardware, you can turn your PC into a multi-function test and measurement instrument by using its built-in sound card as
+        the ADC and DAC devices. The sampling rate can be up to768 kHz and the sampling bit resolution can be up to 24 bits. The software have a wealth of features normally only found in much more
+        expensive instruments. Generally, the sound card supplied with a PC is sufficient to allow measurements in the audio frequency range. Perfect measurement quality can be archived by using a
+        professional grade sound card. Together with the <a href="accessories/accessories-P601PC-P601PPC.html">VIRTINS Sound Card Oscilloscope Probe P601</a>, which has three attenuation positions,
+        the setup is able to measure a signal with a magnitude from as low as 1 µV to 24 V.
+      </p>
+      <p class="body__p">
+        You can also integrate sensors, transducers, ADC and DAC hardware (e.g. sound cards, NI DAQmx cards, VT DSOs, VT RTAs, etc.), computers and the Multi-Instrument software together to form a
+        professional test and measurement system.
+      </p>
+      <h2 class="body__h2">Accessories for Sound Card Based Measurements</h2>
+      <p class="body__p">Please refer to <a href="accessories/accessories-P601PC-P601PPC.html">VIRTINS Sound Card Oscilloscope Probe Kits P601PC and P601PPC</a>.</p>
+    </div>
+    <!--footer start-->
+    <footer>
+      <div id="footer"></div>
+    </footer>
+    <!--footer end-->
+  </body>
+</html>

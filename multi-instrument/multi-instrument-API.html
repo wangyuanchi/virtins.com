@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="Description" content="PC USB Oscilloscopes, Spectrum Analyzers, Signal Generators, Data Loggers powered by Multi-Instrument. Download and try it out with your sound card!" />
+    <title>Multi-Instrument - API by Virtins Technology</title>
+    <link rel="icon" type="image/x-icon" href="/images/global/favicon.png" />
+    <!--Bootstrap-->
+    <link href="/node_modules/bootstrap/dist/css/bootstrap.min.css" rel="stylesheet" />
+    <script defer src="/node_modules/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+    <link rel="stylesheet" href="/style.css" />
+    <!--jquery-->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <script>
+      $(function () {
+        $("#nav").load("/nav.html");
+        $("#footer").load("/footer.html");
+      });
+    </script>
+  </head>
+  <body>
+    <!--navigation bar start-->
+    <header>
+      <div id="nav"></div>
+    </header>
+    <!--navigation bar end-->
+    <h1 class="body__title">Multi-Instrument: API (Application Programming Interface)</h1>
+    <div class="body__widescreen">
+      <nav aria-label="breadcrumb" class="px-4">
+        <ol class="breadcrumb">
+          <li class="breadcrumb-item"><a href="/index.html">Home</a></li>
+          <li class="breadcrumb-item"><a href="/multi-instrument.html">Multi-Instrument</a></li>
+          <li class="breadcrumb-item active" aria-current="page">API</li>
+        </ol>
+      </nav>
+      <img class="float-sm-end d-flex m-auto p-5" src="/images/multi-instrument/Multi-Instrument-API.png" alt="API" width="296" height="373" />
+      <h1 class="body__h1">APIs</h1>
+      <h2 class="body__h2">ActiveX Automation API</h2>
+      <p class="body__p">
+        Multi-Instrument can work as an ActiveX automation server so that an external program can access the data and functions that Multi-Instrument exposes. You can integrate Multi-Instrument into
+        your own software seamlessly via the ActiveX automation server interfaces exposed by Multi-Instrument. Please refer to
+        <a href="https://virtins.com/Multi-Instrument-Automation-Server-Interfaces.pdf">Multi-Instrument Automation Server Interfaces</a>
+      </p>
+      <p class="body__p">Sample automation client programs in Visual C++, Visual Basic, Visual C# and Python are provided.</p>
+      <h2 class="body__h2">vtDAQ and vtDAO API for Data Acquisition (DAQ) and Data Output (DAO)</h2>
+      <p class="body__p">
+        You can use the vtDAQ and vtDAO interface DLLs supplied in this software to allow your own back-end software to interface to sound cards, NI DAQmx cards, VT DSOs, VT RTAs, VT IEPE, VT CAMP,
+        etc.. You can also develop your own vtDAQ and vtDAO compatible DLLs to allow Multi-Instrument to interface to your own hardware. Please refer to
+        <a href="https://virtins.com/vtDAQ-and-vtDAO-Interfaces.pdf">vtDAQ and vtDAO APIs</a>.
+      </p>
+      <p class="body__p">Sample DAQ and DAO back-end programs in Visual C++, Visual C# and LabVIEW are provided.</p>
+      <h2 class="body__h2">vtSPA API for Signal Processing and Analysis</h2>
+      <p class="body__p">
+        vtSPA API provides a suite of generic APIs for data processing and analysis. It contains some unique features / algorithms originated and only available from Virtins Technology. Please refer
+        to
+        <a href="https://virtins.com/Signal-Processing-and-Analysis-APIs.pdf">Signal Processing and Analysis (vtSPA) APIs </a>
+      </p>
+      <h1 class="body__h1">Examples</h1>
+      <div class="container-fluid px-5 my-4">
+        <div class="row">
+          <figure class="figure col-12 col-md-6 col-xl-4">
+            <img
+              class="figure-img img-fluid mx-auto"
+              src="/images/multi-instrument/multi-instrument-api/Multi-Instrument-API-Automation-Pass-m.png"
+              alt="Multi-Instrument-API-Automation-Pass"
+              width="480"
+              height="358"
+            />
+            <figcaption class="figure-caption text-center">Bluetooth Audio Device Pass / Fail Test using Automation API</figcaption>
+          </figure>
+          <figure class="figure col-12 col-md-6 col-xl-4">
+            <img
+              class="figure-img img-fluid mx-auto"
+              src="/images/multi-instrument/multi-instrument-api/Multi-Instrument-API-Automation-Fail-m.png"
+              alt="Multi-Instrument-API-Automation-Fail"
+              width="480"
+              height="358"
+            />
+            <figcaption class="figure-caption text-center">Bluetooth Audio Device Pass / Fail Test using Automation API</figcaption>
+          </figure>
+          <figure class="figure col-12 col-md-6 col-xl-4">
+            <img
+              class="figure-img img-fluid mx-auto"
+              src="/images/multi-instrument/multi-instrument-api/Multi-Instrument-API-Automation-Sample-Program-m.png"
+              alt="Multi-Instrument-API-Automation-Sample-Program"
+              width="480"
+              height="358"
+            />
+            <figcaption class="figure-caption text-center">Automation Client Sample Programs in VB, VC++, VC# and Python</figcaption>
+          </figure>
+          <figure class="figure col-12 col-md-6 col-xl-4">
+            <img
+              class="figure-img img-fluid mx-auto"
+              src="/images/multi-instrument/multi-instrument-api/Multi-Instrument-API-vtDAQ-Sample-Program-VC-m.png"
+              alt="Multi-Instrument-API-vtDAQ-Sample-Program-VC"
+              width="480"
+              height="358"
+            />
+            <figcaption class="figure-caption text-center">vtDAQ and vtSPA API Sample Program in VC++ and VC#</figcaption>
+          </figure>
+          <figure class="figure col-12 col-md-6 col-xl-4">
+            <img
+              class="figure-img img-fluid mx-auto"
+              src="/images/multi-instrument/multi-instrument-api/Multi-Instrument-API-vtDAQ-Sample-Program-Labview-m.png"
+              alt="Multi-Instrument-API-vtDAQ-Sample-Program-Labview"
+              width="480"
+              height="358"
+            />
+            <figcaption class="figure-caption text-center">vtDAQ API Sample Program in Labview</figcaption>
+          </figure>
+          <figure class="figure col-12 col-md-6 col-xl-4">
+            <img
+              class="figure-img img-fluid mx-auto"
+              src="/images/multi-instrument/multi-instrument-api/Multi-Instrument-API-vtDAO-Sample-Program-Labview-m.png"
+              alt="Multi-Instrument-API-vtDAO-Sample-Program-Labview"
+              width="480"
+              height="358"
+            />
+            <figcaption class="figure-caption text-center">vtDAO API Sample Program in Labview</figcaption>
+          </figure>
+        </div>
+      </div>
+      <!-- modal start -->
+      <div class="modal">
+        <span class="modal__close">&times;</span>
+        <img class="modal__content" />
+        <div class="modal__caption"></div>
+      </div>
+      <script src="/image-modal.js"></script>
+      <!-- modal end -->
+    </div>
+    <!--footer start-->
+    <footer>
+      <div id="footer"></div>
+    </footer>
+    <!--footer end-->
+  </body>
+</html>

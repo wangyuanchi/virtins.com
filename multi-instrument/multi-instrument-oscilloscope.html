@@ -1,0 +1,340 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="Description" content="PC USB Oscilloscopes, Spectrum Analyzers, Signal Generators, Data Loggers powered by Multi-Instrument. Download and try it out with your sound card!" />
+    <title>Multi-Instrument - Oscilloscopes by Virtins Technology</title>
+    <link rel="icon" type="image/x-icon" href="/images/global/favicon.png" />
+    <!--Bootstrap-->
+    <link href="/node_modules/bootstrap/dist/css/bootstrap.min.css" rel="stylesheet" />
+    <script defer src="/node_modules/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+    <link rel="stylesheet" href="/style.css" />
+    <!--jquery-->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <script>
+      $(function () {
+        $("#nav").load("/nav.html");
+        $("#footer").load("/footer.html");
+      });
+    </script>
+  </head>
+  <body>
+    <!--navigation bar start-->
+    <header>
+      <div id="nav"></div>
+    </header>
+    <!--navigation bar end-->
+    <h1 class="body__title">Multi-Instrument: Oscilloscope</h1>
+    <div class="body__widescreen">
+      <nav aria-label="breadcrumb" class="px-4">
+        <ol class="breadcrumb">
+          <li class="breadcrumb-item"><a href="/index.html">Home</a></li>
+          <li class="breadcrumb-item"><a href="/multi-instrument.html">Multi-Instrument</a></li>
+          <li class="breadcrumb-item active" aria-current="page">Oscilloscope</li>
+        </ol>
+      </nav>
+      <img class="float-sm-end d-flex m-auto p-5" src="/images/multi-instrument/Oscilloscope.jpg" alt="Oscilloscope" width="296" height="373" />
+      <h1 class="body__h1">Specifications</h1>
+      <p class="body__p">ADC Hardware Related Specifications</p>
+      <h2 class="body__h2">Sound Card based systems:</h2>
+      <ol class="px-5">
+        <li>Scan Time: 100 µs~500 s (computer memory dependent).</li>
+        <li>Bandwidth: 10 Hz - 200 kHz (sound card dependent).</li>
+        <li>Maximum Allowable Input Voltage (if connected directly): about 3 V (sound card dependent).</li>
+        <li>Selectable sampling frequency (up to 768 kHz), sampling bit resolution (8, 16 24 or 32 bits) and sampling channels (one or two) (sound card dependent)</li>
+        <li>Four trigger modes: Auto, Normal, Single and Slow.</li>
+        <li>
+          Support triggering by rising edge, falling edge, or both at a specified trigger level or for a specified amount of change, in the selected input channel. Support trigger frequency rejection.
+        </li>
+        <li>Support pre-triggering and post triggering from 0 to 100% of the specified record length.</li>
+        <li>Continuously monitor the input signal such that no trigger event is missed before data collection</li>
+        <li>Support calibration of the input channels with the input gain setting automatically being taken into account. Re-calibration is not necessary even if the gain setting changes.</li>
+      </ol>
+      <h2 class="body__h2">Non Sound Card based systems:</h2>
+      <p class="body__p">Please refer to the respective hardware manual.</p>
+      <ol class="px-5">
+        <li>Can be used as a transient signal recorder to capture and store raw data continuously into a sequence of WAV files in the hard disk.</li>
+        <li>
+          Five view types: Real time waveform of Channel A and Channel B, Real time waveform of Channel A + Channel B, Real time waveform of Channel A - Channel B, Real time waveform of Channel A x
+          Channel B, Real time Lissajous Pattern for Channel A and Channel B.
+        </li>
+        <li>Independent X axis and Y axis zooming and scrolling.</li>
+        <li>WAV files and properly formatted TXT files can be imported for display and analysis.</li>
+        <li>Collected measurement data can be saved as WAV files or exported as TXT files.</li>
+        <li>Data curve can be print-previewed, printed out directly or saved as BMP files.</li>
+        <li>Support adding notes to the measurement data.</li>
+        <li>
+          Fast display refresh rate: about 50 frames per second (tested with a sound card under Windows XP SP2 on IBM ThinkPad R51 Laptop PC with Intel Pentium M processor 1.60 GHz, with scan time=10
+          ms and FFT size=1024 and both the Oscilloscope and the Spectrum Analyzer running under "Auto" trigger mode). Thus data are displayed and analyzed in "true" real time.
+        </li>
+        <li>The colors of display, font size, screen refresh rate are configurable.</li>
+        <li>Number of points (samples) to be collected per sweep can be fine tuned at one point's resolution.</li>
+        <li>Display the Maximum, Minimum, Mean, RMS values of the data per sweep. Therefore it can be used as a voltmeter.</li>
+        <li>Support one cursor reader and two markers which stick to the measurement data.</li>
+        <li>Five chart types: Line, Scatter, Column, Bar, and Step. Line width is adjustable. Support SINC interpolation between samples.</li>
+        <li>Support combining data from individual channels of different wave files and extracting part of data from a wave file.</li>
+        <li>Support normal and inverted display of a waveform.</li>
+        <li>
+          Up to five reference curves can be set for each channel. The reference curve can be configured by either copying the current curve, or loading a properly formatted text file or a previously
+          saved reference file from the hard disk. Reference curves can be assigned as High-High, High, Low, Low-Low limits.
+        </li>
+        <li>
+          Support digital filtering (intra-frame processing) such as low pass, high pass, band pass, band stop and arbitrary. The filter class can be FFT, FIR or IIR. Support inter-frame processing
+          including linear and exponential average. Support demodulation (AM, FM, PM), DC removal and rectification. Support removal of time delay between two channels. Support time domain parameter
+          measurements including reverberation and speech intelligibility, waveform discontinuity, step response, echo, and damping ratio.
+        </li>
+        <li>Support loading long WAV file frame by frame, either manually or automatically.</li>
+        <li>Each frame of data is time stamped with an accuracy of 1ms.</li>
+        <li>
+          The data in the graph can be copied into the clipboard as text and later paste into other software such as Microsoft Excel for further analysis. The image of the graph can be copied into the
+          clipboard as Bitmap image and later paste into other software such as Microsoft Word.
+        </li>
+        <li>
+          The waveform displayed in the Oscilloscope can be played or cyclically played via the default computer sound card, if the sampling rate and bit resolution of the waveform is compatible with
+          the sound card. Otherwise, it is possible to adjust the replay sampling rate so that the signal is pitch shifted into the audio frequency range.
+        </li>
+        <li>The screen display can also work in “Roll” mode.</li>
+        <li>Support waveform conversion between acceleration, velocity and displacement. Support both SI and English unit systems.</li>
+        <li>Support engineering unit conversion.</li>
+        <li>Support auto setting of sampling parameters such as sampling frequency, sweep time and full-scale ADC range. Support Auto Ranging and Auto Scaling.</li>
+        <li>Support digital persistence (phosphorescent, rainbow) mode and equivalent time sampling mode.</li>
+        <li>Support mixed signal (analog and digital) display.</li>
+        <li>
+          Supports Multilingual User Interface under Windows 2000, XP, Vista, 7, 8, 8.1, 10, 11 and above. Currently supported languages are English, French, German, Italian, Portuguese, Spanish,
+          Russian, Simplified Chinese, Traditional Chinese, Japanese and Korean.
+        </li>
+      </ol>
+      <h1 class="body__h1">Examples</h1>
+      <div class="container-fluid px-5 my-4">
+        <div class="row">
+          <figure class="figure col-12 col-md-6 col-xl-4">
+            <img
+              class="figure-img img-fluid mx-auto"
+              src="/images/multi-instrument/multi-instrument-oscilloscope/VT-USB-Oscilloscope-Sine-and-Square-m.png"
+              alt="VT-USB-Oscilloscope-Sine-and-Square"
+              width="480"
+              height="257"
+            />
+            <figcaption class="figure-caption text-center">Sine and square waves</figcaption>
+          </figure>
+          <figure class="figure col-12 col-md-6 col-xl-4">
+            <img
+              class="figure-img img-fluid mx-auto"
+              src="/images/multi-instrument/multi-instrument-oscilloscope/VT-USB-Oscilloscope-Persistence-Phosphorescent-m.png"
+              alt="VT-USB-Oscilloscope-Persistence-Phosphorescent"
+              width="480"
+              height="257"
+            />
+            <figcaption class="figure-caption text-center">50MHz sinewave sampled at 200MHz with Oscilloscope in persistence mode</figcaption>
+          </figure>
+          <figure class="figure col-12 col-md-6 col-xl-4">
+            <img
+              class="figure-img img-fluid mx-auto"
+              src="/images/multi-instrument/multi-instrument-oscilloscope/VT-USB-Oscilloscope-Persistence-Frequency-Sweep-m.png"
+              alt="VT-USB-Oscilloscope-Persistence-Frequency-Sweep"
+              width="480"
+              height="257"
+            />
+            <figcaption class="figure-caption text-center">Frequency sweep captured under oscilloscope persistence mode</figcaption>
+          </figure>
+          <figure class="figure col-12 col-md-6 col-xl-4">
+            <img
+              class="figure-img img-fluid mx-auto"
+              src="/images/multi-instrument/multi-instrument-oscilloscope/VT-USB-Oscilloscope-Persistence-Amplitude-Sweep-Sine-m.png"
+              alt="VT-USB-Oscilloscope-Persistence-Amplitude-Sweep-Sine"
+              width="480"
+              height="257"
+            />
+            <figcaption class="figure-caption text-center">Amplitude sweep (sine) captured under oscilloscope persistence mode</figcaption>
+          </figure>
+          <figure class="figure col-12 col-md-6 col-xl-4">
+            <img
+              class="figure-img img-fluid mx-auto"
+              src="/images/multi-instrument/multi-instrument-oscilloscope/VT-USB-Oscilloscope-Persistence-Amplitude-Sweep-Square-m.png"
+              alt="VT-USB-Oscilloscope-Persistence-Amplitude-Sweep-Square"
+              width="480"
+              height="257"
+            />
+            <figcaption class="figure-caption text-center">Amplitude sweep (square) captured under oscilloscope persistence mode</figcaption>
+          </figure>
+          <figure class="figure col-12 col-md-6 col-xl-4">
+            <img
+              class="figure-img img-fluid mx-auto"
+              src="/images/multi-instrument/multi-instrument-oscilloscope/VT-USB-Oscilloscope-Amplitude-Modulation-m.png"
+              alt="VT-USB-Oscilloscope-Amplitude-Modulation"
+              width="480"
+              height="257"
+            />
+            <figcaption class="figure-caption text-center">Amplitude Modulation measurement</figcaption>
+          </figure>
+          <figure class="figure col-12 col-md-6 col-xl-4">
+            <img
+              class="figure-img img-fluid mx-auto"
+              src="/images/multi-instrument/multi-instrument-oscilloscope/VT-USB-Oscilloscope-Frequency-Modulation-m.png"
+              alt="VT-USB-Oscilloscope-Frequency-Modulation"
+              width="480"
+              height="257"
+            />
+            <figcaption class="figure-caption text-center">Frequency Modulation measurement</figcaption>
+          </figure>
+          <figure class="figure col-12 col-md-6 col-xl-4">
+            <img
+              class="figure-img img-fluid mx-auto"
+              src="/images/multi-instrument/multi-instrument-oscilloscope/VT-USB-Oscilloscope-Lissajous-Pattern-m.png"
+              alt="VT-USB-Oscilloscope-Lissajous-Pattern"
+              width="480"
+              height="257"
+            />
+            <figcaption class="figure-caption text-center">Lissajous Pattern</figcaption>
+          </figure>
+          <figure class="figure col-12 col-md-6 col-xl-4">
+            <img
+              class="figure-img img-fluid mx-auto"
+              src="/images/multi-instrument/multi-instrument-oscilloscope/Rotating-Lissajous-Plot-With-Oscilloscope-Persistence-m.png"
+              alt="Rotating-Lissajous-Plot-With-Oscilloscope-Persistence"
+              width="480"
+              height="257"
+            />
+            <figcaption class="figure-caption text-center">Rotating Lissajous Pattern under Oscilloscope Persistence Mode</figcaption>
+          </figure>
+          <figure class="figure col-12 col-md-6 col-xl-4">
+            <img
+              class="figure-img img-fluid mx-auto"
+              src="/images/multi-instrument/multi-instrument-oscilloscope/Envelop-Detection-AM-Demodulation-m.png"
+              alt="Envelop-Detection-AM-Demodulation"
+              width="480"
+              height="257"
+            />
+            <figcaption class="figure-caption text-center">Envelope Detection (AM Demodulation)</figcaption>
+          </figure>
+          <figure class="figure col-12 col-md-6 col-xl-4">
+            <img class="figure-img img-fluid mx-auto" src="/images/multi-instrument/multi-instrument-oscilloscope/FM-Demodulation-m.png" alt="FM-Demodulation" width="480" height="257" />
+            <figcaption class="figure-caption text-center">FM Demodulation</figcaption>
+          </figure>
+          <figure class="figure col-12 col-md-6 col-xl-4">
+            <img class="figure-img img-fluid mx-auto" src="/images/multi-instrument/multi-instrument-oscilloscope/PM-Demodulation-m.png" alt="PM-Demodulation" width="480" height="257" />
+            <figcaption class="figure-caption text-center">PM Demodulation</figcaption>
+          </figure>
+          <figure class="figure col-12 col-md-6 col-xl-4">
+            <img
+              class="figure-img img-fluid mx-auto"
+              src="/images/multi-instrument/multi-instrument-oscilloscope/VT-USB-Oscilloscope-PAL-m.png"
+              alt="VT-USB-Oscilloscope-PAL"
+              width="480"
+              height="348"
+            />
+            <figcaption class="figure-caption text-center">PAL signal measurement</figcaption>
+          </figure>
+          <figure class="figure col-12 col-md-6 col-xl-4">
+            <img
+              class="figure-img img-fluid mx-auto"
+              src="/images/multi-instrument/multi-instrument-oscilloscope/VT-USB-Oscilloscope-SINC-Interpolation-m.png"
+              alt="VT-USB-Oscilloscope-SINC-Interpolation"
+              width="480"
+              height="348"
+            />
+            <figcaption class="figure-caption text-center">SINC Interpolation Mode (80MHz sampled at 200MHz)</figcaption>
+          </figure>
+          <figure class="figure col-12 col-md-6 col-xl-4">
+            <img
+              class="figure-img img-fluid mx-auto"
+              src="/images/multi-instrument/multi-instrument-oscilloscope/VT-USB-Oscilloscope-Discontinuity-Detection-m.png"
+              alt="VT-USB-Oscilloscope-Discontinuity-Detection"
+              width="480"
+              height="346"
+            />
+            <figcaption class="figure-caption text-center">Glitch (Discontinuity or Dropout) Detected during a Frequency Sweep</figcaption>
+          </figure>
+          <figure class="figure col-12 col-md-6 col-xl-4">
+            <img
+              class="figure-img img-fluid mx-auto"
+              src="/images/multi-instrument/multi-instrument-oscilloscope/VT-USB-Oscilloscope-Step-Response-Measurement-m.png"
+              alt="VT-USB-Oscilloscope-Step-Response-Measurement"
+              width="480"
+              height="346"
+            />
+            <figcaption class="figure-caption text-center">Step Response Parameter Measurement</figcaption>
+          </figure>
+          <figure class="figure col-12 col-md-6 col-xl-4">
+            <img
+              class="figure-img img-fluid mx-auto"
+              src="/images/multi-instrument/multi-instrument-oscilloscope/VT-USB-Oscilloscope-Echo-Time-Measurement-m.png"
+              alt="VT-USB-Oscilloscope-Echo-Time-Measurement"
+              width="480"
+              height="346"
+            />
+            <figcaption class="figure-caption text-center">Fluid Level Measurement in Oil & Gas Well through Echo Sounding</figcaption>
+          </figure>
+          <figure class="figure col-12 col-md-6 col-xl-4">
+            <img class="figure-img img-fluid mx-auto" src="/images/multi-instrument/multi-instrument-oscilloscope/Ultrasound-Burst-m.png" alt="Ultrasound-Burst" width="480" height="346" />
+            <figcaption class="figure-caption text-center">Ultrasound Burst Extraction Through Digital Filtering (Before: blue, After: red)</figcaption>
+          </figure>
+          <figure class="figure col-12 col-md-6 col-xl-4">
+            <img
+              class="figure-img img-fluid mx-auto"
+              src="/images/multi-instrument/multi-instrument-oscilloscope/VT-USB-Oscilloscope-Echo-Time-Measurement1-m.png"
+              alt="VT-USB-Oscilloscope-Echo-Time-Measurement"
+              width="480"
+              height="346"
+            />
+            <figcaption class="figure-caption text-center">Fluid Level Measurement in Oil & Gas Well through Echo Sounding (Multiple Echoes)</figcaption>
+          </figure>
+          <figure class="figure col-12 col-md-6 col-xl-4">
+            <img
+              class="figure-img img-fluid mx-auto"
+              src="/images/multi-instrument/multi-instrument-oscilloscope/VT-USB-Oscilloscope-Damping-Ratio-Measurement-m.png"
+              alt="VT-USB-Oscilloscope-Damping-Ratio-Measurement"
+              width="480"
+              height="346"
+            />
+            <figcaption class="figure-caption text-center">Damping Ratio Measurement</figcaption>
+          </figure>
+          <figure class="figure col-12 col-md-6 col-xl-4">
+            <img
+              class="figure-img img-fluid mx-auto"
+              src="/images/multi-instrument/multi-instrument-oscilloscope/VT-USB-Oscilloscope-Power-Factor-Measurement-m.png"
+              alt="VT-USB-Oscilloscope-Power-Factor-Measurement"
+              width="480"
+              height="346"
+            />
+            <figcaption class="figure-caption text-center">Measurement of Apparent Power, Real Power, Reactive Power & Power Factor using A×B</figcaption>
+          </figure>
+          <figure class="figure col-12 col-md-6 col-xl-4">
+            <img
+              class="figure-img img-fluid mx-auto"
+              src="/images/multi-instrument/multi-instrument-oscilloscope/VT-USB-Oscilloscope-Reverberation-Time-Interrupted-Noise-Method-m.png"
+              alt="VT-USB-Oscilloscope-Reverberation-Time-Interrupted-Noise-Method"
+              width="480"
+              height="608"
+            />
+            <figcaption class="figure-caption text-center">Reverberation Time (RT60) Measured by Interrupted Noise Method</figcaption>
+          </figure>
+          <figure class="figure col-12 col-md-6 col-xl-4">
+            <img
+              class="figure-img img-fluid mx-auto"
+              src="/images/multi-instrument/multi-instrument-oscilloscope/VT-USB-Oscilloscope-Reverberation-Time-Impulse-Response-Method-m.png"
+              alt="VT-USB-Oscilloscope-Reverberation-Time-Impulse-Response-Method"
+              width="480"
+              height="608"
+            />
+            <figcaption class="figure-caption text-center">Reverberation Releated Acoustic Parameters Measured By Impulse Response Method</figcaption>
+          </figure>
+        </div>
+      </div>
+      <!-- modal start -->
+      <div class="modal">
+        <span class="modal__close">&times;</span>
+        <img class="modal__content" />
+        <div class="modal__caption"></div>
+      </div>
+      <script src="/image-modal.js"></script>
+      <!-- modal end -->
+    </div>
+    <!--footer start-->
+    <footer>
+      <div id="footer"></div>
+    </footer>
+    <!--footer end-->
+  </body>
+</html>

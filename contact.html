@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="Description" content="Contact us through online live chart, email, or telephone." />
+    <title>Contact Us - Virtins Technology</title>
+    <link rel="icon" type="image/x-icon" href="images/global/favicon.png" />
+    <!--Bootstrap-->
+    <link href="node_modules/bootstrap/dist/css/bootstrap.min.css" rel="stylesheet" />
+    <script defer src="node_modules/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+    <link rel="stylesheet" href="style.css" />
+    <!-- BEGIN JIVOSITE CODE {literal} -->
+    <script type="text/javascript">
+      (function () {
+        var widget_id = "72120";
+        var s = document.createElement("script");
+        s.type = "text/javascript";
+        s.async = true;
+        s.src = "//code.jivosite.com/script/widget/" + widget_id;
+        var ss = document.getElementsByTagName("script")[0];
+        ss.parentNode.insertBefore(s, ss);
+      })();
+    </script>
+    <!-- {/literal} END JIVOSITE CODE -->
+    <!--RECAPTCHA V3-->
+    <script src="https://www.google.com/recaptcha/api.js?render=6LfJ-kMkAAAAAPGBHMmotQi_b14c-6Dj2w_XY1Yi"></script>
+    <!--jquery-->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <script>
+      $(function () {
+        $("#nav").load("nav.html");
+        $("#footer").load("footer.html");
+      });
+    </script>
+  </head>
+  <body>
+    <!--navigation bar start-->
+    <header>
+      <div id="nav"></div>
+    </header>
+    <!--navigation bar end-->
+    <h1 class="body__title">Contact Us</h1>
+    <div class="body__widescreen">
+      <!--1-->
+      <h1 class="body__h1">Leave us a message</h1>
+      <form method="post" action="contact.php" id="contact-us-form" class="container-fluid px-4 needs-validation" novalidate>
+        <div class="mb-3">
+          <label for="name" class="form-label fw-bold">Full Name</label>
+          <input type="text" class="form-control" id="name" name="name" required />
+          <div class="invalid-feedback">Please fill in your full name.</div>
+        </div>
+        <div class="mb-3">
+          <label for="company" class="form-label fw-bold">Company</label>
+          <input type="text" class="form-control" id="company" name="company" />
+        </div>
+        <div class="mb-3">
+          <label for="email" class="form-label fw-bold">Email Address</label>
+          <input type="email" class="form-control" pattern=".*\..*" id="email" name="email" placeholder="name@example.com" required />
+          <div class="invalid-feedback">Please fill in a valid email address.</div>
+        </div>
+        <div class="mb-3">
+          <label for="subject" class="form-label fw-bold">Subject</label>
+          <input type="text" class="form-control" id="subject" name="subject" required />
+          <div class="invalid-feedback">Please fill in the subject.</div>
+        </div>
+        <div class="mb-3">
+          <label for="message" class="form-label fw-bold">Message</label>
+          <textarea class="form-control" id="message" name="message" rows="5" required></textarea>
+          <div class="invalid-feedback">Please fill in the message.</div>
+        </div>
+        <div class="mb-3">
+          <button class="btn btn-primary" type="submit">Submit</button>
+        </div>
+      </form>
+      <script src="form-validation.js"></script>
+      <!--2-->
+      <h1 class="body__h1">Email</h1>
+      <p class="body__p">
+        Sales: <a href="mailto:sales@virtins.com">sales@virtins.com</a><br />
+        Support: <a href="mailto:support@virtins.com">support@virtins.com</a><br />
+        Billing: <a href="mailto:billing@virtins.com">billing@virtins.com</a><br />
+        Suggest: <a href="mailto:suggest@virtins.com">suggest@virtins.com</a><br />
+        Redundant: <a href="mailto:virtinstech@gmail.com">virtinstech@gmail.com</a> , <a href="mailto:virtinstech@163.com">virtinstech@163.com</a><br />
+        (You can cc your email to these addresses for redundancy)
+      </p>
+      <!--3-->
+      <h1 class="body__h1">Address</h1>
+      <p class="body__p">
+        <span class="fw-bold">VIRTINS TECHNOLOGY</span><br />
+        6 Tao Ching Road<br />
+        #03-12<br />
+        Singapore 618723<br />
+        Websites: <a href="index.html">www.virtins.com</a>, <a href="https://www.multi-instrument.com">www.multi-instrument.com</a>, <a href="https://www.multi-tech.cn">www.multi-tech.cn</a><br />
+        Tel: (+65) 62580357<br />
+        Fax: (+65) 62531836<br />
+        Registration Number: 53031180A
+      </p>
+      <!--4-->
+      <h1 class="body__h1">No Response?</h1>
+      <p class="body__p">
+        All relevant emails will be replied promptly, normally within 0~24 hours. If your orders, activation requests, questions and messages have not been replied for a few days, do check your email
+        spam filter setting to make sure that our emails to you are not filtered out falsely, and contact us again. You can also post your questions on our
+        <a href="https://virtins.com/forum/">support forum</a>.
+      </p>
+    </div>
+    <!--footer start-->
+    <footer>
+      <div id="footer"></div>
+    </footer>
+    <!--footer end-->
+  </body>
+</html>

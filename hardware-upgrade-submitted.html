@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="Description" content="Your request has been sent and will be processed as soon as possible within 24 hours." />
+    <title>Thank you for taking time to fill out this form - Virtins Technology</title>
+    <link rel="icon" type="image/x-icon" href="images/global/favicon.png" />
+    <!--Bootstrap-->
+    <link href="node_modules/bootstrap/dist/css/bootstrap.min.css" rel="stylesheet" />
+    <script defer src="node_modules/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+    <link rel="stylesheet" href="style.css" />
+    <!--jquery-->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <script>
+      $(function () {
+        $("#nav").load("nav.html");
+        $("#footer").load("footer.html");
+      });
+    </script>
+  </head>
+  <body>
+    <!--navigation bar start-->
+    <header>
+      <div id="nav"></div>
+    </header>
+    <!--navigation bar end-->
+    <h1 class="body__title">Hardware Remote Upgrade Request</h1>
+    <div class="body__widescreen">
+      <!--1-->
+      <h1 class="body__h1">Thank you for taking time to fill out this form!</h1>
+      <p class="body__p">Thank you for taking time to fill out this form. Your request has been sent and will be processed as soon as possible within 24 hours.</p>
+      <hr />
+      <!--2-->
+      <h1 class="body__h1">How to obtain the Hardware ID and Serial Number?</h1>
+      <p class="body__p">
+        Plug in the hardware, and then on Windows desktop, go to [Start] > [All Programs] > [Multi-Instrument] > [VIRTINS Hardware Upgrading Tool] to launch the Hardware Upgrading Tool, the following
+        dialog box will pop up with the hardware ID displayed. (press Read Hardware ID button if it is not displayed)
+      </p>
+      <img src="images/hardware-upgrade/UpgradeHardkey1.png" alt="UpgradeHardkey1" width="756" height="197" class="mx-auto px-4 pb-4" />
+      <p class="body__p">
+        Apart from the Hardware ID, some VT hardware such as the second-generation DSOs also have a Serial Number (S/No.). In this case, the S/No. will also be displayed in the dialog box and is
+        required for Hardware Remote Upgrade Request.
+      </p>
+      <img src="images/hardware-upgrade/SerialNo.png" alt="SerialNo" width="790" height="210" class="mx-auto px-4 pb-4" />
+      <!--3-->
+      <h1 class="body__h1">How to upgrade the license level associated with the hardware?</h1>
+      <p class="body__p">
+        After you receive the upgrade package file, you can upgrade the hardware by yourself.<br /><br />
+        Plug in the hardware, and then on Windows desktop, go to [Start] > [All Programs] > [Multi-Instrument] > [VIRTINS Hardware Upgrading Tool] to launch the Hardware Upgrading Tool, the following
+        dialog box will pop up. Press the File Load button to select the upgrade package file corresponding to the hardware ID, and then press "Upgrade".
+      </p>
+      <img src="images/hardware-upgrade/UpgradeHardkey2.png" alt="UpgradeHardkey2" width="758" height="197" class="mx-auto px-4 pb-4" />
+    </div>
+    <!--footer start-->
+    <footer>
+      <div id="footer"></div>
+    </footer>
+    <!--footer end-->
+  </body>
+</html>

@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Nav</title>
+    <!--Include stylesheet in parent html file, required: Bootstrap & style.css-->
+  </head>
+  <body>
+    <nav class="navbar navbar-expand-lg fixed-top">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="/index.html"><img src="/images/global/favicon.png" alt="Virtins Technology" width="224" height="225" /></a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
+          <div class="offcanvas-header">
+            <h5 class="offcanvas-title" id="offcanvasNavbarLabel">Virtins Technology</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+          </div>
+          <div class="offcanvas-body">
+            <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
+              <li class="nav-item">
+                <a class="nav-link" aria-current="page" href="/index.html">Home</a>
+              </li>
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">Products</a>
+                <ul class="dropdown-menu dropdown-menu-right">
+                  <li><a class="dropdown-item" href="/multi-instrument.html">Multi-Instrument</a></li>
+                  <li>
+                    <a class="dropdown-item" href="/oscilloscopes.html">PC based Oscilloscopes, Spectrum Analyzers, Generators, <span>Logic Analyzers, Data Acquisition</span></a>
+                  </li>
+                  <li><a class="dropdown-item" href="/audio-and-acoustic-analyzers.html">PC based Audio & Acoustic Analyzers</a></li>
+                  <li><a class="dropdown-item" href="/noise-and-vibration-measurement-systems.html">PC based Noise & Vibration Measurement Systems</a></li>
+                  <li><a class="dropdown-item" href="/ultrasonic-and-acoustic-emission-measurement-systems.html">PC based Ultrasonic & Acoustic Emission Measurement Systems</a></li>
+                  <li><a class="dropdown-item disabled" aria-disabled="true">PC based Audiometers (Coming Soon!)</a></li>
+                  <li><a class="dropdown-item" href="/VT-Sound-Recognition.html">Sound Recognition Software & APIs</a></li>
+                  <li>
+                    <a class="dropdown-item" href="/accessories.html">Probes, Sensors, Measurement Microphones, Calibrators, <span>USB Isolators, & Accessories</span></a>
+                  </li>
+                </ul>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="/downloads.html">Download</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="/store.html">Store</a>
+              </li>
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">Support</a>
+                <ul class="dropdown-menu dropdown-menu-right">
+                  <li><a class="dropdown-item" href="/FAQ.html">FAQ</a></li>
+                  <li><a class="dropdown-item" href="/https://virtins.com/forum/">Forum</a></li>
+                  <li><a class="dropdown-item" href="/contact.html">Contact Us</a></li>
+                  <li><a class="dropdown-item" href="/activate.html">PC Software Registration</a></li>
+                  <li><a class="dropdown-item" href="/hardware-upgrade.html">Hardware Remote Upgrade Request</a></li>
+                  <li><a class="dropdown-item" href="/upgrade.html">Free Software Upgrade Notice</a></li>
+                </ul>
+              </li>
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">Others</a>
+                <ul class="dropdown-menu dropdown-menu-right">
+                  <li><a class="dropdown-item" href="/applications.html">Applications</a></li>
+                  <li><a class="dropdown-item" href="/testimonials-and-media-presence.html">Testimonials & Media Presence</a></li>
+                  <li><a class="dropdown-item" href="/about.html">About</a></li>
+                </ul>
+              </li>
+              <li class="nav-item">
+                <form target="_self" action="https://www.paypal.com/cgi-bin/webscr" method="post">
+                  <input type="hidden" name="cmd" value="_cart" />
+                  <input type="hidden" name="business" value="sales@virtins.com" />
+                  <input type="hidden" name="display" value="1" />
+                  <input type="image" src="/images/global/shopping_cart.png" name="submit" alt="PayPal Shopping Cart" width="45" height="45v" />
+                  <img src="https://www.paypalobjects.com/en_GB/i/scr/pixel.gif" width="1" height="1" />
+                </form>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </nav>
+    <div style="height: 100px"></div>
+  </body>
+</html>

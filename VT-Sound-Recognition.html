@@ -1,0 +1,613 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="Description" content="Introduction of Sound Monitoring and Matching APIs for Various Sound Recognition Projects" />
+    <title>Sound Monitoring and Matching APIs based on sound similarity measurement | Virtins Technology</title>
+    <link rel="icon" type="image/x-icon" href="images/global/favicon.png" />
+    <!--Bootstrap-->
+    <link href="node_modules/bootstrap/dist/css/bootstrap.min.css" rel="stylesheet" />
+    <script defer src="node_modules/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+    <link rel="stylesheet" href="style.css" />
+    <!--jquery-->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <script>
+      $(function () {
+        $("#nav").load("nav.html");
+        $("#footer").load("footer.html");
+      });
+    </script>
+  </head>
+  <body>
+    <!--navigation bar start-->
+    <header>
+      <div id="nav"></div>
+    </header>
+    <!--navigation bar end-->
+    <!--hero start-->
+    <div class="hero">
+      <img src="images/sound-recognition/hero-sound-recognition-2.png" alt="Sound Recognition" width="3500" height="1400" class="hero__img" id="sound-recognition-hero" />
+      <a href="https://virtins.com/Sound-Similar-Free-Setup.exe"
+        ><button class="hero__button" id="sound-recognition-button" role="button">
+          <span>Download Sound-Similar Free Version</span>
+        </button></a
+      >
+    </div>
+    <!--hero end-->
+    <div class="body__widescreen">
+      <div class="container-fluid px-5 mb-4 d-lg-none">
+        <div class="row">
+          <div class="col">
+            <div class="card">
+              <img class="card-img-top p-3" src="images/products/SoundSimilar.png" alt="Sound Similar" width="500" height="500" />
+              <div class="card-body">
+                <h5 class="card-title text-center">Sound-Similar Free Version</h5>
+              </div>
+              <a href="https://virtins.com/Sound-Similar-Free-Setup.exe" class="btn btn-primary d-block mx-auto mb-4 px-5" role="button">Download</a>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!--1-->
+      <h1 class="body__h1">Sound Monitoring & Matching APIs based on Sound Similarity Measurement (for Sound Recognition Projects)</h1>
+      <p class="body__p">
+        Sound recognition is one of the main application areas of artificial intelligence. Various sound recognition techniques exist and can be used for recognizing speeches, music, environmental
+        sounds, animal sounds, air-borne or structure-borne machine sounds, etc. These techniques contain in common signal pre-processing, feature extraction and feature matching / classification
+        algorithms from a general perspective. However, they differ in implementation in different applications. For example, there are a few good automatic speech recognition software products and
+        APIs, however, they just cannot be used directly in animal sound classifications.
+      </p>
+      <p class="body__p">
+        Specific sound recognition applications usually require custom programming. Virtins Technology has been actively involved in this line of business for years. Some projects that we have
+        completed are:
+      </p>
+      <ol class="px-5">
+        <li>16-Channel real-time sound monitoring and matching of normal and abnormal sounds in unmanned electrical substations (as compared with normal and abnormal sound samples)</li>
+        <li>Factory Pass/Fail testing on the music quality of music boxes (as compared with standard music samples)</li>
+        <li>Factory Pass/Fail testing on the sound correctness and quality of multi-sound generation toys (as compared with standard sound samples)</li>
+      </ol>
+      <p class="body__p">
+        Through years of researches and driven by actual projects, we have developed a suite of sound recognition API as well as VC++ and VC# sample programs. The API is called Sound Monitoring &
+        Matching API. Its features include:
+      </p>
+      <ol class="px-5">
+        <li>Online or offline sound comparison and similarity scoring</li>
+        <li>Real time sound monitoring</li>
+        <li>Online or offline sound matching based on white and black listed samples</li>
+        <li>Suspicious sounds (those that do not directly fall into white and black list) can be manually confirmed and placed into either white or black list</li>
+        <li>A sound card with multiple channels or multiple single-channel sound cards are supported.</li>
+      </ol>
+      <p class="body__p">The freeware Sound-Similar (Free Version) below is developed using this API. Contact us for details if interested.</p>
+      <p class="body__p">
+        Last but not the least, some applications may look as if they require advanced sound recognition techniques, but their tasks could actually be performed successfully through proper
+        configuration of <a href="multi-instrument.html">Multi-Instrument</a>. Example Video:
+        <a href="https://virtins.com/LighterSoundDetectionUnderBackgroundNoise.mp4">Identification of Lighter Sounds in a Controlled Environment</a>.
+      </p>
+      <!--2-->
+      <h1 class="body__h1">Introduction to Sound-Similar (Free Version)</h1>
+      <p class="body__p">
+        Sound-Similar (Free Version) is a lightweight software application that measures the perceptual similarity between two WAV files in Linear PCM format, the most commonly used format in WAV
+        files. The degree of similarity is represented by a similarity score in percentage, from 0% to 100%. The software does not compare the two digital files bit by bit. Nor does it measure the
+        resemblance of the two waveforms. The similarity is rated based on human auditory perception through advanced time, frequency, and time-frequency domain analyses. The resultant similarity
+        score can be used for sound classification as well as perception-based sound quality check.
+      </p>
+      <p class="body__p">
+        The two WAV files to be compared can have different sampling rates, bit depths, and one or two channels of data. If the file is stereo, then average values of the two channels will be used for
+        comparison. Sound volume difference does not affect the similarity measurement unless it is too low to maintain the perceptible sound quality.
+      </p>
+      <p class="body__p">
+        The frequency ranges of different classes of sounds, such as human speeches, music and environmental sounds, may be different. Sound-Similar allows the user to specify the comparison frequency
+        range in order to increase the scoring accuracy. It is possible to extend this range to infrasonic or ultrasonic region.
+      </p>
+      <p class="body__p">
+        There are two comparison modes: (1) Full Length vs Full Length, and (2) Full Length of the Shorter vs Partial Length of the Longer. In both modes, the two WAV files can have different lengths
+        in time. Mode 2 can be used to check whether the shorter is a part of the longer and, if YES, where the shorter is located in the longer. The minimum length of the sound should be at least 50
+        ms and greater than the reciprocal of the frequency lower limit. There is virtually no restriction on the upper limit of the sound length as long as the computer memory allows.
+      </p>
+      <p class="body__p">
+        There are three similarity modes: (1) Disregard Transmission Channel Difference; (2) Penalize for Transmission Channel Difference; (3) Penalize for Transmission Channel Difference and Heavily
+        for any Difference in Content Delivery Speed. Version 1.0 supports Similarity Mode 1 only. Similarity Modes 2 and 3 were added in Version 1.1.
+      </p>
+      <p class="body__p">
+        The similarity scoring algorithm in the software has been optimized for general-purpose use. A similarity score below a few percent usually indicates that the two sounds are totally different,
+        while a score from a few percent to 100% often shows that the two are alike with a varying degree of similarity. In other words, not only can Sound-Similar classify sounds but also perform
+        quality check against standard samples.
+      </p>
+      <p class="body__p">
+        Sound-Similar was programmed using Sound Monitoring and Matching (SMM) API developed by Virtins Technology. The underlying API is much more flexible in setting various comparison parameters
+        and has more advanced options such as background noise removal, short-time noise and distortion detection and different scoring methods.
+      </p>
+      <!--3-->
+      <h1 class="body__h1">Stationary or Quasi-Stationary Sound Comparison Examples</h1>
+      <h2 class="body__h2">1. DTMF tone recognition (POSITIVE): DTMF-1-SR44100-16Bit-2s-Ideal.wav vs DTMF-1-SR44100-16Bit-2s-Noisy.wav</h2>
+      <div class="d-flex flex-column align-items-center flex-lg-row justify-content-lg-evenly p-2">
+        <div>
+          <audio controls="controls">
+            <source src="images/sound-recognition/DTMF-1-SR44100-16Bit-2s-Ideal.wav" type="audio/wav" />
+          </audio>
+          <figcaption class="figure-caption text-center text-nowrap text-decoration-underline pb-2">Ideal</figcaption>
+        </div>
+        <div>
+          <audio controls="controls">
+            <source src="images/sound-recognition/DTMF-1-SR44100-16Bit-2s-Noisy.wav" type="audio/wav" />
+          </audio>
+          <figcaption class="figure-caption text-center text-nowrap text-decoration-underline pb-2">Noisy</figcaption>
+        </div>
+      </div>
+      <p class="body__p">
+        Both are 2-second DTMF tone "1" consisting of 697Hz and 1209Hz, sampled at 44.1kHz and 16 bits. The former was generated digitally by the signal generator of Multi-Instrument and thus is ideal
+        without noises. The latter was recorded by a microphone from the same tone output by a speaker and thus contains substantial background noises. The volume difference is about 8 dB. The
+        following picture shows the comparison of their waveforms, spectra and spectrograms. The measured similarity score is 99.5% thanks to the anti-noise setting inside Sound-Similar Free. Thus the
+        answer is POSITIVE (i.e. not FALSE NEGATIVE).
+      </p>
+      <img src="images/sound-recognition/DTMF-1-SR44100-16Bit-2s-Ideal-vs-Noisy-MI.png" alt="DTMF-1-SR44100-16Bit-2s-Ideal-vs-Noisy-MI" width="950" height="516" class="mx-auto px-4 py-2" />
+      <img src="images/sound-recognition/DTMF-1-SR44100-16Bit-2s-Ideal-vs-Noisy-SS.png" alt="DTMF-1-SR44100-16Bit-2s-Ideal-vs-Noisy-SS" width="814" height="259" class="mx-auto px-4 py-2" />
+      <h2 class="body__h2">2. DTMF tone recognition (NEGATIVE): DTMF-2-SR44100-16Bit-2s-Ideal.wav vs DTMF-1-SR44100-16Bit-2s-Noisy.wav</h2>
+      <div class="d-flex flex-column align-items-center flex-lg-row justify-content-lg-evenly p-2">
+        <div>
+          <audio controls="controls">
+            <source src="images/sound-recognition/DTMF-2-SR44100-16Bit-2s-Ideal.wav" type="audio/wav" />
+          </audio>
+          <figcaption class="figure-caption text-center text-nowrap text-decoration-underline pb-2">Ideal</figcaption>
+        </div>
+        <div>
+          <audio controls="controls">
+            <source src="images/sound-recognition/DTMF-1-SR44100-16Bit-2s-Noisy.wav" type="audio/wav" />
+          </audio>
+          <figcaption class="figure-caption text-center text-nowrap text-decoration-underline pb-2">Noisy</figcaption>
+        </div>
+      </div>
+      <p class="body__p">
+        The former is 2-second DTMF tone "2" consisting of 697Hz and 1336Hz, sampled at 44.1kHz and 16 bits. The latter is 2-second DTMF tone "1" consisting of 697Hz and 1209Hz with the same sampling
+        parameters. The former was generated digitally by the signal generator of Multi-Instrument and thus is ideal without noises. The latter was recorded by a microphone from the sound output by a
+        speaker and thus contains background noises. The volume difference is about 8 dB. The following picture shows the comparison of their waveforms, spectra and spectrograms. The measured
+        similarity score is 12.1% and thus the answer is NEGATIVE (i.e. not FALSE POSITIVE). It should be noted that DTMF tones are quite similar to one another when perceived by humans. If two
+        different DTMF tones have one frequency component in common, their similarity score can go up to a few tens of percent. However, if the two DTMF tones have two frequency components in common
+        (i.e. same DTMF tones), then their similarity score will be very close to 100%.
+      </p>
+      <img src="images/sound-recognition/DTMF-SR44100-16Bit-2s-Ideal2-vs-Noisy1-MI.png" alt="DTMF-SR44100-16Bit-2s-Ideal2-vs-Noisy1-MI" width="950" height="516" class="mx-auto px-4 py-2" />
+      <img src="images/sound-recognition/DTMF-SR44100-16Bit-2s-Ideal2-vs-Noisy1-SS.png" alt="DTMF-SR44100-16Bit-2s-Ideal2-vs-Noisy1-SS" width="814" height="259" class="mx-auto px-4 py-2" />
+      <h2 class="body__h2">3. Effect of the volume difference on similarity score: DTMF-1-SR44100-16Bit-2s-Ideal_-60dB vs DTMF-1-SR44100-16Bit-2s-Noisy.wav</h2>
+      <div class="d-flex flex-column align-items-center flex-lg-row justify-content-lg-evenly p-2">
+        <div>
+          <audio controls="controls">
+            <source src="images/sound-recognition/DTMF-1-SR44100-16Bit-2s-Ideal_-60dB.wav" type="audio/wav" />
+          </audio>
+          <figcaption class="figure-caption text-center text-nowrap text-decoration-underline pb-2">Ideal</figcaption>
+        </div>
+        <div>
+          <audio controls="controls">
+            <source src="images/sound-recognition/DTMF-1-SR44100-16Bit-2s-Noisy.wav" type="audio/wav" />
+          </audio>
+          <figcaption class="figure-caption text-center text-nowrap text-decoration-underline pb-2">Noisy</figcaption>
+        </div>
+      </div>
+      <p class="body__p">
+        This test is similar to the above Test 1(1) except that the volume of the first one is 60dB lower (i.e. 1/1000) than that of Test 1(1) or 52dB lower than the second one here. The similarity
+        score is 96.6%, dropped only a little bit from 99.5% in Test 1(1), showing that the volume difference has little impact on the similarity score.
+      </p>
+      <img
+        src="images/sound-recognition/DTMF-1-SR44100-16Bit-2s-Ideal-vs-Noisy_-60dB_vs_0dB-SS.png"
+        alt="DTMF-1-SR44100-16Bit-2s-Ideal-vs-Noisy_-60dB_vs_0dB-SS"
+        width="814"
+        height="259"
+        class="mx-auto px-4 py-2"
+      />
+      <h2 class="body__h2">4. Effect of the length difference on similarity score: DTMF-1-SR44100-16Bit-10s-Ideal.wav vs DTMF-1-SR44100-16Bit-2s-Noisy.wav</h2>
+      <div class="d-flex flex-column align-items-center flex-lg-row justify-content-lg-evenly p-2">
+        <div>
+          <audio controls="controls">
+            <source src="images/sound-recognition/DTMF-1-SR44100-16Bit-10s-Ideal.wav" type="audio/wav" />
+          </audio>
+          <figcaption class="figure-caption text-center text-nowrap text-decoration-underline pb-2">Ideal</figcaption>
+        </div>
+        <div>
+          <audio controls="controls">
+            <source src="images/sound-recognition/DTMF-1-SR44100-16Bit-2s-Noisy.wav" type="audio/wav" />
+          </audio>
+          <figcaption class="figure-caption text-center text-nowrap text-decoration-underline pb-2">Noisy</figcaption>
+        </div>
+      </div>
+      <p class="body__p">
+        This test is similar to the above Test 1(1) except that the first one is 10-second long here, five times as long as the latter. The similarity score is 99.4%, almost unchanged compared with
+        Test 1(1). It should be noted that the longer one here contains the same stationary signal across its full length.
+      </p>
+      <img
+        src="images/sound-recognition/DTMF-1-SR44100-16Bit-10s_vs_2s-Ideal-vs-Noisy-SS.png"
+        alt="DTMF-1-SR44100-16Bit-10s_vs_2s-Ideal-vs-Noisy-SS"
+        width="814"
+        height="259"
+        class="mx-auto px-4 py-2"
+      />
+      <h2 class="body__h2">
+        5. Electrical Substation Sound Recognition (NEGATIVE): Substation-60Hz-High-Votage-Transformer-Sound-SR44100-16Bit-2s.wav vs Substation-60Hz-Partial-Discharge-Sound1-SR44100-16Bit-2s.wav
+      </h2>
+      <div class="d-flex flex-column align-items-center flex-lg-row justify-content-lg-evenly p-2">
+        <div>
+          <audio controls="controls">
+            <source src="images/sound-recognition/Substation-60Hz-High-Votage-Transformer-Sound-SR44100-16Bit-2s.wav" type="audio/wav" />
+          </audio>
+          <figcaption class="figure-caption text-center text-nowrap text-decoration-underline pb-2">High Votage Transformer Sound</figcaption>
+        </div>
+        <div>
+          <audio controls="controls">
+            <source src="images/sound-recognition/Substation-60Hz-Partial-Discharge-Sound1-SR44100-16Bit-2s.wav" type="audio/wav" />
+          </audio>
+          <figcaption class="figure-caption text-center text-nowrap text-decoration-underline pb-2">Partial Discharge Sound</figcaption>
+        </div>
+      </div>
+      <p class="body__p">
+        The former is a 2-second sound from a high voltage transformer while the latter is a 2-second sound emitted by a partial discharge event in a substation. The former is quite stationary but the
+        latter is not quite so. The measured similarity score is 0.6%. In other words, the partial discharge sound can be differentiated from the hum. It should be noted that the lower limit of the
+        comparison frequency range was set to 30Hz to take into account the 50Hz or 60Hz hum in comparison.
+      </p>
+      <img
+        src="images/sound-recognition/Substation-60Hz-SR44100-16Bit-2s-Transformer_vs_Partial-Discharge-MI.png"
+        alt="Substation-60Hz-SR44100-16Bit-2s-Transformer_vs_Partial-Discharge-MI"
+        width="950"
+        height="516"
+        class="mx-auto px-4 py-2"
+      />
+      <img
+        src="images/sound-recognition/Substation-60Hz-SR44100-16Bit-2s-Transformer_vs_Partial-Discharge-SS.png"
+        alt="Substation-60Hz-SR44100-16Bit-2s-Transformer_vs_Partial-Discharge-SS"
+        width="814"
+        height="259"
+        class="mx-auto px-4 py-2"
+      />
+      <h2 class="body__h2">
+        6. Electrical Substation Sound Recognition (POSITIVE): Substation-60Hz-Partial-Discharge-Sound1-SR44100-16Bit-2s.wav vs Substation-60Hz-Partial-Discharge-Sound2-SR44100-16Bit-2s.wav
+      </h2>
+      <div class="d-flex flex-column align-items-center flex-lg-row justify-content-lg-evenly p-2">
+        <div>
+          <audio controls="controls">
+            <source src="images/sound-recognition/Substation-60Hz-Partial-Discharge-Sound1-SR44100-16Bit-2s.wav" type="audio/wav" />
+          </audio>
+          <figcaption class="figure-caption text-center text-nowrap text-decoration-underline pb-2">Partial Discharge Sound 1</figcaption>
+        </div>
+        <div>
+          <audio controls="controls">
+            <source src="images/sound-recognition/Substation-60Hz-Partial-Discharge-Sound2-SR44100-16Bit-2s.wav" type="audio/wav" />
+          </audio>
+          <figcaption class="figure-caption text-center text-nowrap text-decoration-underline pb-2">Partial Discharge Sound 2</figcaption>
+        </div>
+      </div>
+      <p class="body__p">
+        Both are 2-second partial discharge sounds in a substation. The measured similarity score is 84.5%. In other words, the two sounds can be classified under the same tag. It should be noted that
+        the lower limit of the comparison frequency range was set to 30Hz to take into account the 50Hz or 60Hz hum in comparison.
+      </p>
+      <img
+        src="images/sound-recognition/Substation-60Hz-SR44100-16Bit-2s-Partial-Discharge-SS.png"
+        alt="Substation-60Hz-SR44100-16Bit-2s-Partial-Discharge-SS"
+        width="814"
+        height="259"
+        class="mx-auto px-4 py-2"
+      />
+      <!--4-->
+      <h1 class="body__h1">Non-Stationary Sound Comparison Examples</h1>
+      <h2 class="body__h2">1. Music recognition 1 (POSITIVE): Piano-1-1-SR44100-16Bit-10s.wav vs Piano-1-2-SR44100-16Bit-10s.wav</h2>
+      <div class="d-flex flex-column align-items-center flex-lg-row justify-content-lg-evenly p-2">
+        <div>
+          <audio controls="controls">
+            <source src="images/sound-recognition/Piano-1-1-SR44100-16Bit-10s.wav" type="audio/wav" />
+          </audio>
+          <figcaption class="figure-caption text-center text-nowrap text-decoration-underline pb-2">Piano 1-1</figcaption>
+        </div>
+        <div>
+          <audio controls="controls">
+            <source src="images/sound-recognition/Piano-1-2-SR44100-16Bit-10s.wav" type="audio/wav" />
+          </audio>
+          <figcaption class="figure-caption text-center text-nowrap text-decoration-underline pb-2">Piano 1-2</figcaption>
+        </div>
+      </div>
+      <p class="body__p">
+        Both were recorded from the same music clip but with different speaker and microphone pairs and different background noises and echoes. The measured similarity score is 90.9%.
+      </p>
+      <img src="images/sound-recognition/Piano-1-SR44100-16Bit-10s-1vs2-MI.png" alt="Piano-1-SR44100-16Bit-10s-1vs2-MI" width="950" height="516" class="mx-auto px-4 py-2" />
+      <img src="images/sound-recognition/Piano-11vs12-SR44100-16Bit-10s-SS.png" alt="Piano-11vs12-SR44100-16Bit-10s-SS" width="814" height="259" class="mx-auto px-4 py-2" />
+      <h2 class="body__h2">2. Music recognition 2 (POSITIVE): Piano-2-1-SR44100-16Bit-10s.wav vs Piano-2-2-SR44100-16Bit-10s.wav</h2>
+      <div class="d-flex flex-column align-items-center flex-lg-row justify-content-lg-evenly p-2">
+        <div>
+          <audio controls="controls">
+            <source src="images/sound-recognition/Piano-2-1-SR44100-16Bit-10s.wav" type="audio/wav" />
+          </audio>
+          <figcaption class="figure-caption text-center text-nowrap text-decoration-underline pb-2">Piano 2-1</figcaption>
+        </div>
+        <div>
+          <audio controls="controls">
+            <source src="images/sound-recognition/Piano-2-2-SR44100-16Bit-10s.wav" type="audio/wav" />
+          </audio>
+          <figcaption class="figure-caption text-center text-nowrap text-decoration-underline pb-2">Piano 2-2</figcaption>
+        </div>
+      </div>
+      <p class="body__p">
+        Both were recorded from the same music clip but with different speaker and microphone pairs and different background noises and echoes. The measured similarity score is 91.5%.
+      </p>
+      <img src="images/sound-recognition/Piano-2-SR44100-16Bit-10s-1vs2-MI.png" alt="Piano-2-SR44100-16Bit-10s-1vs2-MI" width="950" height="516" class="mx-auto px-4 py-2" />
+      <img src="images/sound-recognition/Piano-21vs22-SR44100-16Bit-10s-SS.png" alt="Piano-21vs22-SR44100-16Bit-10s-SS" width="814" height="259" class="mx-auto px-4 py-2" />
+      <h2 class="body__h2">3. Music recognition (NEGATIVE): Cross-check the wav files from above (Piano 1-1, 1-2, 2-1 and 2-2)</h2>
+      <p class="body__p">i. Piano-1-1-SR44100-16Bit-10s.wav vs Piano-2-1-SR44100-16Bit-10s.wav: similarity score 0.5%</p>
+      <div class="d-flex flex-column align-items-center flex-lg-row justify-content-lg-evenly p-2">
+        <div>
+          <audio controls="controls">
+            <source src="images/sound-recognition/Piano-1-1-SR44100-16Bit-10s.wav" type="audio/wav" />
+          </audio>
+          <figcaption class="figure-caption text-center text-nowrap text-decoration-underline pb-2">Piano 1-1</figcaption>
+        </div>
+        <div>
+          <audio controls="controls">
+            <source src="images/sound-recognition/Piano-2-1-SR44100-16Bit-10s.wav" type="audio/wav" />
+          </audio>
+          <figcaption class="figure-caption text-center text-nowrap text-decoration-underline pb-2">Piano 2-1</figcaption>
+        </div>
+      </div>
+      <img src="images/sound-recognition/Piano-1vs2-SR44100-16Bit-10s-MI.png" alt="Piano-1vs2-SR44100-16Bit-10s-MI" width="950" height="516" class="mx-auto px-4 py-2" />
+      <img src="images/sound-recognition/Piano-11vs21-SR44100-16Bit-10s-SS.png" alt="Piano-11vs21-SR44100-16Bit-10s-SS" width="814" height="259" class="mx-auto px-4 py-2" />
+      <p class="body__p">ii. Piano-1-1-SR44100-16Bit-10s.wav vs Piano-2-2-SR44100-16Bit-10s.wav: similarity score 0.5%</p>
+      <div class="d-flex flex-column align-items-center flex-lg-row justify-content-lg-evenly p-2">
+        <div>
+          <audio controls="controls">
+            <source src="images/sound-recognition/Piano-1-1-SR44100-16Bit-10s.wav" type="audio/wav" />
+          </audio>
+          <figcaption class="figure-caption text-center text-nowrap text-decoration-underline pb-2">Piano 1-1</figcaption>
+        </div>
+        <div>
+          <audio controls="controls">
+            <source src="images/sound-recognition/Piano-2-2-SR44100-16Bit-10s.wav" type="audio/wav" />
+          </audio>
+          <figcaption class="figure-caption text-center text-nowrap text-decoration-underline pb-2">Piano 2-2</figcaption>
+        </div>
+      </div>
+      <img src="images/sound-recognition/Piano-11vs22-SR44100-16Bit-10s-SS.png" alt="Piano-11vs22-SR44100-16Bit-10s-SS" width="814" height="259" class="mx-auto px-4 py-2" />
+      <p class="body__p">iii. Piano-1-2-SR44100-16Bit-10s.wav vs Piano-2-1-SR44100-16Bit-10s.wav: similarity score 0.6%</p>
+      <div class="d-flex flex-column align-items-center flex-lg-row justify-content-lg-evenly p-2">
+        <div>
+          <audio controls="controls">
+            <source src="images/sound-recognition/Piano-1-2-SR44100-16Bit-10s.wav" type="audio/wav" />
+          </audio>
+          <figcaption class="figure-caption text-center text-nowrap text-decoration-underline pb-2">Piano 1-2</figcaption>
+        </div>
+        <div>
+          <audio controls="controls">
+            <source src="images/sound-recognition/Piano-2-1-SR44100-16Bit-10s.wav" type="audio/wav" />
+          </audio>
+          <figcaption class="figure-caption text-center text-nowrap text-decoration-underline pb-2">Piano 2-1</figcaption>
+        </div>
+      </div>
+      <img src="images/sound-recognition/Piano-12vs21-SR44100-16Bit-10s-SS.png" alt="Piano-12vs21-SR44100-16Bit-10s-SS" width="814" height="259" class="mx-auto px-4 py-2" />
+      <p class="body__p">iv. Piano-1-2-SR44100-16Bit-10s.wav vs Piano-2-2-SR44100-16Bit-10s.wav: similarity score 0.5%</p>
+      <div class="d-flex flex-column align-items-center flex-lg-row justify-content-lg-evenly p-2">
+        <div>
+          <audio controls="controls">
+            <source src="images/sound-recognition/Piano-1-2-SR44100-16Bit-10s.wav" type="audio/wav" />
+          </audio>
+          <figcaption class="figure-caption text-center text-nowrap text-decoration-underline pb-2">Piano 1-2</figcaption>
+        </div>
+        <div>
+          <audio controls="controls">
+            <source src="images/sound-recognition/Piano-2-2-SR44100-16Bit-10s.wav" type="audio/wav" />
+          </audio>
+          <figcaption class="figure-caption text-center text-nowrap text-decoration-underline pb-2">Piano 2-2</figcaption>
+        </div>
+      </div>
+      <img src="images/sound-recognition/Piano-12vs22-SR44100-16Bit-10s-SS.png" alt="Piano-12vs22-SR44100-16Bit-10s-SS" width="814" height="259" class="mx-auto px-4 py-2" />
+      <h2 class="body__h2">4. Song recognition 1 (POSITIVE): Song-1-1-SR44100-16Bit-10s.wav vs Song-1-2-SR44100-16Bit-10s.wav</h2>
+      <div class="d-flex flex-column align-items-center flex-lg-row justify-content-lg-evenly p-2">
+        <div>
+          <audio controls="controls">
+            <source src="images/sound-recognition/Song-1-1-SR44100-16Bit-10s.wav" type="audio/wav" />
+          </audio>
+          <figcaption class="figure-caption text-center text-nowrap text-decoration-underline pb-2">Song 1-1</figcaption>
+        </div>
+        <div>
+          <audio controls="controls">
+            <source src="images/sound-recognition/Song-1-2-SR44100-16Bit-10s.wav" type="audio/wav" />
+          </audio>
+          <figcaption class="figure-caption text-center text-nowrap text-decoration-underline pb-2">Song 1-2</figcaption>
+        </div>
+      </div>
+      <p class="body__p">
+        Both were recorded from the same song clip but with different speaker and microphone pairs and different background noises and echoes. The measured similarity score is 71.9%.
+      </p>
+      <img src="images/sound-recognition/Song-1-SR44100-16Bit-10s-1vs2-MI.png" alt="Song-1-SR44100-16Bit-10s-1vs2-MI" width="950" height="516" class="mx-auto px-4 py-2" />
+      <img src="images/sound-recognition/Song-11vs12-SR44100-16Bit-10s-SS.png" alt="Song-11vs12-SR44100-16Bit-10s-SS" width="814" height="259" class="mx-auto px-4 py-2" />
+      <h2 class="body__h2">5. Song recognition 2 (POSITIVE): Song-2-1-SR44100-16Bit-10s.wav vs Song-2-2-SR44100-16Bit-10s.wav</h2>
+      <div class="d-flex flex-column align-items-center flex-lg-row justify-content-lg-evenly p-2">
+        <div>
+          <audio controls="controls">
+            <source src="images/sound-recognition/Song-2-1-SR44100-16Bit-10s.wav" type="audio/wav" />
+          </audio>
+          <figcaption class="figure-caption text-center text-nowrap text-decoration-underline pb-2">Song 2-1</figcaption>
+        </div>
+        <div>
+          <audio controls="controls">
+            <source src="images/sound-recognition/Song-2-2-SR44100-16Bit-10s.wav" type="audio/wav" />
+          </audio>
+          <figcaption class="figure-caption text-center text-nowrap text-decoration-underline pb-2">Song 2-2</figcaption>
+        </div>
+      </div>
+      <p class="body__p">
+        Both were recorded from the same song clip but with different speaker and microphone pairs and different background noises and echoes. The measured similarity score is 83.5%.
+      </p>
+      <img src="images/sound-recognition/Song-2-SR44100-16Bit-10s-1vs2-MI.png" alt="Song-2-SR44100-16Bit-10s-1vs2-MI" width="950" height="516" class="mx-auto px-4 py-2" />
+      <img src="images/sound-recognition/Song-21vs22-SR44100-16Bit-10s-SS.png" alt="Song-21vs22-SR44100-16Bit-10s-SS" width="814" height="259" class="mx-auto px-4 py-2" />
+      <h2 class="body__h2">6. Song recognition (NEGATIVE): Cross-check the wav files from above (Song 1-1, 1-2, 2-1 and 2-2)</h2>
+      <p class="body__p">i. Song-1-1-SR44100-16Bit-10s.wav vs Song-2-1-SR44100-16Bit-10s.wav: similarity score 0.3%</p>
+      <div class="d-flex flex-column align-items-center flex-lg-row justify-content-lg-evenly p-2">
+        <div>
+          <audio controls="controls">
+            <source src="images/sound-recognition/Song-1-1-SR44100-16Bit-10s.wav" type="audio/wav" />
+          </audio>
+          <figcaption class="figure-caption text-center text-nowrap text-decoration-underline pb-2">Song 1-1</figcaption>
+        </div>
+        <div>
+          <audio controls="controls">
+            <source src="images/sound-recognition/Song-2-1-SR44100-16Bit-10s.wav" type="audio/wav" />
+          </audio>
+          <figcaption class="figure-caption text-center text-nowrap text-decoration-underline pb-2">Song 2-1</figcaption>
+        </div>
+      </div>
+      <img src="images/sound-recognition/Song-1vs2-SR44100-16Bit-10s-MI.png" alt="Song-1vs2-SR44100-16Bit-10s-MI" width="950" height="516" class="mx-auto px-4 py-2" />
+      <img src="images/sound-recognition/Song-11vs21-SR44100-16Bit-10s-SS.png" alt="Song-11vs21-SR44100-16Bit-10s-SS" width="814" height="259" class="mx-auto px-4 py-2" />
+      <p class="body__p">ii. Song-1-1-SR44100-16Bit-10s.wav vs Song-2-2-SR44100-16Bit-10s.wav: similarity score 0.2%</p>
+      <div class="d-flex flex-column align-items-center flex-lg-row justify-content-lg-evenly p-2">
+        <div>
+          <audio controls="controls">
+            <source src="images/sound-recognition/Song-1-1-SR44100-16Bit-10s.wav" type="audio/wav" />
+          </audio>
+          <figcaption class="figure-caption text-center text-nowrap text-decoration-underline pb-2">Song 1-1</figcaption>
+        </div>
+        <div>
+          <audio controls="controls">
+            <source src="images/sound-recognition/Song-2-2-SR44100-16Bit-10s.wav" type="audio/wav" />
+          </audio>
+          <figcaption class="figure-caption text-center text-nowrap text-decoration-underline pb-2">Song 2-2</figcaption>
+        </div>
+      </div>
+      <img src="images/sound-recognition/Song-11vs22-SR44100-16Bit-10s-SS.png" alt="Song-11vs22-SR44100-16Bit-10s-SS" width="814" height="259" class="mx-auto px-4 py-2" />
+      <p class="body__p">iii. Song-1-2-SR44100-16Bit-10s.wav vs Song-2-1-SR44100-16Bit-10s.wav: similarity score 0.2%</p>
+      <div class="d-flex flex-column align-items-center flex-lg-row justify-content-lg-evenly p-2">
+        <div>
+          <audio controls="controls">
+            <source src="images/sound-recognition/Song-1-2-SR44100-16Bit-10s.wav" type="audio/wav" />
+          </audio>
+          <figcaption class="figure-caption text-center text-nowrap text-decoration-underline pb-2">Song 1-2</figcaption>
+        </div>
+        <div>
+          <audio controls="controls">
+            <source src="images/sound-recognition/Song-2-1-SR44100-16Bit-10s.wav" type="audio/wav" />
+          </audio>
+          <figcaption class="figure-caption text-center text-nowrap text-decoration-underline pb-2">Song 2-1</figcaption>
+        </div>
+      </div>
+      <img src="images/sound-recognition/Song-12vs21-SR44100-16Bit-10s-SS.png" alt="Song-12vs21-SR44100-16Bit-10s-SS" width="814" height="259" class="mx-auto px-4 py-2" />
+      <p class="body__p">iv. Song-1-2-SR44100-16Bit-10s.wav vs Song-2-2-SR44100-16Bit-10s.wav: similarity score 0.3%</p>
+      <div class="d-flex flex-column align-items-center flex-lg-row justify-content-lg-evenly p-2">
+        <div>
+          <audio controls="controls">
+            <source src="images/sound-recognition/Song-1-2-SR44100-16Bit-10s.wav" type="audio/wav" />
+          </audio>
+          <figcaption class="figure-caption text-center text-nowrap text-decoration-underline pb-2">Song 1-2</figcaption>
+        </div>
+        <div>
+          <audio controls="controls">
+            <source src="images/sound-recognition/Song-2-2-SR44100-16Bit-10s.wav" type="audio/wav" />
+          </audio>
+          <figcaption class="figure-caption text-center text-nowrap text-decoration-underline pb-2">Song 2-2</figcaption>
+        </div>
+      </div>
+      <img src="images/sound-recognition/Song-12vs22-SR44100-16Bit-10s-SS.png" alt="Song-12vs22-SR44100-16Bit-10s-SS" width="814" height="259" class="mx-auto px-4 py-2" />
+      <h2 class="body__h2">7. Speech recognition 1 (POSITIVE): Speech-1-1-SR44100-16Bit-2s.wav vs Speech-1-2-SR44100-16Bit-2s.wav</h2>
+      <div class="d-flex flex-column align-items-center flex-lg-row justify-content-lg-evenly p-2">
+        <div>
+          <audio controls="controls">
+            <source src="images/sound-recognition/Speech-1-1-SR44100-16Bit-2s.wav" type="audio/wav" />
+          </audio>
+          <figcaption class="figure-caption text-center text-nowrap text-decoration-underline pb-2">Speech 1-1</figcaption>
+        </div>
+        <div>
+          <audio controls="controls">
+            <source src="images/sound-recognition/Speech-1-2-SR44100-16Bit-2s.wav" type="audio/wav" />
+          </audio>
+          <figcaption class="figure-caption text-center text-nowrap text-decoration-underline pb-2">Speech 1-2</figcaption>
+        </div>
+      </div>
+      <p class="body__p">
+        Both were recorded from the same speech clip ("Because these two really sounds similar!") but with different speaker and microphone pairs and different background noise levels and echoes. The
+        measured similarity score is 80.5%.
+      </p>
+      <img src="images/sound-recognition/Speech-1vs2-SR44100-16Bit-2s-MI.png" alt="Speech-1vs2-SR44100-16Bit-2s-MI" width="950" height="516" class="mx-auto px-4 py-2" />
+      <img src="images/sound-recognition/Speech-11vs12-SR44100-16Bit-10s-SS.png" alt="Speech-11vs12-SR44100-16Bit-10s-SS" width="814" height="259" class="mx-auto px-4 py-2" />
+      <h2 class="body__h2">8. Speech recognition 2 (Similar): Speech-1-1-SR44100-16Bit-2s.wav vs Speech-1-3-SR44100-16Bit-2s.wav</h2>
+      <div class="d-flex flex-column align-items-center flex-lg-row justify-content-lg-evenly p-2">
+        <div>
+          <audio controls="controls">
+            <source src="images/sound-recognition/Speech-1-1-SR44100-16Bit-2s.wav" type="audio/wav" />
+          </audio>
+          <figcaption class="figure-caption text-center text-nowrap text-decoration-underline pb-2">Speech 1-1</figcaption>
+        </div>
+        <div>
+          <audio controls="controls">
+            <source src="images/sound-recognition/Speech-1-3-SR44100-16Bit-2s.wav" type="audio/wav" />
+          </audio>
+          <figcaption class="figure-caption text-center text-nowrap text-decoration-underline pb-2">Speech 1-3</figcaption>
+        </div>
+      </div>
+      <p class="body__p">
+        The former is a speech clip "Because these two really sound similar!" while the latter is a speech clip "Because these two really sound different!". That is, only the last words are different.
+        The measured similarity score is 60.5%.
+      </p>
+      <img src="images/sound-recognition/Speech-1vs3-SR44100-16Bit-2s-MI.png" alt="Speech-1vs3-SR44100-16Bit-2s-MI" width="950" height="516" class="mx-auto px-4 py-2" />
+      <img src="images/sound-recognition/Speech-11vs13-SR44100-16Bit-10s-SS.png" alt="Speech-11vs13-SR44100-16Bit-10s-SS" width="814" height="259" class="mx-auto px-4 py-2" />
+      <h2 class="body__h2">9. Speech recognition 3 (Similar): Speech-1-1-SR44100-16Bit-2s.wav vs Speech-1-4-SR44100-16Bit-2s.wav</h2>
+      <div class="d-flex flex-column align-items-center flex-lg-row justify-content-lg-evenly p-2">
+        <div>
+          <audio controls="controls">
+            <source src="images/sound-recognition/Speech-1-1-SR44100-16Bit-2s.wav" type="audio/wav" />
+          </audio>
+          <figcaption class="figure-caption text-center text-nowrap text-decoration-underline pb-2">Speech 1-1</figcaption>
+        </div>
+        <div>
+          <audio controls="controls">
+            <source src="images/sound-recognition/Speech-1-4-SR44100-16Bit-2s.wav" type="audio/wav" />
+          </audio>
+          <figcaption class="figure-caption text-center text-nowrap text-decoration-underline pb-2">Speech 1-4</figcaption>
+        </div>
+      </div>
+      <p class="body__p">
+        The former was a speech clip "Because these two really sound similar!" while the latter was a speech clip "Because these two sound really similar!". That is, only the positions of two words
+        are swapped, which is in a way equivalent to a two-word difference. The measured similarity score is 9.7%.
+      </p>
+      <img src="images/sound-recognition/Speech-1vs4-SR44100-16Bit-2s-MI.png" alt="Speech-1vs4-SR44100-16Bit-2s-MI" width="950" height="516" class="mx-auto px-4 py-2" />
+      <img src="images/sound-recognition/Speech-11vs14-SR44100-16Bit-10s-SS.png" alt="Speech-11vs14-SR44100-16Bit-10s-SS" width="814" height="259" class="mx-auto px-4 py-2" />
+      <h2 class="body__h2">10. Speech recognition 4 (Similar): Speech-1-1-SR44100-16Bit-2s.wav vs Speech-1-5-SR44100-16Bit-2s.wav</h2>
+      <div class="d-flex flex-column align-items-center flex-lg-row justify-content-lg-evenly p-2">
+        <div>
+          <audio controls="controls">
+            <source src="images/sound-recognition/Speech-1-1-SR44100-16Bit-2s.wav" type="audio/wav" />
+          </audio>
+          <figcaption class="figure-caption text-center text-nowrap text-decoration-underline pb-2">Speech 1-1</figcaption>
+        </div>
+        <div>
+          <audio controls="controls">
+            <source src="images/sound-recognition/Speech-1-5-SR44100-16Bit-2s.wav" type="audio/wav" />
+          </audio>
+          <figcaption class="figure-caption text-center text-nowrap text-decoration-underline pb-2">Speech 1-5</figcaption>
+        </div>
+      </div>
+      <p class="body__p">
+        The former was a speech clip "Because these two really sound similar!" while the latter was a speech clip "Because these two sound similar really!". That is, only the positions of three words
+        are changed, which is in a way equivalent to a three-word difference. The measured similarity score is 1.4%.
+      </p>
+      <img src="images/sound-recognition/Speech-1vs5-SR44100-16Bit-2s-MI.png" alt="Speech-1vs5-SR44100-16Bit-2s-MI" width="950" height="516" class="mx-auto px-4 py-2" />
+      <img src="images/sound-recognition/Speech-11vs15-SR44100-16Bit-10s-SS.png" alt="Speech-11vs15-SR44100-16Bit-10s-SS" width="814" height="259" class="mx-auto px-4 py-2" />
+      <h2 class="body__h2">11. Searching the shorter WAV File in the longer one: Song-3-2-SR44100-16Bit-1s.wav in Song-3-1-SR44100-16Bit-20s.wav</h2>
+      <div class="d-flex flex-column align-items-center flex-lg-row justify-content-lg-evenly p-2">
+        <div>
+          <audio controls="controls">
+            <source src="images/sound-recognition/Song-3-2-SR44100-16Bit-1s.wav" type="audio/wav" />
+          </audio>
+          <figcaption class="figure-caption text-center text-nowrap text-decoration-underline pb-2">1s Excerpt</figcaption>
+        </div>
+        <div>
+          <audio controls="controls">
+            <source src="images/sound-recognition/Song-3-1-SR44100-16Bit-20s.wav" type="audio/wav" />
+          </audio>
+          <figcaption class="figure-caption text-center text-nowrap text-decoration-underline pb-2">20s Excerpt</figcaption>
+        </div>
+      </div>
+      <p class="body__p">
+        The two files were recorded with different speaker and microphone pair and different background noises and echoes. The former contains a 1-second excerpt of a song while the latter contains a
+        20-second excerpt of the same song. The comparison mode is set to "Full Length of the Shorter vs Partial Length of the Longer". The result shows that the sound from 14.477 s to 15.477 s in the
+        second file is similar to the entire sound in the first file with a similarity score of 55.2%.
+      </p>
+      <img src="images/sound-recognition/Speech-3-2vs3-1-SR44100-16Bit-1s-20s-MI.png" alt="Speech-3-2vs3-1-SR44100-16Bit-1s-20s-MI" width="950" height="516" class="mx-auto px-4 py-2" />
+      <img src="images/sound-recognition/Song-31vs32-SR44100-16Bit-20s_vs_1s-SS.png" alt="Song-31vs32-SR44100-16Bit-20s_vs_1s-SS" width="814" height="259" class="mx-auto px-4 py-2 pb-4" />
+    </div>
+    <!--footer start-->
+    <footer>
+      <div id="footer"></div>
+    </footer>
+    <!--footer end-->
+  </body>
+</html>

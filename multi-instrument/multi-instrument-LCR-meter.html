@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="Description" content="PC USB Oscilloscopes, Spectrum Analyzers, Signal Generators, Data Loggers powered by Multi-Instrument. Download and try it out with your sound card!" />
+    <title>Multi-Instrument - LCR Meter by Virtins Technology</title>
+    <link rel="icon" type="image/x-icon" href="/images/global/favicon.png" />
+    <!--Bootstrap-->
+    <link href="/node_modules/bootstrap/dist/css/bootstrap.min.css" rel="stylesheet" />
+    <script defer src="/node_modules/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+    <link rel="stylesheet" href="/style.css" />
+    <!--jquery-->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <script>
+      $(function () {
+        $("#nav").load("/nav.html");
+        $("#footer").load("/footer.html");
+      });
+    </script>
+  </head>
+  <body>
+    <!--navigation bar start-->
+    <header>
+      <div id="nav"></div>
+    </header>
+    <!--navigation bar end-->
+    <h1 class="body__title">Multi-Instrument: LCR Meter</h1>
+    <div class="body__widescreen">
+      <nav aria-label="breadcrumb" class="px-4">
+        <ol class="breadcrumb">
+          <li class="breadcrumb-item"><a href="/index.html">Home</a></li>
+          <li class="breadcrumb-item"><a href="/multi-instrument.html">Multi-Instrument</a></li>
+          <li class="breadcrumb-item active" aria-current="page">LCR Meter</li>
+        </ol>
+      </nav>
+      <img class="float-sm-end d-flex m-auto p-5" src="/images/multi-instrument/LCR.jpg" alt="LCR Meter" width="296" height="373" />
+      <h1 class="body__h1">Specifications</h1>
+      <ol class="px-5">
+        <li>Can measure the value of an inductor, a capacitor or a resistor, or the impedance of a network of them in a wide range and display the result in a big font.</li>
+        <li>
+          Two types of external connections are supported: serial connection for high impedance measurement, and parallel connection for low impedance measurement. Serial connection uses the sound
+          card's input impedance as reference, while parallel connection uses an external resistor of a relatively small value as reference.
+        </li>
+        <li>Support the calibration of the sound card input impedance which may vary with frequency.</li>
+        <li>The value of the external reference resistor (if any) can be entered.</li>
+        <li>The measurement range is displayed and updated when the relevant settings change.</li>
+        <li>
+          The LCR Meter is a special Device Test Plan with built-in LCR measurement algorithm. The default LCR test plan uses 1 kHz sine wave as the test tone. However, you can configure your own LCR
+          test plans (e.g. with different test tones) if necessary.
+        </li>
+        <li>Same as other Device Test Plan, the test results can be plotted in up to 8 X-Y plots. The variables for X and Y axes can be configured.</li>
+        <li>
+          Supports Multilingual User Interface under Windows 2000, XP, Vista, 7, 8, 8.1, 10, 11 and above. Currently supported languages are English, French, German, Italian, Portuguese, Spanish,
+          Russian, Simplified Chinese, Traditional Chinese, Japanese and Korean.
+        </li>
+      </ol>
+      <h1 class="body__h1">Examples</h1>
+      <div class="container-fluid px-5 my-4">
+        <div class="row">
+          <figure class="figure col-12 col-md-6 col-xl-4">
+            <img
+              class="figure-img img-fluid mx-auto"
+              src="/images/multi-instrument/multi-instrument-lcr-meter/Multi-Instrument-LCR-Meter-L-m.png"
+              alt="Multi-Instrument-LCR-Meter-L"
+              width="480"
+              height="239"
+            />
+            <figcaption class="figure-caption text-center">Inductance Measurement</figcaption>
+          </figure>
+          <figure class="figure col-12 col-md-6 col-xl-4">
+            <img
+              class="figure-img img-fluid mx-auto"
+              src="/images/multi-instrument/multi-instrument-lcr-meter/Multi-Instrument-LCR-Meter-C-m.png"
+              alt="Multi-Instrument-LCR-Meter-C"
+              width="480"
+              height="239"
+            />
+            <figcaption class="figure-caption text-center">Capacitance Measurement</figcaption>
+          </figure>
+          <figure class="figure col-12 col-md-6 col-xl-4">
+            <img
+              class="figure-img img-fluid mx-auto"
+              src="/images/multi-instrument/multi-instrument-lcr-meter/Multi-Instrument-LCR-Meter-R-m.png"
+              alt="Multi-Instrument-LCR-Meter-R"
+              width="480"
+              height="239"
+            />
+            <figcaption class="figure-caption text-center">Resistance Measurement</figcaption>
+          </figure>
+        </div>
+      </div>
+      <!-- modal start -->
+      <div class="modal">
+        <span class="modal__close">&times;</span>
+        <img class="modal__content" />
+        <div class="modal__caption"></div>
+      </div>
+      <script src="/image-modal.js"></script>
+      <!-- modal end -->
+    </div>
+    <!--footer start-->
+    <footer>
+      <div id="footer"></div>
+    </footer>
+    <!--footer end-->
+  </body>
+</html>

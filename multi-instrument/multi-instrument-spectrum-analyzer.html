@@ -1,0 +1,446 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="Description" content="PC USB Oscilloscopes, Spectrum Analyzers, Signal Generators, Data Loggers powered by Multi-Instrument. Download and try it out with your sound card!" />
+    <title>Multi-Instrument - Spectrum Analyzer by Virtins Technology</title>
+    <link rel="icon" type="image/x-icon" href="/images/global/favicon.png" />
+    <!--Bootstrap-->
+    <link href="/node_modules/bootstrap/dist/css/bootstrap.min.css" rel="stylesheet" />
+    <script defer src="/node_modules/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+    <link rel="stylesheet" href="/style.css" />
+    <!--jquery-->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <script>
+      $(function () {
+        $("#nav").load("/nav.html");
+        $("#footer").load("/footer.html");
+      });
+    </script>
+  </head>
+  <body>
+    <!--navigation bar start-->
+    <header>
+      <div id="nav"></div>
+    </header>
+    <!--navigation bar end-->
+    <h1 class="body__title">Multi-Instrument: Spectrum Analyzer</h1>
+    <div class="body__widescreen">
+      <nav aria-label="breadcrumb" class="px-4">
+        <ol class="breadcrumb">
+          <li class="breadcrumb-item"><a href="/index.html">Home</a></li>
+          <li class="breadcrumb-item"><a href="/multi-instrument.html">Multi-Instrument</a></li>
+          <li class="breadcrumb-item active" aria-current="page">Spectrum Analyzer</li>
+        </ol>
+      </nav>
+      <img class="float-sm-end d-flex m-auto p-5" src="/images/multi-instrument/Spectrum Analyzer.jpg" alt="Spectrum Analyzer" width="296" height="373" />
+      <h1 class="body__h1">Specifications</h1>
+      <ol class="px-5">
+        <li>
+          Seven view types: Real time Amplitude Spectrum, Real time Phase Spectrum, Real time Auto Correlation Function, Real time Cross Correlation Function, Real time Coherence / Non-Coherence
+          Function, Real time Transfer Function / Impedance Analyzer, Real time Impulse Response.
+        </li>
+        <li>Independent X axis and Y axis zooming and scrolling.</li>
+        <li>
+          In Amplitude Spectrum, Y axis supports relative modes in linear and dBr scale, and absolute mode in RMS voltage, dBV, dBu, dB, dBFS scale. X axis supports linear, logarithmic and octave
+          scale (1/1, 1/3, 1/6, 1/12, 1/24, 1/48, 1/96). Support amplitude / power spectrum density display. Y axis can be converted to impedance display.
+        </li>
+        <li>Analysis results can be exported as TXT files.</li>
+        <li>Data curve can be print-previewed, printed out directly or saved as BMP files.</li>
+        <li>
+          Fast display refresh rate: about 50 frames per second (tested with a sound card under Windows XP SP2 on IBM ThinkPad R51 Laptop PC with Intel Pentium M processor 1.60 GHz, with scan time=10
+          ms and FFT size=1024 and both the Oscilloscope and the Spectrum Analyzer running under "Auto" mode). Thus data are displayed and analyzed in "true" real time.
+        </li>
+        <li>The colors of display, font size, screen refresh rate are configurable.</li>
+        <li>FFT size can be adjusted from 128 to 4194304 points.</li>
+        <li>
+          Allow record length to be different from FFT size. If the FFT size is greater than the record length, then zero(s) will be added at the end of the actual measurement data during FFT
+          computation. If the FFT size is less than the record length, then the measurement data will be split into different segments with the size of each segment equal to the FFT size. Segment
+          overlap percentage can be selected in the range of 0%~99.9%. The final result will be obtained by averaging the FFT results from all segments.
+        </li>
+        <li>
+          Support 69 window functions: Rectangle, Triangle (or Fejer), Hann, Hamming, Blackman, Exact Blackman, Blackman Harris, Blackman Nuttall, Flat Top, Exponential, Gaussian, Welch (or Riesz),
+          Cosine, Riemann (or Lanczos), Parzen, Tukey, Bohman, Poisson, Hann-Poisson, Cauchy, Bartlett-Hann, Kaiser, etc.
+        </li>
+        <li>
+          Display peak frequency with sub-FFT-bin-size accuracy in Amplitude Spectrum display, second peak time delay and corresponding coefficient in Auto Correlation Function display, peak time
+          delay and corresponding coefficient in Cross Correlation Function display, peak frequency and corresponding coefficient in Coherence Function display, peak frequency and corresponding gain
+          and phase in Transfer Function display, peak time and corresponding value in Impulse Response display.
+        </li>
+        <li>
+          Allow the measurement of Total Harmonic Distortion (THD), THD+Noise (THD+N), Signal in Noise and Distortion (SINAD), Signal-to-Noise Ratio (SNR) and Noise Level (NL), Total Non-Coherent
+          Distortion+Noise (TNCD), and GedLee Metric in a specified frequency range.
+        </li>
+        <li>
+          Allow the measurement of IMD-SMPTE/DIN, IMD-CCIF2, IMD-CCIF3, DIM, Crosstalk, Bandwidth (-3dB), Harmonics, Energy in user defined frequency bands, Peaks, Total Distortion+Noise (TD+N), Wow &
+          Flutter, sound loudness, loudness level & sharpness & articulation index.
+        </li>
+        <li>
+          In THD measurement and harmonics analysis, the fundamental frequency can be detected automatically based on the peak frequency or another variable such as the RPM reading from a tachometer
+          (e.g. for the purpose of order tracking). It can also be specified manually.
+        </li>
+        <li>Support one cursor reader and two markers which stick to the measurement data. Support peak markers.</li>
+        <li>
+          Intra-frame processing includes: Remove DC Component, Frequency Compensation, Frequency Weighting (flat, A weighting, B weighting , C weighting, ITU-R 468 weighting), and Smooth via Moving
+          Average (linear or octave). Frequency compensation is achieved via loading a user configurable text-based Frequency Compensation File (*.fcf).
+        </li>
+        <li>
+          Four inter-frame processing methods: None, Peak Hold, Linear Average, Exponential Average. The number of frames (2~200, forever) for peak hold or linear averaging can be specified. The
+          process can be reset during runtime if “forever” is chosen.
+        </li>
+        <li>Five chart types: Line, Scatter, Column, Bar, and Step. Line width is adjustable.</li>
+        <li>
+          Up to five reference curves can be set for each channel. The reference curve can be configured by either copying the current curve, or loading a properly formatted text file or a previously
+          saved reference file from the hard disk. Reference curves can be assigned as High-High, High, Low, Low-Low limits.
+        </li>
+        <li>
+          The data in the graph can be copied into the clipboard as text and later paste into other software such as Microsoft Excel for further analysis. The image of the graph can be copied into the
+          clipboard as Bitmap image and later paste into other software such as Microsoft Word.
+        </li>
+        <li>
+          Supports Multilingual User Interface under Windows 2000, XP, Vista, 7, 8, 8.1, 10, 11 and above. Currently supported languages are English, French, German, Italian, Portuguese, Spanish,
+          Russian, Simplified Chinese, Traditional Chinese, Japanese and Korean.
+        </li>
+      </ol>
+      <h1 class="body__h1">Examples</h1>
+      <div class="container-fluid px-5 my-4">
+        <div class="row">
+          <figure class="figure col-12 col-md-6 col-xl-4">
+            <img
+              class="figure-img img-fluid mx-auto"
+              src="/images/multi-instrument/multi-instrument-spectrum-analyzer/VT-USB-Spectrum-Analyzer-THD-Measurement-m.png"
+              alt="VT-USB-Spectrum-Analyzer-THD-Measurement"
+              width="480"
+              height="257"
+            />
+            <figcaption class="figure-caption text-center">Measurement of THD, THD+N, SNR, SINAD, ENOB...</figcaption>
+          </figure>
+          <figure class="figure col-12 col-md-6 col-xl-4">
+            <img
+              class="figure-img img-fluid mx-auto"
+              src="/images/multi-instrument/multi-instrument-spectrum-analyzer/VT-USB-Spectrum-Analyzer-IMD_Measurement-m.png"
+              alt="VT-USB-Spectrum-Analyzer-IMD_Measurement"
+              width="480"
+              height="257"
+            />
+            <figcaption class="figure-caption text-center">Measurement of IMD (SMPTE)</figcaption>
+          </figure>
+          <figure class="figure col-12 col-md-6 col-xl-4">
+            <img
+              class="figure-img img-fluid mx-auto"
+              src="/images/multi-instrument/multi-instrument-spectrum-analyzer/VT-USB-Spectrum-Analyzer-Crosstalk-Measurement-m.png"
+              alt="VT-USB-Spectrum-Analyzer-Crosstalk-Measurement"
+              width="480"
+              height="257"
+            />
+            <figcaption class="figure-caption text-center">Measurement of Crosstalk</figcaption>
+          </figure>
+          <figure class="figure col-12 col-md-6 col-xl-4">
+            <img
+              class="figure-img img-fluid mx-auto"
+              src="/images/multi-instrument/multi-instrument-spectrum-analyzer/VT-USB-Spectrum-Analyzer-Frequency-Response-Measurement-White-Noise-m.png"
+              alt="VT-USB-Spectrum-Analyzer-Frequency-Response-Measurement-White-Noise"
+              width="480"
+              height="257"
+            />
+            <figcaption class="figure-caption text-center">Measurement of Frequency Response (white noise stimulation)</figcaption>
+          </figure>
+          <figure class="figure col-12 col-md-6 col-xl-4">
+            <img
+              class="figure-img img-fluid mx-auto"
+              src="/images/multi-instrument/multi-instrument-spectrum-analyzer/VT-USB-Spectrum-Analyzer-Fast-Frequency-Response-Measurement-Multi-Tones-m.png"
+              alt="VT-USB-Spectrum-Analyzer-Fast-Frequency-Response-Measurement-Multi-Tones"
+              width="480"
+              height="257"
+            />
+            <figcaption class="figure-caption text-center">Fast Measurement of Frequency Response (multi-tone stimulation)</figcaption>
+          </figure>
+          <figure class="figure col-12 col-md-6 col-xl-4">
+            <img
+              class="figure-img img-fluid mx-auto"
+              src="/images/multi-instrument/multi-instrument-spectrum-analyzer/VT-USB-Spectrum-Analyzer-Frequency-Response-Measurement-Pink-Noise-Octave-Analysis-m.png"
+              alt="VT-USB-Spectrum-Analyzer-Frequency-Response-Measurement-Pink-Noise-Octave-Analysis"
+              width="480"
+              height="257"
+            />
+            <figcaption class="figure-caption text-center">Measurement of Frequency Response (pink noise stimulation + octave analysis)</figcaption>
+          </figure>
+          <figure class="figure col-12 col-md-6 col-xl-4">
+            <img
+              class="figure-img img-fluid mx-auto"
+              src="/images/multi-instrument/multi-instrument-spectrum-analyzer/VT-USB-Spectrum-Analyzer-Impact-Test-m.png"
+              alt="VT-USB-Spectrum-Analyzer-Impact-Test"
+              width="480"
+              height="257"
+            />
+            <figcaption class="figure-caption text-center">Impact Test</figcaption>
+          </figure>
+          <figure class="figure col-12 col-md-6 col-xl-4">
+            <img
+              class="figure-img img-fluid mx-auto"
+              src="/images/multi-instrument/multi-instrument-spectrum-analyzer/VT-USB-Spectrum-Analyzer-Signal-Spectrum-m.png"
+              alt="VT-USB-Spectrum-Analyzer-Signal-Spectrum"
+              width="480"
+              height="257"
+            />
+            <figcaption class="figure-caption text-center">Normalized Amplitude Spectrum of a Signal</figcaption>
+          </figure>
+          <figure class="figure col-12 col-md-6 col-xl-4">
+            <img
+              class="figure-img img-fluid mx-auto"
+              src="/images/multi-instrument/multi-instrument-spectrum-analyzer/Phase-Difference-Measurement-m.png"
+              alt="Phase-Difference-Measurement"
+              width="480"
+              height="257"
+            />
+            <figcaption class="figure-caption text-center">Measurement of Phase Difference between Two Sinewaves</figcaption>
+          </figure>
+          <figure class="figure col-12 col-md-6 col-xl-4">
+            <img
+              class="figure-img img-fluid mx-auto"
+              src="/images/multi-instrument/multi-instrument-spectrum-analyzer/VT-USB-Spectrum-Analyzer-Auto-Correlation-m.png"
+              alt="VT-USB-Spectrum-Analyzer-Auto-Correlation"
+              width="480"
+              height="346"
+            />
+            <figcaption class="figure-caption text-center">Auto Correlation of a Sinewave</figcaption>
+          </figure>
+          <figure class="figure col-12 col-md-6 col-xl-4">
+            <img
+              class="figure-img img-fluid mx-auto"
+              src="/images/multi-instrument/multi-instrument-spectrum-analyzer/VT-USB-Spectrum-Analyzer-Cross-Correlation-m.png"
+              alt="VT-USB-Spectrum-Analyzer-Cross-Correlation"
+              width="480"
+              height="346"
+            />
+            <figcaption class="figure-caption text-center">Cross Correlation of a Sinewave and Its Phase Shifted Copy</figcaption>
+          </figure>
+          <figure class="figure col-12 col-md-6 col-xl-4">
+            <img
+              class="figure-img img-fluid mx-auto"
+              src="/images/multi-instrument/multi-instrument-spectrum-analyzer/VT-USB-Spectrum-Analyzer-Phase-Spectrum-m.png"
+              alt="VT-USB-Spectrum-Analyzer-Phase-Spectrum"
+              width="480"
+              height="346"
+            />
+            <figcaption class="figure-caption text-center">Phase Spectrum of a Sinewave and Its Phase Shifted Copy</figcaption>
+          </figure>
+          <figure class="figure col-12 col-md-6 col-xl-4">
+            <img
+              class="figure-img img-fluid mx-auto"
+              src="/images/multi-instrument/multi-instrument-spectrum-analyzer/VT-USB-Spectrum-Analyzer-Kaiser-6-Window-Spectrum-m.png"
+              alt="VT-USB-Spectrum-Analyzer-Kaiser-6-Window-Spectrum"
+              width="480"
+              height="346"
+            />
+            <figcaption class="figure-caption text-center">Spectrum of Kaiser 6 Window Function</figcaption>
+          </figure>
+          <figure class="figure col-12 col-md-6 col-xl-4">
+            <img
+              class="figure-img img-fluid mx-auto"
+              src="/images/multi-instrument/multi-instrument-spectrum-analyzer/VT-USB-Spectrum-Analyzer-Coherence-m.png"
+              alt="VT-USB-Spectrum-Analyzer-Coherence"
+              width="480"
+              height="346"
+            />
+            <figcaption class="figure-caption text-center">Measurement of Coherence Function between Output and Input (white noise stimulation)</figcaption>
+          </figure>
+          <figure class="figure col-12 col-md-6 col-xl-4">
+            <img
+              class="figure-img img-fluid mx-auto"
+              src="/images/multi-instrument/multi-instrument-spectrum-analyzer/VT-USB-Spectrum-Analyzer-Bode-Plot-m.png"
+              alt="VT-USB-Spectrum-Analyzer-Bode-Plot"
+              width="480"
+              height="346"
+            />
+            <figcaption class="figure-caption text-center">Bode Plot measured via Dual Channel FFT (white noise stimulation)</figcaption>
+          </figure>
+          <figure class="figure col-12 col-md-6 col-xl-4">
+            <img
+              class="figure-img img-fluid mx-auto"
+              src="/images/multi-instrument/multi-instrument-spectrum-analyzer/VT-USB-Spectrum-Analyzer-Impulse-Response-m.png"
+              alt="VT-USB-Spectrum-Analyzer-Impulse-Response"
+              width="480"
+              height="346"
+            />
+            <figcaption class="figure-caption text-center">Impulse Response measured via Dual-Channel FFT (white noise stimulation)</figcaption>
+          </figure>
+          <figure class="figure col-12 col-md-6 col-xl-4">
+            <img
+              class="figure-img img-fluid mx-auto"
+              src="/images/multi-instrument/multi-instrument-spectrum-analyzer/VT-USB-Spectrum-Analyzer_GedLeeMetric-m.png"
+              alt="VT-USB-Spectrum-Analyzer_GedLeeMetric"
+              width="480"
+              height="346"
+            />
+            <figcaption class="figure-caption text-center">GedLee Metric for Perception Based Nonlinear Distortion Measurement</figcaption>
+          </figure>
+          <figure class="figure col-12 col-md-6 col-xl-4">
+            <img
+              class="figure-img img-fluid mx-auto"
+              src="/images/multi-instrument/multi-instrument-spectrum-analyzer/Total-Non-Coherent-Distortion-And-Noise-m.png"
+              alt="Total-Non-Coherent-Distortion-And-Noise"
+              width="480"
+              height="346"
+            />
+            <figcaption class="figure-caption text-center">Measurement of Total Non Coherent Distortion + Noise (two independent white noises)</figcaption>
+          </figure>
+          <figure class="figure col-12 col-md-6 col-xl-4">
+            <img class="figure-img img-fluid mx-auto" src="/images/multi-instrument/multi-instrument-spectrum-analyzer/TD+N-Measurement-m.png" alt="TD+N-Measurement" width="480" height="346" />
+            <figcaption class="figure-caption text-center">Measurement of Total Distortion + Noise (multitone stimulation)</figcaption>
+          </figure>
+          <figure class="figure col-12 col-md-6 col-xl-4">
+            <img
+              class="figure-img img-fluid mx-auto"
+              src="/images/multi-instrument/multi-instrument-spectrum-analyzer/IMD-CCIF2-Measurement-m.png"
+              alt="IMD-CCIF2-Measurement"
+              width="480"
+              height="346"
+            />
+            <figcaption class="figure-caption text-center">Measurement of IMD (CCIF2)</figcaption>
+          </figure>
+          <figure class="figure col-12 col-md-6 col-xl-4">
+            <img
+              class="figure-img img-fluid mx-auto"
+              src="/images/multi-instrument/multi-instrument-spectrum-analyzer/White-Noise-Loudness-Loudness-Level-Sharpness-m.png"
+              alt="White-Noise-Loudness-Loudness-Level-Sharpness"
+              width="480"
+              height="346"
+            />
+            <figcaption class="figure-caption text-center">Sound Quality (Loundness, Loundness Level, Sharpness, Articulation Index) measurement</figcaption>
+          </figure>
+          <figure class="figure col-12 col-md-6 col-xl-4">
+            <img
+              class="figure-img img-fluid mx-auto"
+              src="/images/multi-instrument/multi-instrument-spectrum-analyzer/Time-Delay-Measurement-Using-Cross-Correlation-m.png"
+              alt="Time-Delay-Measurement-Using-Cross-Correlation"
+              width="480"
+              height="346"
+            />
+            <figcaption class="figure-caption text-center">Time Delay Measurement using Cross Correlation (white noise stimulation)</figcaption>
+          </figure>
+          <figure class="figure col-12 col-md-6 col-xl-4">
+            <img
+              class="figure-img img-fluid mx-auto"
+              src="/images/multi-instrument/multi-instrument-spectrum-analyzer/Time-Delay-Measurement-Using-Generalized-Cross-Correlation-m.png"
+              alt="Time-Delay-Measurement-Using-Generalized-Cross-Correlation"
+              width="480"
+              height="346"
+            />
+            <figcaption class="figure-caption text-center">Time Delay Measurement using Generalized Cross Correlation (music stimulation)</figcaption>
+          </figure>
+          <figure class="figure col-12 col-md-6 col-xl-4">
+            <img
+              class="figure-img img-fluid mx-auto"
+              src="/images/multi-instrument/multi-instrument-spectrum-analyzer/Time-Delay-Measurement-Using-Auto-Correlation-m.png"
+              alt="Time-Delay-Measurement-Using-Auto-Correlation"
+              width="480"
+              height="346"
+            />
+            <figcaption class="figure-caption text-center">Time Delay and Well depth Measurement using Auto Correlation (MLS stimulation)</figcaption>
+          </figure>
+          <figure class="figure col-12 col-md-6 col-xl-4">
+            <img
+              class="figure-img img-fluid mx-auto"
+              src="/images/multi-instrument/multi-instrument-spectrum-analyzer/Dynamic-Intermodulation-Measurement-m.png"
+              alt="Dynamic-Intermodulation-Measurement"
+              width="480"
+              height="346"
+            />
+            <figcaption class="figure-caption text-center">Dynamic Intermodulation (DIM) Distortion Measurement</figcaption>
+          </figure>
+          <figure class="figure col-12 col-md-6 col-xl-4">
+            <img
+              class="figure-img img-fluid mx-auto"
+              src="/images/multi-instrument/multi-instrument-spectrum-analyzer/Wow-and-Flutter-Measurement-m.png"
+              alt="Wow-and-Flutter-Measurement"
+              width="480"
+              height="346"
+            />
+            <figcaption class="figure-caption text-center">Wow & Flutter Measurement</figcaption>
+          </figure>
+          <figure class="figure col-12 col-md-6 col-xl-4">
+            <img
+              class="figure-img img-fluid mx-auto"
+              src="/images/multi-instrument/multi-instrument-spectrum-analyzer/Frequency-Response-Measurement-using-Logarithmic-Sweep-m.png"
+              alt="Frequency-Response-Measurement-using-Logarithmic-Sweep"
+              width="480"
+              height="346"
+            />
+            <figcaption class="figure-caption text-center">Measurement of Frequency Response (logarithmic sweep + octave analysis)</figcaption>
+          </figure>
+          <figure class="figure col-12 col-md-6 col-xl-4">
+            <img
+              class="figure-img img-fluid mx-auto"
+              src="/images/multi-instrument/multi-instrument-spectrum-analyzer/Harmonic-Analysis-and-Signal-Decomposition-m.png"
+              alt="Harmonic-Analysis-and-Signal-Decomposition"
+              width="480"
+              height="257"
+            />
+            <figcaption class="figure-caption text-center">Harmonic Analysis and Signal Decomposition</figcaption>
+          </figure>
+          <figure class="figure col-12 col-md-6 col-xl-4">
+            <img
+              class="figure-img img-fluid mx-auto"
+              src="/images/multi-instrument/multi-instrument-spectrum-analyzer/VT-USB-Spectrum-Analyzer-Harmonic-Residual-vs-Fundamental-Clipping-m.png"
+              alt="VT-USB-Spectrum-Analyzer-Harmonic-Residual-vs-Fundamental-Clipping"
+              width="480"
+              height="257"
+            />
+            <figcaption class="figure-caption text-center">
+              Comparison between a sine wave with clipping distortion and its distortion residual (fundamental removed by a 1022-order band-stop FIR digital filter)
+            </figcaption>
+          </figure>
+          <figure class="figure col-12 col-md-6 col-xl-4">
+            <img
+              class="figure-img img-fluid mx-auto"
+              src="/images/multi-instrument/multi-instrument-spectrum-analyzer/VT-USB-Spectrum-Analyzer-Harmonic-Residual-vs-Fundamental-Crossover-m.png"
+              alt="VT-USB-Spectrum-Analyzer-Harmonic-Residual-vs-Fundamental-Crossover"
+              width="480"
+              height="257"
+            />
+            <figcaption class="figure-caption text-center">
+              Comparison between a sine wave with crossover distortion and its distortion residual (Simulated, fundamental removed by a 1022-order band-stop FIR digital filter)
+            </figcaption>
+          </figure>
+          <figure class="figure col-12 col-md-6 col-xl-4">
+            <img
+              class="figure-img img-fluid mx-auto"
+              src="/images/multi-instrument/multi-instrument-spectrum-analyzer/VT-USB-Spectrum-Analyzer-Harmonics-2and3-vs-Fundamental-m.png"
+              alt="VT-USB-Spectrum-Analyzer-Harmonics-2and3-vs-Fundamental"
+              width="480"
+              height="260"
+            />
+            <figcaption class="figure-caption text-center">
+              Comparison between a distorted sine wave and its 2nd & 3rd harmonics residual (obtained by a 1022-order band-pass FIR digital filter)
+            </figcaption>
+          </figure>
+          <figure class="figure col-12 col-md-6 col-xl-4">
+            <img
+              class="figure-img img-fluid mx-auto"
+              src="/images/multi-instrument/multi-instrument-spectrum-analyzer/VT-USB-Spectrum-Analyzer-Impedance-Analyzer-m.png"
+              alt="VT-USB-Spectrum-Analyzer-Impedance-Analyzer"
+              width="480"
+              height="260"
+            />
+            <figcaption class="figure-caption text-center">Impedance & Phase vs Frequency of a Speaker (pink noise stimulation)</figcaption>
+          </figure>
+        </div>
+      </div>
+      <!-- modal start -->
+      <div class="modal">
+        <span class="modal__close">&times;</span>
+        <img class="modal__content" />
+        <div class="modal__caption"></div>
+      </div>
+      <script src="/image-modal.js"></script>
+      <!-- modal end -->
+    </div>
+    <!--footer start-->
+    <footer>
+      <div id="footer"></div>
+    </footer>
+    <!--footer end-->
+  </body>
+</html>

@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="Description" content="Hardware Remote Upgrade is used to upgrade the software license level associated with the hardware." />
+    <title>Hardware Remote Upgrade Request | Virtins Technology</title>
+    <link rel="icon" type="image/x-icon" href="images/global/favicon.png" />
+    <!--Bootstrap-->
+    <link href="node_modules/bootstrap/dist/css/bootstrap.min.css" rel="stylesheet" />
+    <script defer src="node_modules/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+    <link rel="stylesheet" href="style.css" />
+    <!--RECAPTCHA V3-->
+    <script src="https://www.google.com/recaptcha/api.js?render=6LfJ-kMkAAAAAPGBHMmotQi_b14c-6Dj2w_XY1Yi"></script>
+    <!--jquery-->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <script>
+      $(function () {
+        $("#nav").load("nav.html");
+        $("#footer").load("footer.html");
+      });
+    </script>
+  </head>
+  <body>
+    <!--navigation bar start-->
+    <header>
+      <div id="nav"></div>
+    </header>
+    <!--navigation bar end-->
+    <h1 class="body__title">Hardware Remote Upgrade Request</h1>
+    <div class="body__widescreen">
+      <!--1-->
+      <h1 class="body__h1">HARDWARE REMOTE UPGRADE REQUEST FORM</h1>
+      <p class="body__p">
+        Hardware Remote Upgrade is used to upgrade the software license level associated with the hardware. The hardware can be a USB hardkey or any ADC/DAC hardware manufactured by Virtins
+        Technology. After purchasing a software upgrade, please use the following form to submit your hardware ID (and Serial Number, if applicable), we will generate the corresponding upgrade package
+        file and send it to you via email afterwards.
+      </p>
+      <form method="post" action="hardware-upgrade.php" id="hardware-upgrade-form" class="container-fluid px-4 needs-validation" novalidate>
+        <div class="mb-3">
+          <label for="name" class="form-label fw-bold">Full Name</label>
+          <input type="text" class="form-control" id="name" name="name" required />
+          <div class="invalid-feedback">Please fill in your full name.</div>
+        </div>
+        <div class="mb-3">
+          <label for="company" class="form-label fw-bold">Company</label>
+          <input type="text" class="form-control" id="company" name="company" />
+        </div>
+        <div class="mb-3">
+          <label for="email" class="form-label fw-bold">Email Address</label>
+          <input type="email" class="form-control" pattern=".*\..*" id="email" name="email" placeholder="name@example.com" required />
+          <div class="invalid-feedback">Please fill in a valid email address.</div>
+        </div>
+        <div class="mb-3">
+          <label for="upgrade-to" class="form-label fw-bold">Upgrade to</label>
+          <select name="upgrade-to" id="upgrade-to" class="form-select" required>
+            <option value="Multi-Instrument Pro" selected>Multi-Instrument Pro</option>
+            <option value="Multi-Instrument Standard">Multi-Instrument Standard</option>
+            <option value="Multi-Instrument Lite">Multi-Instrument Lite</option>
+            <option value="Sound Card Oscilloscope">Sound Card Oscilloscope</option>
+            <option value="Sound Card Spectrum Analyzer">Sound Card Spectrum Analyzer</option>
+            <option value="Sound Card Signal Generator">Sound Card Signal Generator</option>
+            <option value="VIRTINS Sound Card Multi-Instrument 2.1">VIRTINS Sound Card Multi-Instrument 2.1</option>
+            <option value="VIRTINS Sound Card Oscilloscope">VIRTINS Sound Card Oscilloscope</option>
+            <option value="VIRTINS Sound Card Spectrum Analyzer 2.1">VIRTINS Sound Card Spectrum Analyzer 2.1</option>
+            <option value="VIRTINS Sound Card Signal Generator 2.1">VIRTINS Sound Card Signal Generator 2.1</option>
+          </select>
+        </div>
+        <label class="form-label fw-bold">Add-ons</label>
+        <div class="form-check mb-3">
+          <input class="form-check-input" type="checkbox" value="Spectrum 3D Plot" id="add-ons-1" name="add-ons[]" />
+          <label class="form-check-label" for="add-ons-1">Spectrum 3D Plot</label>
+        </div>
+        <div class="form-check mb-3">
+          <input class="form-check-input" type="checkbox" value="Data Logger" id="add-ons-2" name="add-ons[]" />
+          <label class="form-check-label" for="add-ons-2">Data Logger</label>
+        </div>
+        <div class="form-check mb-3">
+          <input class="form-check-input" type="checkbox" value="LCR Meter" id="add-ons-3" name="add-ons[]" />
+          <label class="form-check-label" for="add-ons-3">LCR Meter</label>
+        </div>
+        <div class="form-check mb-3">
+          <input class="form-check-input" type="checkbox" value="Device Test Plan" id="add-ons-4" name="add-ons[]" />
+          <label class="form-check-label" for="add-ons-4">Device Test Plan</label>
+        </div>
+        <div class="form-check mb-3">
+          <input class="form-check-input" type="checkbox" value="Vibrometer" id="add-ons-5" name="add-ons[]" />
+          <label class="form-check-label" for="add-ons-5">Vibrometer</label>
+        </div>
+        <div class="mb-3">
+          <label for="order-reference-no" class="form-label fw-bold">Order Reference Number</label>
+          <input type="text" class="form-control" id="order-reference-no" name="order-reference-no" />
+        </div>
+        <div class="mb-3">
+          <label for="hardware-category" class="form-label fw-bold">Hardware Category</label>
+          <select name="hardware-category" id="hardware-category" class="form-select" required>
+            <option value="USB Hardkey" selected>USB Hardkey</option>
+            <option value="VT Hardware">VT Hardware</option>
+          </select>
+        </div>
+        <div class="mb-3">
+          <label for="hardware-id" class="form-label fw-bold">Hardware ID<br /></label>
+          <input type="text" class="form-control" id="hardware-id" name="hardware-id" required />
+          <div class="invalid-feedback">Please fill in your Hardware ID</div>
+        </div>
+        <div class="mb-3">
+          <label for="serial-number" class="form-label fw-bold"
+            >Serial Number<br /><span class="text-secondary fw-normal">(Required for some VT hardware such as the Second Generation DSOs)</span></label
+          >
+          <input type="text" class="form-control" id="serial-number" name="serial-number" />
+        </div>
+        <div class="mb-3">
+          <label for="note" class="form-label fw-bold">Additional Note<br /></label>
+          <textarea class="form-control" id="note" name="note" rows="5"></textarea>
+        </div>
+        <div class="mb-3">
+          <button class="btn btn-primary" type="submit">Submit</button>
+        </div>
+      </form>
+      <script src="form-validation.js"></script>
+      <!--2-->
+      <h1 class="body__h1">How to obtain the Hardware ID and Serial Number?</h1>
+      <p class="body__p">
+        Plug in the hardware, and then on Windows desktop, go to [Start] > [All Programs] > [Multi-Instrument] > [VIRTINS Hardware Upgrading Tool] to launch the Hardware Upgrading Tool, the following
+        dialog box will pop up with the hardware ID displayed. (press Read Hardware ID button if it is not displayed)
+      </p>
+      <img src="images/hardware-upgrade/UpgradeHardkey1.png" alt="UpgradeHardkey1" width="756" height="197" class="mx-auto px-4 pb-4" />
+      <p class="body__p">
+        Apart from the Hardware ID, some VT hardware such as the second-generation DSOs also have a Serial Number (S/No.). In this case, the S/No. will also be displayed in the dialog box and is
+        required for Hardware Remote Upgrade Request.
+      </p>
+      <img src="images/hardware-upgrade/SerialNo.png" alt="SerialNo" width="790" height="210" class="mx-auto px-4 pb-4" />
+      <!--3-->
+      <h1 class="body__h1">How to upgrade the license level associated with the hardware?</h1>
+      <p class="body__p">
+        After you receive the upgrade package file, you can upgrade the hardware by yourself.<br /><br />
+        Plug in the hardware, and then on Windows desktop, go to [Start] > [All Programs] > [Multi-Instrument] > [VIRTINS Hardware Upgrading Tool] to launch the Hardware Upgrading Tool, the following
+        dialog box will pop up. Press the File Load button to select the upgrade package file corresponding to the hardware ID, and then press "Upgrade".
+      </p>
+      <img src="images/hardware-upgrade/UpgradeHardkey2.png" alt="UpgradeHardkey2" width="758" height="197" class="mx-auto px-4 pb-4" />
+    </div>
+    <!--footer start-->
+    <footer>
+      <div id="footer"></div>
+    </footer>
+    <!--footer end-->
+  </body>
+</html>
