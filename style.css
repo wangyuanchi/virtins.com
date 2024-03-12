@@ -572,8 +572,7 @@ select {
 .modal__content {
   margin: auto;
   display: block;
-  max-width: 60%;
-  height: auto;
+  margin-top: 50px;
 }
 
 .modal__caption {

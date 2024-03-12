@@ -36,24 +36,27 @@
       </nav>
       <img class="float-sm-end d-flex m-auto p-5" src="/images/multi-instrument/Oscilloscope.jpg" alt="Oscilloscope" width="296" height="373" />
       <h1 class="body__h1">Specifications</h1>
-      <p class="body__p">ADC Hardware Related Specifications</p>
-      <h2 class="body__h2">Sound Card based systems:</h2>
       <ol class="px-5">
-        <li>Scan Time: 100 µs~500 s (computer memory dependent).</li>
-        <li>Bandwidth: 10 Hz - 200 kHz (sound card dependent).</li>
-        <li>Maximum Allowable Input Voltage (if connected directly): about 3 V (sound card dependent).</li>
-        <li>Selectable sampling frequency (up to 768 kHz), sampling bit resolution (8, 16 24 or 32 bits) and sampling channels (one or two) (sound card dependent)</li>
-        <li>Four trigger modes: Auto, Normal, Single and Slow.</li>
         <li>
-          Support triggering by rising edge, falling edge, or both at a specified trigger level or for a specified amount of change, in the selected input channel. Support trigger frequency rejection.
+          ADC Hardware Related Specifications
+          <p class="body__p text-decoration-underline ps-0 mb-0">Sound Card based systems:</p>
+          <ol type="i" class="ps-4">
+            <li>Scan Time: 100 µs~500 s (computer memory dependent).</li>
+            <li>Bandwidth: 10 Hz - 200 kHz (sound card dependent).</li>
+            <li>Maximum Allowable Input Voltage (if connected directly): about 3 V (sound card dependent).</li>
+            <li>Selectable sampling frequency (up to 768 kHz), sampling bit resolution (8, 16 24 or 32 bits) and sampling channels (one or two) (sound card dependent)</li>
+            <li>Four trigger modes: Auto, Normal, Single and Slow.</li>
+            <li>
+              Support triggering by rising edge, falling edge, or both at a specified trigger level or for a specified amount of change, in the selected input channel. Support trigger frequency
+              rejection.
+            </li>
+            <li>Support pre-triggering and post triggering from 0 to 100% of the specified record length.</li>
+            <li>Continuously monitor the input signal such that no trigger event is missed before data collection</li>
+            <li>Support calibration of the input channels with the input gain setting automatically being taken into account. Re-calibration is not necessary even if the gain setting changes.</li>
+          </ol>
+          <p class="body__p text-decoration-underline ps-0 mb-0">Non Sound Card based systems:</p>
+          <p class="body__p ps-0 mb-0">Please refer to the respective hardware manual.</p>
         </li>
-        <li>Support pre-triggering and post triggering from 0 to 100% of the specified record length.</li>
-        <li>Continuously monitor the input signal such that no trigger event is missed before data collection</li>
-        <li>Support calibration of the input channels with the input gain setting automatically being taken into account. Re-calibration is not necessary even if the gain setting changes.</li>
-      </ol>
-      <h2 class="body__h2">Non Sound Card based systems:</h2>
-      <p class="body__p">Please refer to the respective hardware manual.</p>
-      <ol class="px-5">
         <li>Can be used as a transient signal recorder to capture and store raw data continuously into a sequence of WAV files in the hard disk.</li>
         <li>
           Five view types: Real time waveform of Channel A and Channel B, Real time waveform of Channel A + Channel B, Real time waveform of Channel A - Channel B, Real time waveform of Channel A x
