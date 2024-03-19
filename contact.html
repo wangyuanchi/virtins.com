@@ -44,20 +44,22 @@
     <div class="body__widescreen">
       <!--1-->
       <h1 class="body__h1">Leave us a message</h1>
-      <form method="post" action="contact.php" id="contact-us-form" class="container-fluid px-4 needs-validation" novalidate>
-        <div class="mb-3">
-          <label for="name" class="form-label fw-bold">Full Name</label>
-          <input type="text" class="form-control" id="name" name="name" required />
-          <div class="invalid-feedback">Please fill in your full name.</div>
-        </div>
-        <div class="mb-3">
-          <label for="company" class="form-label fw-bold">Company</label>
-          <input type="text" class="form-control" id="company" name="company" />
-        </div>
-        <div class="mb-3">
-          <label for="email" class="form-label fw-bold">Email Address</label>
-          <input type="email" class="form-control" pattern=".*\..*" id="email" name="email" placeholder="name@example.com" required />
-          <div class="invalid-feedback">Please fill in a valid email address.</div>
+      <form method="post" action="contact.php" id="contact-us-form" class="form needs-validation" novalidate>
+        <div class="row">
+          <div class="mb-3 col-12 col-md-6 col-lg-4">
+            <label for="name" class="form-label fw-bold">Full Name</label>
+            <input type="text" class="form-control" id="name" name="name" required />
+            <div class="invalid-feedback">Please fill in your full name.</div>
+          </div>
+          <div class="mb-3 col-12 col-md-6 col-lg-4">
+            <label for="company" class="form-label fw-bold">Company</label>
+            <input type="text" class="form-control" id="company" name="company" />
+          </div>
+          <div class="mb-3 col-12 col-lg-4">
+            <label for="email" class="form-label fw-bold">Email Address</label>
+            <input type="email" class="form-control" pattern=".*\..*" id="email" name="email" placeholder="name@example.com" required />
+            <div class="invalid-feedback">Please fill in a valid email address.</div>
+          </div>
         </div>
         <div class="mb-3">
           <label for="subject" class="form-label fw-bold">Subject</label>

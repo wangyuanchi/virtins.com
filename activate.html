@@ -20,6 +20,24 @@
         $("#footer").load("footer.html");
       });
     </script>
+    <!--scroll fix bug-->
+    <script>
+      window.onload = function () {
+        // Check if the page was accessed directly or via a redirect from FAQ.html
+        let redirectedFrom = document.referrer.indexOf("FAQ.html") !== -1;
+        // If redirect source is correct
+        if (redirectedFrom) {
+          // Get the target element ID from the URL
+          let targetElementId = window.location.hash.substr(1);
+          // Find the target element
+          let targetElement = document.getElementById(targetElementId);
+          if (targetElement) {
+            // Scroll to the target element with an offset of 100px
+            window.scrollTo(0, targetElement.offsetTop - 100);
+          }
+        }
+      };
+    </script>
   </head>
   <body>
     <!--navigation bar start-->
@@ -32,26 +50,29 @@
       <!--1-->
       <h1 class="body__h1">ACTIVATION CODE REQUEST FORM</h1>
       <p class="body__p">
-        Please use the following form to submit your site code and MID values (which are displayed on the screen after you launch the trial program). We will generate the corresponding activation code
+        Please use the following form to submit your Site Code and MID values (which are displayed on the screen after you launch the trial program). We will generate the corresponding Activation Code
         and send it to you afterwards. You can then use the activation code to unlock the software.
       </p>
-      <form method="post" action="activate.php" id="activate-form" class="container-fluid px-4 needs-validation" novalidate>
-        <div class="mb-3">
-          <label for="name" class="form-label fw-bold">Full Name</label>
-          <input type="text" class="form-control" id="name" name="name" required />
-          <div class="invalid-feedback">Please fill in your full name.</div>
+      <p class="body__p"><span class="text-danger">*</span> Mandatory Fields</p>
+      <form method="post" action="activate.php" id="activate-form" class="form needs-validation" novalidate>
+        <div class="row">
+          <div class="mb-3 col-12 col-md-6 col-lg-4">
+            <label for="name" class="form-label fw-bold">Full Name <span class="text-danger">*</span></label>
+            <input type="text" class="form-control" id="name" name="name" required />
+            <div class="invalid-feedback">Please fill in your full name.</div>
+          </div>
+          <div class="mb-3 col-12 col-md-6 col-lg-4">
+            <label for="company" class="form-label fw-bold">Company</label>
+            <input type="text" class="form-control" id="company" name="company" />
+          </div>
+          <div class="mb-3 col-12 col-lg-4">
+            <label for="email" class="form-label fw-bold">Email Address <span class="text-danger">*</span></label>
+            <input type="email" class="form-control" pattern=".*\..*" id="email" name="email" placeholder="name@example.com" required />
+            <div class="invalid-feedback">Please fill in a valid email address.</div>
+          </div>
         </div>
         <div class="mb-3">
-          <label for="company" class="form-label fw-bold">Company</label>
-          <input type="text" class="form-control" id="company" name="company" />
-        </div>
-        <div class="mb-3">
-          <label for="email" class="form-label fw-bold">Email Address</label>
-          <input type="email" class="form-control" pattern=".*\..*" id="email" name="email" placeholder="name@example.com" required />
-          <div class="invalid-feedback">Please fill in a valid email address.</div>
-        </div>
-        <div class="mb-3">
-          <label for="product" class="form-label fw-bold">Product</label>
+          <label for="product" class="form-label fw-bold">Product <span class="text-danger">*</span></label>
           <select name="product" id="product" class="form-select" required>
             <option value="Multi-Instrument Pro" selected>Multi-Instrument Pro</option>
             <option value="Multi-Instrument Standard">Multi-Instrument Standard</option>
@@ -59,52 +80,57 @@
             <option value="Sound Card Oscilloscope">Sound Card Oscilloscope</option>
             <option value="Sound Card Spectrum Analyzer">Sound Card Spectrum Analyzer</option>
             <option value="Sound Card Signal Generator">Sound Card Signal Generator</option>
-            <option value="VIRTINS Sound Card Multi-Instrument 2.1">VIRTINS Sound Card Multi-Instrument 2.1</option>
-            <option value="VIRTINS Sound Card Oscilloscope">VIRTINS Sound Card Oscilloscope</option>
-            <option value="VIRTINS Sound Card Spectrum Analyzer 2.1">VIRTINS Sound Card Spectrum Analyzer 2.1</option>
-            <option value="VIRTINS Sound Card Signal Generator 2.1">VIRTINS Sound Card Signal Generator 2.1</option>
           </select>
         </div>
         <label class="form-label fw-bold">Add-ons</label>
-        <div class="form-check mb-3">
-          <input class="form-check-input" type="checkbox" value="Spectrum 3D Plot" id="add-ons-1" name="add-ons[]" />
-          <label class="form-check-label" for="add-ons-1">Spectrum 3D Plot</label>
+        <div class="d-flex flex-row flex-wrap column-gap-4 column-gap-lg-5">
+          <div class="mb-3">
+            <input class="form-check-input" type="checkbox" value="Spectrum 3D Plot" id="add-ons-1" name="add-ons[]" />
+            <label class="form-check-label" for="add-ons-1">Spectrum 3D Plot</label>
+          </div>
+          <div class="mb-3">
+            <input class="form-check-input" type="checkbox" value="Data Logger" id="add-ons-2" name="add-ons[]" />
+            <label class="form-check-label" for="add-ons-2">Data Logger</label>
+          </div>
+          <div class="mb-3">
+            <input class="form-check-input" type="checkbox" value="LCR Meter" id="add-ons-3" name="add-ons[]" />
+            <label class="form-check-label" for="add-ons-3">LCR Meter</label>
+          </div>
+          <div class="mb-3">
+            <input class="form-check-input" type="checkbox" value="Device Test Plan" id="add-ons-4" name="add-ons[]" />
+            <label class="form-check-label" for="add-ons-4">Device Test Plan</label>
+          </div>
+          <div class="mb-3">
+            <input class="form-check-input" type="checkbox" value="Vibrometer" id="add-ons-5" name="add-ons[]" />
+            <label class="form-check-label" for="add-ons-5">Vibrometer</label>
+          </div>
         </div>
-        <div class="form-check mb-3">
-          <input class="form-check-input" type="checkbox" value="Data Logger" id="add-ons-2" name="add-ons[]" />
-          <label class="form-check-label" for="add-ons-2">Data Logger</label>
+        <div class="row">
+          <div class="mb-3 col-12 col-md-6">
+            <label for="order-reference-no" class="form-label fw-bold">Order Reference Number</label>
+            <input type="text" class="form-control" id="order-reference-no" name="order-reference-no" />
+          </div>
+          <div class="mb-3 col-12 col-md-6">
+            <label for="site-code" class="form-label fw-bold">Site Code <span class="text-danger">*</span></label>
+            <input type="text" class="form-control" id="site-code" name="site-code" required />
+            <div class="invalid-feedback">Please fill in your site code.</div>
+            <span class="text-secondary fw-normal">(In the case of a License Extension, please enter the Next Site Code)</span>
+          </div>
         </div>
-        <div class="form-check mb-3">
-          <input class="form-check-input" type="checkbox" value="LCR Meter" id="add-ons-3" name="add-ons[]" />
-          <label class="form-check-label" for="add-ons-3">LCR Meter</label>
+        <div class="row">
+          <div class="mb-3 col-12 col-md-6">
+            <label for="mid" class="form-label fw-bold">MID <span class="text-danger">*</span></label>
+            <input type="text" class="form-control" id="mid" name="mid" required />
+            <div class="invalid-feedback">Please fill in your MID.</div>
+            <span class="text-secondary fw-normal">(In the case of a License Extension, please enter the Next MID)</span>
+          </div>
+          <div class="mb-3 col-12 col-md-6">
+            <label for="removal-code" class="form-label fw-bold">Removal Code</label>
+            <input type="text" class="form-control" id="removal-code" name="removal-code" />
+            <span class="text-secondary fw-normal">(Removal Code is required for License Transfer)</span>
+          </div>
         </div>
-        <div class="form-check mb-3">
-          <input class="form-check-input" type="checkbox" value="Device Test Plan" id="add-ons-4" name="add-ons[]" />
-          <label class="form-check-label" for="add-ons-4">Device Test Plan</label>
-        </div>
-        <div class="form-check mb-3">
-          <input class="form-check-input" type="checkbox" value="Vibrometer" id="add-ons-5" name="add-ons[]" />
-          <label class="form-check-label" for="add-ons-5">Vibrometer</label>
-        </div>
-        <div class="mb-3">
-          <label for="order-reference-no" class="form-label fw-bold">Order Reference Number</label>
-          <input type="text" class="form-control" id="order-reference-no" name="order-reference-no" />
-        </div>
-        <div class="mb-3">
-          <label for="site-code" class="form-label fw-bold">Site Code<br /><span class="text-secondary fw-normal">(In the case of a License Extension, please enter the next Site Code)</span></label>
-          <input type="text" class="form-control" id="site-code" name="site-code" required />
-          <div class="invalid-feedback">Please fill in your site code.</div>
-        </div>
-        <div class="mb-3">
-          <label for="mid" class="form-label fw-bold">MID<br /><span class="text-secondary fw-normal">(In the case of a License Extension, please enter the next MID)</span></label>
-          <input type="text" class="form-control" id="mid" name="mid" required />
-          <div class="invalid-feedback">Please fill in your MID.</div>
-        </div>
-        <div class="mb-3">
-          <label for="removal-code" class="form-label fw-bold">Removal Code<br /><span class="text-secondary fw-normal">(Removal Code is required for License Transfer)</span></label>
-          <input type="text" class="form-control" id="removal-code" name="removal-code" />
-        </div>
-        <label class="form-label fw-bold">Request Type<br /><span class="text-secondary fw-normal">(refer to pointers 1 to 4 below)</span></label>
+        <label class="form-label fw-bold">Request Type</label>
         <div class="mb-3">
           <select name="request-type" id="request-type" class="form-select" required>
             <option value="License First Time Activation" selected>License First Time Activation</option>
@@ -112,12 +138,12 @@
             <option value="License Transfer">License Transfer</option>
             <option value="License Extension">License Extension</option>
           </select>
+          <span class="text-secondary fw-normal">(refer to pointers 1 to 4 below)</span>
         </div>
         <div class="mb-3">
-          <label for="note" class="form-label fw-bold"
-            >Additional Note<br /><span class="text-secondary fw-normal">(For re-activation request, please indicate the reason, e.g. hard disk / CPU / main board replaced, etc.)</span></label
-          >
+          <label for="note" class="form-label fw-bold">Additional Note</label>
           <textarea class="form-control" id="note" name="note" rows="5"></textarea>
+          <span class="text-secondary fw-normal">(For re-activation request, please indicate the reason, e.g. hard disk / CPU / main board replaced, etc.)</span>
         </div>
         <div class="mb-3">
           <button class="btn btn-primary" type="submit">Submit</button>
@@ -142,7 +168,7 @@
         <br />
         2. The Removal Code from the LICENSED computer together with the Site Code and MID from the new computer. (applicable to the case of license transfer)
       </p>
-      <h2 class="body__h2">3. License transfer from one computer to another</h2>
+      <h2 id="License-Transfer" class="body__h2">3. License transfer from one computer to another</h2>
       <p class="body__p text-decoration-underline">Method 1: Request for license transfer (recommended)</p>
       <p class="body__p">
         Remove the license from the original computer and send the Removal Code together with the Site Code and MID from the new computer to us to request for a new activation code.<br /><br />
@@ -152,7 +178,7 @@
       </p>
       <img src="images/activate/MIRemovalDlg.png" alt="MIRemovalDlg" width="387" height="445" class="mx-auto px-4 py-2" />
       <p class="body__p text-decoration-underline">Method 2: Do-It-Yourself (only valid if the software versions on both computers are the same)</p>
-      <p class="body__p">The procedure is as follows: (Suppose that the license to be transferred from Computer A to Computer B)</p>
+      <p class="body__p">The procedure is as follows: (Suppose that the license is to be transferred from Computer A to Computer B)</p>
       <p class="body__p">
         (i) On Computer B, install and run the software in order to obtain the Site Code B.<br />
         (ii) On Computer A, turn on the "Scroll Lock" key (or press and hold the "Shift" key) on your keyboard and run the software. The activation dialog box will be displayed. Choose "Transfer

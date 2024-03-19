@@ -99,7 +99,7 @@
               <div class="card-body">
                 <h5 class="card-title">Sound Card Based Multi-function Test and Measurement System, Radio China</h5>
                 <p class="card-text text-secondary">April - June, 2009</p>
-                <a href="https://virtins.com/doc/Sound-Card-Based-Multi-function-Test-and-Measurement-System.pdf" class="stretched-link"></a>
+                <a href="images/testimonials-and-media-presence/Turn-a-PC-into-an-Oscilloscope-a-new-generation-of-virtual-test-and-measurement-systems.pdf" class="stretched-link"></a>
               </div>
             </div>
           </div>
@@ -164,14 +164,24 @@
       <figure class="text-center px-5">
         <blockquote class="blockquote">
           <p>
-            ... I just checked with the AP and as expected, the noise floor in <span id="test-case" class="text-primary text-decoration-underline">this test case</span> is about -110/-115 dB. That's
-            what is reported by my audio precision analyzer, my Agilent SA my own test tool, and also in MI. I'm currently testing MI as a new bench tool for a massive audio roundup planned in our
-            next issue and I totally love it. I will have no choice but to buy a license after the 21-day trial. I'm mad I've spend 100 bucks for TrueR... :X Your software deserve to be well-known
-            everywhere...
+            ... I just checked with the AP and as expected, the noise floor in <span id="test-case-anchor" class="modal__anchor text-primary text-decoration-underline">this test case</span> is about
+            -110/-115 dB. That's what is reported by my audio precision analyzer, my Agilent SA my own test tool, and also in MI. I'm currently testing MI as a new bench tool for a massive audio
+            roundup planned in our next issue and I totally love it. I will have no choice but to buy a license after the 21-day trial. I'm mad I've spend 100 bucks for TrueR... :X Your software
+            deserve to be well-known everywhere...
           </p>
         </blockquote>
         <figcaption class="blockquote-footer">Samuel DEMEULEMEESTER, <cite title="Source Title">Editor-in-Chief, Canard PC</cite></figcaption>
       </figure>
+      <div id="test-case-image" class="modal">
+        <span class="modal__close">&times;</span>
+        <img
+          class="modal__content"
+          src="images/testimonials-and-media-presence/MI-THD-using-Asus-Xonar-Essense-STX-ASIO-by-Canardpc.png"
+          alt="MI-THD-using-Asus-Xonar-Essense-STX-ASIO-by-Canardpc"
+          width="1920"
+          height="1048"
+        />
+      </div>
       <figure class="text-center px-5">
         <blockquote class="blockquote">
           <p>You are certainly the most innovative in this field. Congratulations!</p>
@@ -238,32 +248,7 @@
         <figcaption class="blockquote-footer">John Bragoli, <cite title="Source Title">ABC-TELEVISION</cite></figcaption>
       </figure>
     </div>
-    <!-- modal start -->
-    <div class="modal">
-      <span class="modal__close">&times;</span>
-      <img
-        class="modal__content"
-        src="images/testimonials-and-media-presence/MI-THD-using-Asus-Xonar-Essense-STX-ASIO-by-Canardpc.png"
-        alt="MI-THD-using-Asus-Xonar-Essense-STX-ASIO-by-Canardpc"
-        width="750"
-        height="409"
-      />
-    </div>
-    <script>
-      const testCase = document.getElementById("test-case");
-      const modal = document.querySelector(".modal");
-      const close = modal.querySelector(".modal__close");
-      testCase.addEventListener("mouseover", () => {
-        testCase.style.cursor = "pointer";
-      });
-      testCase.addEventListener("click", () => {
-        modal.classList.add("d-block");
-      });
-      close.addEventListener("click", () => {
-        modal.classList.remove("d-block");
-      });
-    </script>
-    <!-- modal end -->
+    <script src="image-modal.js"></script>
     <!--footer start-->
     <footer>
       <div id="footer"></div>

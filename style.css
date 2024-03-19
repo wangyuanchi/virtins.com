@@ -651,6 +651,16 @@ select {
   font-family: var(--FF);
 }
 
+/* FORM STYLES */
+.form {
+  width: 100% - 3rem;
+  padding: 1.5rem;
+  margin: 1rem 1.5rem;
+  background-color: #fbfbfb;
+  border: 1px solid #9fa6b2;
+  border-radius: 15px;
+}
+
 /* SPECIFIC STYLES */
 
 /* Small screen, laptops */
