@@ -39,7 +39,7 @@ if ($recaptcha["success"] == 1 and $recaptcha["score"] >= 0.5) {
 
         $mail->setFrom($email, $name);
 
-        $mail->addAddress("support@virtins.com", "support@virtins.com");
+        $mail->addAddress("sales@virtins.com", "sales@virtins.com");
 
         $message = "Full Name: " . $name . "\n" .
             "Company: " . $company . "\n" .
