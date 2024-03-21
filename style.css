@@ -671,7 +671,7 @@ select {
 /* Small screen, laptops */
 @media screen and (min-width: 992px) {
   #multi-instrument-hero {
-    content: url(images/multi-instrument/hero.png);
+    content: url(images/multi-instrument/hero.jpg);
   }
 
   #multi-instrument-button {
@@ -685,7 +685,7 @@ select {
   }
 
   #sound-recognition-hero {
-    content: url(images/sound-recognition/hero-sound-recognition.png);
+    content: url(images/sound-recognition/hero-sound-recognition.jpg);
   }
 
   #sound-recognition-button {
