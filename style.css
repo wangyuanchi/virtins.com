@@ -360,7 +360,8 @@ select {
   padding: 0 1.5rem;
   text-align: center;
   font-family: var(--FF);
-  font-size: 2rem;
+  font-size: 1rem;
+  font-weight: bold;
 }
 
 .products__description {
@@ -368,7 +369,7 @@ select {
   padding: 0 1.5rem;
   text-align: center;
   font-family: var(--FF);
-  font-size: 1.5rem;
+  font-size: 0.75rem;
 }
 
 .products__product {
@@ -464,6 +465,12 @@ select {
     align-items: left;
     text-align: left;
   }
+  .products__header {
+    font-size: 1.25rem;
+  }
+  .products__description {
+    font-size: 1rem;
+  }
 }
 
 /* Small screen, laptops */
@@ -476,11 +483,23 @@ select {
   .product__image img {
     width: 80%;
   }
+  .products__header {
+    font-size: 1.5rem;
+  }
+  .products__description {
+    font-size: 1.25rem;
+  }
 }
 /* Desktop, large screens */
 @media screen and (min-width: 1200px) {
   .product__image img {
     width: 85%;
+  }
+  .products__header {
+    font-size: 1.75rem;
+  }
+  .products__description {
+    font-size: 1.5rem;
   }
 }
 
