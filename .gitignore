@@ -1,0 +1,4 @@
+# PHP files with sensitive information
+activate.php
+contact.php
+hardware-upgrade.php
