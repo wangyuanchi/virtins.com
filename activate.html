@@ -71,79 +71,90 @@
             <div class="invalid-feedback">Please fill in a valid email address.</div>
           </div>
         </div>
-        <div class="mb-3">
-          <label for="product" class="form-label fw-bold">Product <span class="text-danger">*</span></label>
-          <select name="product" id="product" class="form-select" required>
-            <option value="Multi-Instrument Pro" selected>Multi-Instrument Pro</option>
-            <option value="Multi-Instrument Standard">Multi-Instrument Standard</option>
-            <option value="Multi-Instrument Lite">Multi-Instrument Lite</option>
-            <option value="Sound Card Oscilloscope">Sound Card Oscilloscope</option>
-            <option value="Sound Card Spectrum Analyzer">Sound Card Spectrum Analyzer</option>
-            <option value="Sound Card Signal Generator">Sound Card Signal Generator</option>
-          </select>
-        </div>
-        <label class="form-label fw-bold">Add-ons</label>
-        <div class="d-flex flex-row flex-wrap column-gap-4 column-gap-lg-5">
-          <div class="mb-3">
-            <input class="form-check-input" type="checkbox" value="Spectrum 3D Plot" id="add-ons-1" name="add-ons[]" />
-            <label class="form-check-label" for="add-ons-1">Spectrum 3D Plot</label>
-          </div>
-          <div class="mb-3">
-            <input class="form-check-input" type="checkbox" value="Data Logger" id="add-ons-2" name="add-ons[]" />
-            <label class="form-check-label" for="add-ons-2">Data Logger</label>
-          </div>
-          <div class="mb-3">
-            <input class="form-check-input" type="checkbox" value="LCR Meter" id="add-ons-3" name="add-ons[]" />
-            <label class="form-check-label" for="add-ons-3">LCR Meter</label>
-          </div>
-          <div class="mb-3">
-            <input class="form-check-input" type="checkbox" value="Device Test Plan" id="add-ons-4" name="add-ons[]" />
-            <label class="form-check-label" for="add-ons-4">Device Test Plan</label>
-          </div>
-          <div class="mb-3">
-            <input class="form-check-input" type="checkbox" value="Vibrometer" id="add-ons-5" name="add-ons[]" />
-            <label class="form-check-label" for="add-ons-5">Vibrometer</label>
-          </div>
-        </div>
         <div class="row">
-          <div class="mb-3 col-12 col-md-6">
+          <div class="mb-3 col-12 col-md-6 order-0">
+            <label for="product" class="form-label fw-bold">Product <span class="text-danger">*</span></label>
+            <select name="product" id="product" class="form-select" required>
+              <option value="Multi-Instrument Pro" selected>Multi-Instrument Pro</option>
+              <option value="Multi-Instrument Standard">Multi-Instrument Standard</option>
+              <option value="Multi-Instrument Lite">Multi-Instrument Lite</option>
+              <option value="Sound Card Oscilloscope">Sound Card Oscilloscope</option>
+              <option value="Sound Card Spectrum Analyzer">Sound Card Spectrum Analyzer</option>
+              <option value="Sound Card Signal Generator">Sound Card Signal Generator</option>
+            </select>
+          </div>
+          <div class="mb-3 col-12 col-md-6 order-2 order-md-1">
             <label for="order-reference-no" class="form-label fw-bold">Order Reference Number</label>
             <input type="text" class="form-control" id="order-reference-no" name="order-reference-no" />
           </div>
-          <div class="mb-3 col-12 col-md-6">
-            <label for="site-code" class="form-label fw-bold">Site Code <span class="text-danger">*</span></label>
-            <input type="text" class="form-control" id="site-code" name="site-code" required />
-            <div class="invalid-feedback">Please fill in your site code.</div>
-            <span class="text-secondary fw-normal">(In the case of a License Extension, please enter the Next Site Code)</span>
+          <div class="d-flex flex-row flex-wrap column-gap-4 column-gap-lg-5 order-1 order-md-2">
+            <label class="form-label fw-bold col-12">Add-ons</label>
+            <div class="mb-3">
+              <input class="form-check-input" type="checkbox" value="Spectrum 3D Plot" id="add-ons-1" name="add-ons[]" />
+              <label class="form-check-label" for="add-ons-1">Spectrum 3D Plot</label>
+            </div>
+            <div class="mb-3">
+              <input class="form-check-input" type="checkbox" value="Data Logger" id="add-ons-2" name="add-ons[]" />
+              <label class="form-check-label" for="add-ons-2">Data Logger</label>
+            </div>
+            <div class="mb-3">
+              <input class="form-check-input" type="checkbox" value="LCR Meter" id="add-ons-3" name="add-ons[]" />
+              <label class="form-check-label" for="add-ons-3">LCR Meter</label>
+            </div>
+            <div class="mb-3">
+              <input class="form-check-input" type="checkbox" value="Device Test Plan" id="add-ons-4" name="add-ons[]" />
+              <label class="form-check-label" for="add-ons-4">Device Test Plan</label>
+            </div>
+            <div class="mb-3">
+              <input class="form-check-input" type="checkbox" value="Vibrometer" id="add-ons-5" name="add-ons[]" />
+              <label class="form-check-label" for="add-ons-5">Vibrometer</label>
+            </div>
           </div>
         </div>
         <div class="row">
           <div class="mb-3 col-12 col-md-6">
-            <label for="mid" class="form-label fw-bold">MID <span class="text-danger">*</span></label>
-            <input type="text" class="form-control" id="mid" name="mid" required />
-            <div class="invalid-feedback">Please fill in your MID.</div>
-            <span class="text-secondary fw-normal">(In the case of a License Extension, please enter the Next MID)</span>
+            <label for="site-code" class="form-label fw-bold"
+              >Site Code <span class="text-danger">*</span><br /><span class="text-secondary fw-normal">(In the case of a License Extension, please enter the Next Site Code)</span>
+            </label>
+            <input type="text" class="form-control" id="site-code" name="site-code" required />
+            <div class="invalid-feedback">Please fill in your site code.</div>
           </div>
           <div class="mb-3 col-12 col-md-6">
-            <label for="removal-code" class="form-label fw-bold">Removal Code</label>
-            <input type="text" class="form-control" id="removal-code" name="removal-code" />
-            <span class="text-secondary fw-normal">(Removal Code is required for License Transfer)</span>
+            <label for="mid" class="form-label fw-bold"
+              >MID <span class="text-danger">*</span><br />
+              <span class="text-secondary fw-normal">(In the case of a License Extension, please enter the Next MID)</span>
+            </label>
+            <input type="text" class="form-control" id="mid" name="mid" required />
+            <div class="invalid-feedback">Please fill in your MID.</div>
           </div>
         </div>
-        <label class="form-label fw-bold">Request Type</label>
-        <div class="mb-3">
-          <select name="request-type" id="request-type" class="form-select" required>
-            <option value="License First Time Activation" selected>License First Time Activation</option>
-            <option value="License Re-Activation">License Re-Activation</option>
-            <option value="License Transfer">License Transfer</option>
-            <option value="License Extension">License Extension</option>
-          </select>
-          <span class="text-secondary fw-normal">(refer to pointers 1 to 4 below)</span>
+        <div class="row">
+          <div class="mb-3 col-12 col-md-6">
+            <label class="form-label fw-bold"
+              >Request Type<br />
+              <span class="text-secondary fw-normal">(refer to pointers 1 to 4 below)</span>
+            </label>
+            <select name="request-type" id="request-type" class="form-select" required>
+              <option value="License First Time Activation" selected>License First Time Activation</option>
+              <option value="License Re-Activation">License Re-Activation</option>
+              <option value="License Transfer">License Transfer</option>
+              <option value="License Extension">License Extension</option>
+            </select>
+          </div>
+          <div class="mb-3 col-12 col-md-6">
+            <label for="removal-code" class="form-label fw-bold"
+              >Removal Code<br />
+              <span class="text-secondary fw-normal">(Removal Code is required for License Transfer)</span>
+            </label>
+            <input type="text" class="form-control" id="removal-code" name="removal-code" />
+          </div>
         </div>
         <div class="mb-3">
-          <label for="note" class="form-label fw-bold">Additional Note</label>
+          <label for="note" class="form-label fw-bold"
+            >Additional Note<br />
+            <span class="text-secondary fw-normal">(For re-activation request, please indicate the reason, e.g. hard disk / CPU / main board replaced, etc.)</span>
+          </label>
           <textarea class="form-control" id="note" name="note" rows="5"></textarea>
-          <span class="text-secondary fw-normal">(For re-activation request, please indicate the reason, e.g. hard disk / CPU / main board replaced, etc.)</span>
         </div>
         <div class="mb-3">
           <button class="btn btn-primary" type="submit">Submit</button>
