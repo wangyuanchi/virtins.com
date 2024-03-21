@@ -569,6 +569,11 @@ select {
   background-color: rgba(0, 0, 0, 0.8);
 }
 
+/* Fix for overlapping background */
+.modal-backdrop.show {
+  opacity: 0;
+}
+
 .modal__content {
   margin: auto;
   display: block;
