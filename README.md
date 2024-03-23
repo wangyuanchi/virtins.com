@@ -15,7 +15,7 @@ This website is licensed under the MIT LICENSE - see the [LICENSE](https://githu
 
 1. Clone the repository in VS Code.
 2. Run the code on a server, such as Live Server by Ritwick Dey.
-3. For the form elements to work, you need to use a web server like XAMPP.
+3. PHP files are left out as it includes sensitive information.
 
 ## Technologies Used
 
