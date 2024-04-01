@@ -25,5 +25,6 @@ This website is licensed under the MIT LICENSE - see the [LICENSE](https://githu
 - PHP
 
 ## Excluded Files
-.php files
 .exe files
+
+.php files
