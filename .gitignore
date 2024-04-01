@@ -1,4 +1,6 @@
 *.exe
+*.rar
+*.zip
 
 activate.php
 contact.php
