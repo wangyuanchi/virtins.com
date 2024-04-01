@@ -1,7 +1,6 @@
-
 # Website for VIRTINS TECHNOLOGY
 
-This new website is developed using its former outdated design made in 2013. 
+This new website is developed using its former outdated design made in 2013.
 
 It provides a fresher aesthetic, better user experience and compatibility across devices and browsers.
 
@@ -23,8 +22,3 @@ This website is licensed under the MIT LICENSE - see the [LICENSE](https://githu
 - Bootstrap 5.3
 - JavaScript
 - PHP
-
-## Excluded Files
-.exe files
-
-.php files
