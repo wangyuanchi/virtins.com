@@ -1,4 +1,8 @@
-const modal = document.querySelector(".modal");
+// Bootstrap modals with id "FreeShippingModal" and anchors' id-specific modals have the .modal class
+// Other images use the shared modal with .modal__modal class
+// Both classes use the same design in style.css, but different classes to prevent clashes
+
+const modal = document.querySelector(".modal__modal");
 const figureList = document.querySelectorAll(".figure");
 const anchorList = document.querySelectorAll(".modal__anchor");
 

@@ -575,7 +575,8 @@ select {
 }
 
 /* MODAL STYLES */
-.modal {
+.modal,
+.modal__modal {
   display: none;
   position: fixed;
   z-index: 1060;
