@@ -161,6 +161,21 @@
             </div>
           </div>
         </div>
+        <div class="accordion-item">
+          <h2 class="accordion-header">
+            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapse11" aria-expanded="false" aria-controls="collapse11">
+              Should I disable the default "Enable Audio Enhancements" option under the "Advanced" tab in Windows Recording Control for the audio device used by the software?
+            </button>
+          </h2>
+          <div id="collapse11" class="accordion-collapse collapse">
+            <div class="accordion-body">
+              Yes, it MUST be disabled. Some Windows versions / editions come with some audio signal enhancement features which are enabled by default. These features must be disabled through the
+              Sound Recording Control under Windows Control Panel to prevent them from altering the originally sampled data, as shown below. This is particularly important when Sound Card MME driver
+              is used in the software.
+              <img src="images/faq/WindowsAudioEnhancements.png" alt="WindowsAudioEnhancements" width="400" height="455" class="mx-auto my-3" />
+            </div>
+          </div>
+        </div>
       </div>
       <!--3-->
       <h1 class="body__h1">Others</h1>
