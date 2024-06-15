@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="Description" content="Thank you for your payment. Your transaction has been completed, and a receipt for your purchase has been emailed to you." />
+    <title>Thank you for your payment - Virtins Technology</title>
+    <link rel="canonical" href="https://virtins.com/pppback.shtml" />
+    <link rel="icon" type="image/x-icon" href="images/global/favicon.png" />
+    <!--Bootstrap-->
+    <link href="node_modules/bootstrap/dist/css/bootstrap.min.css" rel="stylesheet" />
+    <script defer src="node_modules/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+    <link rel="stylesheet" href="style.css" />
+    <!--jquery-->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <script>
+      $(function () {
+        $("#nav").load("nav.html");
+        $("#footer").load("footer.html");
+      });
+    </script>
+  </head>
+  <body>
+    <!--navigation bar start-->
+    <header>
+      <div id="nav"></div>
+    </header>
+    <!--navigation bar end-->
+    <h1 class="body__title">Thank you for your payment!</h1>
+    <div class="body__widescreen">
+      <!--1-->
+      <p class="body__p">Thank you for your payment. Your transaction has been completed, and a receipt for your purchase has been emailed to you.</p>
+      <p class="body__p">
+        If you have purchased any software license, please download the software to your target PC in case you have not done so, and then proceed to
+        <a href="/activate.html">register or upgrade your softkey activated license</a>. We will send the activation code to the email address you have given within 24 hours.
+      </p>
+      <p class="body__p">If you have purchased any hardware, we will ship it to the shipping address you have given within 24 hours. You will then be notified with an email.</p>
+    </div>
+    <!--footer start-->
+    <footer>
+      <div id="footer"></div>
+    </footer>
+    <!--footer end-->
+  </body>
+</html>
