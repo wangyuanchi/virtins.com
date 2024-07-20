@@ -6,15 +6,6 @@ It provides a fresher aesthetic, better user experience and compatibility across
 
 Visit the website here: https://www.virtins.com.
 
-## License
-
-This website is licensed under the MIT LICENSE - see the [LICENSE](https://github.com/wangyuanchi/virtins.com/blob/main/LICENSE.md) file for more details.
-
-## Installation
-
-1. Clone the repository in VS Code.
-2. Run the code on a server, such as Live Server by Ritwick Dey.
-
 ## Technologies Used
 
 - HTML
