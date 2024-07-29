@@ -119,9 +119,22 @@
           <textarea class="form-control" id="note" name="note" rows="5"></textarea>
         </div>
         <div class="mb-3">
+          <input type="hidden" id="ip" name="ip" />
+        </div>
+        <div class="mb-3">
           <button class="btn btn-primary" type="submit">Submit</button>
         </div>
       </form>
+      <script type="application/javascript ">
+        const ipFormInput = document.getElementById('ip');
+        fetch('https://api.ipify.org?format=json')
+            .then((response) => { return response.json() })
+            .then((json) => {
+                const ip = json.ip;
+                ipFormInput.value = ip;
+            })
+            .catch((err) => { console.error(`Error getting IP Address: ${err}`) })
+      </script>
       <script src="form-validation.js"></script>
       <!--2-->
       <h1 class="body__h1">How to obtain the Hardware ID and Serial Number?</h1>
